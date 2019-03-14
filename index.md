@@ -2,7 +2,7 @@
 ## Hello  
     
   
-[url(img/cbcb_main.jpg)](posts/post_01.md)
+[<img src="img/cbcb_main.jpg">](posts/post_01.md)
 
 
 [02](posts/post_02.md)
