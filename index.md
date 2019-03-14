@@ -1,7 +1,7 @@
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
 ## Hello  
     
   
-[01](post_01.md)  
+[01](posts/post_01.md)  
 
-[02](post_02.md)
+[02](posts/post_02.md)
