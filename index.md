@@ -2,7 +2,7 @@
 ## Hello  
     
   
-[url(img/cbcb_main.png "Catch-ball catch-bomb")](posts/post_01.md)
+[url(img/cbcb_main.jpg)](posts/post_01.md)
 
 
 [02](posts/post_02.md)
