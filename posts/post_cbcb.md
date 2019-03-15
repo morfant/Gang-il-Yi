@@ -1,15 +1,7 @@
 [Back](../index.md)
 
-###캐치볼, 캐치밤 Catch ball, catch bomb
+캐치볼, 캐치밤 Catch ball, catch bomb
 
-<img src="../img/cbcb_in_performance.jpg">
-</br>
-</br>
-
-<img src="../img/cbcb_logout.jpeg">
-</br>
-</br>
-
-<img src="../img/cbcb_textbomb.png">
-</br>
-</br>
+<img src="../img/cbcb_in_performance.jpg">  
+<img src="../img/cbcb_logout.jpeg">  
+<img src="../img/cbcb_textbomb.png">  
