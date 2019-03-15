@@ -6,10 +6,10 @@
 </br>
 </br>
 
-<img src="../img/cbcb_logout.jpg">
+<img src="../img/cbcb_logout.jpeg">
 </br>
 </br>
 
-<img src="../img/cbcb_textbomb.jpg">
+<img src="../img/cbcb_textbomb.png">
 </br>
 </br>
