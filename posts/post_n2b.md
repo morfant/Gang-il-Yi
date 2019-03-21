@@ -1,6 +1,6 @@
 [Back](../index.md)
 
-이름 이진수변환 및 열전사프린팅 Name to binarary visualizer and thermal printing installation (2018)<br><br>
+이름 이진수변환 및 열전사프린팅 Name to binarary visualizer and thermal printing installation<br><br>
   
 
    
