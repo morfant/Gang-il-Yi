@@ -7,4 +7,4 @@
 ![](../img/cbcb_logout.jpeg)
 ![](../img/cbcb_textbomb.png)
 
-[- video](https://youtu.be/-8mqZjqoUN4){:target="_blank"}
+[video](https://youtu.be/-8mqZjqoUN4){:target="_blank"}
