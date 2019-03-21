@@ -3,7 +3,7 @@
 캐치볼, 캐치밤 Catch ball, catch bomb
 
 ![](../img/cbcb_balls.jpg)
-![](../img/cbcbin_performance.jpg)
+![](../img/cbcb_in_performance.jpg)
 ![](../img/cbcb_logout.jpeg)
 ![](../img/cbcb_textbomb.png)
 
