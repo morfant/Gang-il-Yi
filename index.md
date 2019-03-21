@@ -3,9 +3,9 @@
 [<img src="img/pianoday_0.png">](posts/post_pianoday2019.md)
 
 
-캐치볼, 캐치밤 Catch ball, catch bomb (2018)    
+캐치볼, 캐치밤 Catch ball, catch bomb (2018)
 [<img src="img/cbcb_main.jpg">](posts/post_cbcb.md)
-<p style="text-align: right;">photo by 이야기</p>  
+<p style="text-align: right;">photo by 이야기</p>
   
   
   
