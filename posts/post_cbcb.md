@@ -6,3 +6,5 @@
 <img src="../img/cbcb_in_performance.jpg">  
 <img src="../img/cbcb_logout.jpeg">  
 <img src="../img/cbcb_textbomb.png">  
+[![](http://img.youtube.com/vi/-8mqZjqoUN4/0.jpg)](http://www.youtube.com/watch?v=-8mqZjqoUN4 "")  
+
