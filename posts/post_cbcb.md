@@ -6,5 +6,4 @@
 <img src="../img/cbcb_in_performance.jpg">  
 <img src="../img/cbcb_logout.jpeg">  
 <img src="../img/cbcb_textbomb.png">  
-[![cbcbalt](http://img.youtube.com/vi/-8mqZjqoUN4/0.jpg)](http://www.youtube.com/watch?v=-8mqZjqoUN4 "cbcb")
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-8mqZjqoUN4/0.jpg)](https://www.youtube.com/watch?v=-8mqZjqoUN4)
