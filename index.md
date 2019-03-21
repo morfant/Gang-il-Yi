@@ -11,5 +11,5 @@
 [<img src="img/majorleague_main.png">](posts/post_majorleague.md)  
 
 
-이름 이진수 변환 및 써멀 프린팅 설치물 Name to binarary visualizer and thermal printing installation (2018)  
+이름 이진수 변환 및 열전사 프린팅 설치 Name to binarary visualizer and thermal printing installation (2018)  
 [<img src="img/n2b_main.png">](posts/post_n2b.md)  
