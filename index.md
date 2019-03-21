@@ -7,3 +7,5 @@
 [<img src="img/cbcb_main.jpg">](posts/post_cbcb.md)
   
   
+메이저리그 Majorleague (2018)
+[<img src="img/majorleague_main.jpg">](posts/post_majorleague.md)
