@@ -12,7 +12,7 @@
 
 
 사운드캠프 Soundcamp (2018)
-[<img src="img/soundcamp2018_main.png">](posts/post_soundcamp2018.md)  
+[<img src="img/soundcamp2018_main.jpg">](posts/post_soundcamp2018.md)  
 
 
 이름 이진수변환 및 열전사프린팅 Name to binarary visualizer and thermal printing installation (2018)  
