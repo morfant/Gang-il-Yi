@@ -2,3 +2,7 @@
  background-image: url("bezier_patterns.png");
  background-color: #cccccc;
 } */
+
+p {
+  margin: 0 0 0px;
+}
