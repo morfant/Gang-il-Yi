@@ -4,7 +4,8 @@
 
 
 캐치볼, 캐치밤 Catch ball, catch bomb (2018)    
-[<img src="img/cbcb_main.jpg">](posts/post_cbcb.md)<p style="text-align: right;">photo by 이야기</p>  
+[<img src="img/cbcb_main.jpg">](posts/post_cbcb.md)
+<p style="text-align: right;">photo by 이야기</p>  
   
   
   
