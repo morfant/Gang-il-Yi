@@ -4,5 +4,5 @@
   
   
 프린팅 예시 printing example  
-![](../img/n2b_printing_example.png)
+![](../img/n2b_printing_example.png)  
 [video](https://drive.google.com/file/d/1e2rGc_futrYHMsClwydtaxQa6nLCU-vW/view?usp=sharing){:target="_blank"}
