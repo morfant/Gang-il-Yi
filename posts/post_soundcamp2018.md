@@ -4,5 +4,5 @@
 
 ![](../img/soundcamp2018_trees.jpg)
 ![](../img/soundcamp2018_camping.jpg)
-![](../img/soundcamp2018_birdmic.jpeg)
+![](../img/soundcamp2018_birdmic.jpg)
 
