@@ -8,4 +8,4 @@
   
   
 메이저리그 Majorleague (2018)
-[<img src="img/majorleague_main.jpg">](posts/post_majorleague.md)
+[<img src="img/majorleague_main.png">](posts/post_majorleague.md)
