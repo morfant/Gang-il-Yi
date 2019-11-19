@@ -1,6 +1,10 @@
 <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
-[instagram](https://www.instagram.com/giy.eyear/)
+[instagram](https://www.instagram.com/giy.eyear/){:target="_blank"}
+
+
 <br><br><br><br>
+
+
 피아노데이 PianoDay (2019)    
 [<img src="img/pianoday_0.png">](posts/post_pianoday2019.md)
 
