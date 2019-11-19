@@ -1,6 +1,8 @@
 <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
 [instagram](https://www.instagram.com/giy.eyear/){:target="_blank"} |
-[bandcamp](https://thisriver.bandcamp.com/){:target="_blank"}
+[bandcamp](https://thisriver.bandcamp.com/){:target="_blank"} |
+[soundcloud](https://soundcloud.com/thisriver){:target="_blank"}
+
 
 <br><br><br><br>
 
