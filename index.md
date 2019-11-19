@@ -1,5 +1,5 @@
 <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
-[instagram](https://www.instagram.com/giy.eyear/){:target="_blank"},
+[instagram](https://www.instagram.com/giy.eyear/){:target="_blank"}
 [bandcamp](https://thisriver.bandcamp.com/){:target="_blank"}
 
 <br><br><br><br>
