@@ -1,6 +1,8 @@
 [Back](../index.md)
 
-캐치볼, 캐치밤 Catch ball, catch bomb</br>
+캐치볼, 캐치밤 Catch ball, catch bomb
+
+
 Mixed media(p5.js, node.js, IMU sensor etc) audiance relating performance
 
 ![](../img/cbcb_balls.jpg)
