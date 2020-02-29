@@ -1,3 +1,8 @@
+Gang il, Yi    
+[portfolio](https://drive.google.com/open?id=1Uc6Z9rBlfHAuxB_oziPcVrFIlbLbZTpHwG1ZUsFII0Y){:target="_blank"}    
+[cv](https://drive.google.com/open?id=1KCO-WvrEvPSmPJIcfNuUF3WLoQCZIcHE_-ad1KQncoE){:target="_blank"}    
+
+
 <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
 [weatherreport](https://weatherrep0rt.github.io/){:target="_blank"} |
 [instagram](https://www.instagram.com/giy.eyear/){:target="_blank"} |
@@ -10,8 +15,16 @@
 
 <br><br><br><br>
 
-합창 (2019) /w Jiyeon Kim, Mihye Cha (as jeokdo)
+합창 (2019. 12) /w Jiyeon Kim, Mihye Cha (as jeokdo)
 [<img src="img/hapchang_jeokdo_0.jpg">](posts/post_hapchang_jeokdo.md)
+
+
+[현대음악 공연 <Dichterliebe : Detachment> (2019. 12)](posts/post_schumann.md)
+  
+  
+[움직임 퍼포먼스 + 전시<로열큐빗마스터> 사운드 참여 Sound(2019. 11)](posts/post_cubitmaster.md)
+
+
 
 
 
