@@ -10,6 +10,9 @@
 
 <br><br><br><br>
 
+합창 (2019) /w Jiyeon Kim, Mihye Cha (as jeokdo)
+[<img src="img/hapchang_jeokdo_0.jpg">](posts/post_hapchang_jeokdo.md)
+
 
 피아노데이 PianoDay (2019)    
 [<img src="img/pianoday_0.png">](posts/post_pianoday2019.md)
