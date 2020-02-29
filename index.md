@@ -14,38 +14,3 @@ Gang il, Yi
 
 
 <br><br><br><br>
-
-합창 (2019. 12) /w Jiyeon Kim, Mihye Cha (as jeokdo)
-[<img src="img/hapchang_jeokdo_0.jpg">](posts/post_hapchang_jeokdo.md)
-
-
-[현대음악 공연 <Dichterliebe : Detachment> (2019. 12)](posts/post_schumann.md)
-  
-  
-[움직임 퍼포먼스 + 전시<로열큐빗마스터> 사운드 참여 Sound(2019. 11)](posts/post_cubitmaster.md)
-
-
-
-
-
-피아노데이 PianoDay (2019)    
-[<img src="img/pianoday_0.png">](posts/post_pianoday2019.md)
-
-
-캐치볼, 캐치밤 Catch ball, catch bomb (2018)
-[<img src="img/cbcb_main.jpg">](posts/post_cbcb.md)
-photo by 이야기
-  
-  
-  
-메이저리그 Majorleague (2018)
-[<img src="img/majorleague_main.png">](posts/post_majorleague.md)  
-
-
-사운드캠프 Soundcamp (2018)
-[<img src="img/soundcamp2018_main.jpg">](posts/post_soundcamp2018.md)  
-photo by euina jeong  
-
-
-이름 이진수변환 및 열전사프린팅 Name to binarary visualizer and thermal printing installation (2018)  
-[<img src="img/n2b_main.png">](posts/post_n2b.md)  
