@@ -1,4 +1,5 @@
 Gang il, Yi
+[giy.hands@gmail.com](mailto:giy.hands@gmail.com){:target="_blank"}
 <br><br>
 
 [portfolio](https://drive.google.com/open?id=1Uc6Z9rBlfHAuxB_oziPcVrFIlbLbZTpHwG1ZUsFII0Y){:target="_blank"}    
