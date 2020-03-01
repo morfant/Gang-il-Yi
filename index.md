@@ -5,6 +5,7 @@ author_profile: false
 
 [portfolio](https://drive.google.com/open?id=1Uc6Z9rBlfHAuxB_oziPcVrFIlbLbZTpHwG1ZUsFII0Y){:target="_blank"}    
 [cv](https://drive.google.com/open?id=1KCO-WvrEvPSmPJIcfNuUF3WLoQCZIcHE_-ad1KQncoE){:target="_blank"}    
+
 [giy.hands@gmail.com](mailto:giy.hands@gmail.com){:target="_blank"}
 
 <br><br><br><br>
