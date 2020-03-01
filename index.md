@@ -15,7 +15,7 @@ author_profile: false
 [openprocessing](https://www.openprocessing.org/user/139857/#sketches){:target="_blank"}  |
 [github](https://github.com/morfant/){:target="_blank"}   
 <br>
-[###### giy.hands@gmail.com](mailto:giy.hands@gmail.com){:target="_blank"}
+[email](mailto:giy.hands@gmail.com){:target="_blank"}
 
   
   
