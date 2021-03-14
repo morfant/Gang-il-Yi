@@ -3,7 +3,7 @@ layout: single
 author_profile: false
 ---
 
-[portfolio](https://docs.google.com/document/d/1Uc6Z9rBlfHAuxB_oziPcVrFIlbLbZTpHwG1ZUsFII0Y/edit?usp=sharing){:target="_blank"}   
+[portfolio](https://bit.ly/2IihzIi){:target="_blank"}   
 [cv](https://drive.google.com/open?id=1KCO-WvrEvPSmPJIcfNuUF3WLoQCZIcHE_-ad1KQncoE){:target="_blank"}   
 <br>
 
