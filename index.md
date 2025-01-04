@@ -3,7 +3,7 @@ layout: single
 author_profile: false
 ---
 
-[portfolio]([https://bit.ly/2IihzIi](https://docs.google.com/document/d/e/2PACX-1vQ_gT1CcOQbYR2mQFOmkSBXGylTd2CYwzsAzJH-9U1e1fvCoWfRfVj399nJa9r5buTDz8rbU6_dlp8J/pub)){:target="_blank"}   
+[portfolio](https://docs.google.com/document/d/e/2PACX-1vQ_gT1CcOQbYR2mQFOmkSBXGylTd2CYwzsAzJH-9U1e1fvCoWfRfVj399nJa9r5buTDz8rbU6_dlp8J/pub){:target="_blank"}   
 [cv](https://drive.google.com/open?id=1KCO-WvrEvPSmPJIcfNuUF3WLoQCZIcHE_-ad1KQncoE){:target="_blank"}   
 <br>
 
