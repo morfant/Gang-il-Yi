@@ -7,13 +7,14 @@ author_profile: false
 [cv](https://drive.google.com/open?id=1KCO-WvrEvPSmPJIcfNuUF3WLoQCZIcHE_-ad1KQncoE){:target="_blank"}   
 <br>
 
-[weatherreport](https://weatherrep0rt.github.io/){:target="_blank"} |
+[weatherreport](https://wrhome.super.site/){:target="_blank"} |<br>
+[myself-a-painter](https://myselfapainter.super.site/){:target="_blank"} |
 [instagram](https://www.instagram.com/giy.eyear/){:target="_blank"} |
-[youtube](https://www.youtube.com/@code-draw){:target="_blank"} |
+[openprocessing](https://www.openprocessing.org/user/139857/#sketches){:target="_blank"} |
+[youtube](https://www.youtube.com/@code-draw){:target="_blank"} |<br>
 [bandcamp](https://thisriver.bandcamp.com/){:target="_blank"} |
-[soundcloud](https://soundcloud.com/thisriver){:target="_blank"} |
-[self-taught](https://morfant.github.io/self-taught/){:target="_blank"} |
-[openprocessing](https://www.openprocessing.org/user/139857/#sketches){:target="_blank"}  |
+[soundcloud](https://soundcloud.com/thisriver){:target="_blank"} |<br>
+[self-taught](https://morfant.github.io/self-taught/){:target="_blank"} |<br>
 [github](https://github.com/morfant/){:target="_blank"}
 
 <br>
