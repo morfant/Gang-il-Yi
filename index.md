@@ -11,7 +11,7 @@ author_profile: false
 [myself-a-painter](https://myselfapainter.super.site/){:target="_blank"} |
 [instagram](https://www.instagram.com/giy.eyear/){:target="_blank"} |
 [openprocessing](https://www.openprocessing.org/user/139857/#sketches){:target="_blank"} |
-[youtube](https://www.youtube.com/@code-draw){:target="_blank"} |<br>
+[youtube](https://www.youtube.com/@GangilYi/videos){:target="_blank"} |<br>
 [bandcamp](https://thisriver.bandcamp.com/){:target="_blank"} |
 [soundcloud](https://soundcloud.com/thisriver){:target="_blank"} |<br>
 [self-taught](https://morfant.github.io/self-taught/){:target="_blank"} |<br>
