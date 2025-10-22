@@ -4,7 +4,7 @@ author_profile: false
 ---
 
 [portfolio](https://docs.google.com/document/d/e/2PACX-1vQ_gT1CcOQbYR2mQFOmkSBXGylTd2CYwzsAzJH-9U1e1fvCoWfRfVj399nJa9r5buTDz8rbU6_dlp8J/pub){:target="_blank"}   
-[cv (pdf)](https://github.com/morfant/Gang-il-Yi/blob/ea981c9b0dde30c1aebe0f6ca4baeca5eb423621/docs/cv.pdf){:target="_blank"}   
+[cv](https://bronze-yarrow-a6c.notion.site/Gangil-Yi-CV-294ae12323ca802bbf4acf44ae9275eb){:target="_blank"}   
 <br>
 
 [weatherreport](https://wrhome.super.site/){:target="_blank"} |<br>
