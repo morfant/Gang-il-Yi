@@ -7,6 +7,7 @@ media:
 links:
   - label: "code & data (GitHub)"
     url: "https://github.com/morfant/sammelungen"
+cover: /img/there_are_lights_0.png
 ---
 
 데이터를 이용한 전자음악 작곡 &lt;There are lights that never go out&gt;. 2015 WESA festival 참여, 2015.12.

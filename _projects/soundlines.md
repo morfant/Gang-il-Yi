@@ -31,3 +31,10 @@ GV80, 홀로렌즈 2, LED 스크린, 2 채널 스테레오 사운드, AR 게임,
 [그래픽 디자인, 테크니컬 아티스트] 현지
 [사운드] 카입, 김지연, 이강일
 [제작 지원] 현대자동차 제로원
+
+![](/img/soundlines_doc_0.png)
+![](/img/soundlines_doc_1.png)
+![](/img/soundlines_doc_2.png)
+![](/img/soundlines_doc_3.png)
+![](/img/soundlines_doc_4.png)
+![](/img/soundlines_doc_5.png)

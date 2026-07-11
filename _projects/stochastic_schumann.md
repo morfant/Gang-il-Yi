@@ -8,6 +8,7 @@ media:
 links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/schumann_like_with_probability/-/tree/master"
+cover: /img/stochastic_schumann_0.png
 ---
 
 현대음악 공연 &lt;Dichterliebe : Detachment&gt; 전자음악 작곡. AUDIOGUY, 2019.12.

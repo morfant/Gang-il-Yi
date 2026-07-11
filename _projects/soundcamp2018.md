@@ -13,3 +13,5 @@ cover: /img/soundcamp2018_main.jpg
 ![](/img/soundcamp2018_trees.jpg)
 ![](/img/soundcamp2018_camping.jpg)
 ![](/img/soundcamp2018_birdmic.jpg)
+
+![](/img/soundcamp2018_doc_0.png)

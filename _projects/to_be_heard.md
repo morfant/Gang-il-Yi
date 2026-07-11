@@ -3,6 +3,7 @@ title: "말할 수 있기 위해서"
 title_en: "To be heard"
 year: 2020
 type: installation
+cover: /img/to_be_heard_0.png
 ---
 
 제로원 오픈스튜디오 2020 — 수어통역 디바이스를 활용한 2채널 영상 작업 &lt;말할 수 있기 위해서&gt; (To be heard). 강남 드림플러스 6층 제로원, 2020.10 - 2020.11.
@@ -18,3 +19,7 @@ In To Be Heard, sound artist Gang il Yi collaborates with UNBARRIER, a start-up 
 To Be Heard is a tutorial video to learn and use sign language. In the conversation to take place within the context of this project, the audience would have an opportunity to 'hear' others as the language of the other party gets translated or converted into his or her language and to consider what it means to 'hear' and 'listen to' each other.
 
 This project neither focuses on the element of 'sound' in 'hearing' impairment nor views it as an absence of something given. This project allows and validates a way of communication and language that happens to be bodily.
+
+![](/img/to_be_heard_1.png)
+![](/img/to_be_heard_2.png)
+![](/img/to_be_heard_3.png)

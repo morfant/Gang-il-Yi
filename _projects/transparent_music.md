@@ -14,3 +14,6 @@ media:
 관련: &lt;제천국제음악영화제: 음악 들려주는 영화관&gt; — 도큐멘터리 영상 ‘투명한 음악’ 쇼케이스 공연 (w/ 김지연), 오디오 스트리밍 데이터 비주얼라이제이션 Audio streaming data visualization. 제천문화회관, 2019.8.10.
 
 ![](/img/transparent_music_1.jpg)
+
+![](/img/transparent_music_doc_0.png)
+![](/img/transparent_music_doc_1.png)

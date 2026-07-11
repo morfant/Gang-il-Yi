@@ -1,6 +1,7 @@
 ---
 title: "Drawing Two+gether"
 year: 2022
+cover: /img/drawing_together_0.png
 ---
 
 농인/청인 청소년이 함께하는 게임을 활용한 예술 코딩 워크숍 &lt;Drawing Two+gether&gt;. 서울예술교육센터, 2022.4.
@@ -12,3 +13,9 @@ year: 2022
 자바스크립트 p5.js를 활용합니다. 키보드로 그림을 그려보며 모니터 속 다양한 꽃들로 서로가 서로의 의미를 창조합니다. 이 모든 과정은 미디어아티스트 이강일과 함께합니다.
 
 *본 워크숍은 농인x 청인 청소년이 함께 합니다
+
+![](/img/drawing_together_1.png)
+![](/img/drawing_together_2.png)
+![](/img/drawing_together_3.png)
+![](/img/drawing_together_4.png)
+![](/img/drawing_together_5.png)
