@@ -3,6 +3,8 @@
 이강일 (Gang il Yi) — sound artist 포트폴리오 사이트.
 Jekyll + GitHub Pages. `master`에 push하면 자동으로 빌드/배포됩니다.
 
+**상세한 관리 방법은 [사이트-관리-가이드.md](사이트-관리-가이드.md) 참고.**
+
 ## 새 프로젝트 추가하는 법
 
 1. `_projects/_template.md`를 복사해서 `_projects/프로젝트이름.md`로 저장

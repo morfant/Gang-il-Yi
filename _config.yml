@@ -44,3 +44,4 @@ exclude:
   - vendor
   - README.md
   - CLAUDE.md
+  - 사이트-관리-가이드.md
