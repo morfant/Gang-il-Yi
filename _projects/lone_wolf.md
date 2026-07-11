@@ -1,5 +1,6 @@
 ---
 title: "Lone Wolf"
+title_en: "Lone Wolf"
 year: 2015
 featured: true
 type: performance
@@ -21,6 +22,8 @@ media:
 소재가 된 인물들은 감정적이든 법적이든 그들에게 총을 쏘는 것이 금기시 되는 대상들이었다. 그럼에도 불구하고 총을 쏘았던 것은 그렇게 하는것이 예술적 표현의 영역에 있어서도 자유로울 수 없게 되었음을 비틀어 말하고 싶었던 이유를 포함한다.
 
 제목인 lone wolf는 사회적 소외 등의 잠복적 원인으로 뜬금없는 총기난사 사건등을 일으키는 이들을 지칭하는 말에서 따온 것이다.
+
+Laser-pointing FPS multimedia performance. WESA 2015, 5.5 UNDER, Seoul, 2015.
 
 ![](/img/lone_wolf_1.png)
 ![](/img/lone_wolf_2.png)

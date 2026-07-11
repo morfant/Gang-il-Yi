@@ -1,6 +1,6 @@
 ---
 title: "우연한 잡음, 우연의 풍경"
-title_en: "Coincidence noise, coincidence scape"
+title_en: "Coincidence Noise, Coincidence Scape"
 year: 2011
 type: installation
 cover: /img/cncs_0.png
@@ -20,6 +20,8 @@ links:
 우연한 잡음들이 여러 곳에서 맞부딪힌다.
 
 관객의 그림자에 반응하여 소리를 내는 50개의 모듈을 제작, 여러 사람들에게서 모은 택배상자들 안에 넣었다. 주고받는 우편물들의 행적이 이루는 그물망 같은 우연적 연쇄를 개념적 심상의 바탕으로 두고, 그 안에 관객의 그림자가 들어서는 것을 관계의 발생으로 보았다. 그림자의 농도와 위치에 의해 규칙을 파악 할 수 없는 형태로 소리를 내는 보이지 않는 그물망 속에서 이루어진 관객과의 순간적 접점이, 언어로 표현하기에는 모호한 심상적 풍경으로 드러나기를 바랬다. 더하여 관계의 발생을 일종의 '붙잡음'으로 상정하여 실제 발생하는 소리들의 '잡음'적 성격, 그 우연적 성격과 의미를 나누어 가지도록 했다.
+
+Solo exhibition — 50 networked light-responsive sound modules. Gallery Yogi, Seoul, 2011.
 
 ![](/img/cncs_1.jpg)
 ![](/img/cncs_2.png)

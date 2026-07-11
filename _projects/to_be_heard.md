@@ -1,6 +1,6 @@
 ---
 title: "말할 수 있기 위해서"
-title_en: "To be heard"
+title_en: "To Be Heard"
 year: 2020
 featured: true
 type: installation

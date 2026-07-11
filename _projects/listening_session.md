@@ -1,5 +1,6 @@
 ---
 title: "리스닝 세션-크게 듣기"
+title_en: "Listening Session: Listening Loudly"
 year: 2021
 featured: true
 type: sound
@@ -19,6 +20,8 @@ cover: /img/listening_session_0.jpg
 김지연•이강일 작가의 &lt;리스닝 세션-크게 듣기&gt;(2021)는 '리스닝 세션'이라는 형식을 전유해, 듣기에 있어 청자로서의 위치와 행위 능력을 재설정해보기를 제안한다. 이때 '듣기'란 소리와 듣는 이 사이의 상호작용을 통해 이루어지는 능동적인 실천에 가깝다. 또한 인간의 청력이 비가 주파수 대역의 소리를 들을 수 없는 것처럼, 생태적으로 동거해온 존재와 소수자들의 소리를 배경에 위치시키는 선택적 조정이 끊임없이 이뤄지는 데 대해 질문하는 일이기도 하다.
 
 김지연과 이강일의 리스닝 세션은 소리와 듣기를 다시 정의하면서 들리는 것(to hear)과 듣는 것 (to listen)의 차이를 감각하게 한다. 어떤 소리는 때로 비가청 영역을 뚫고 들려오는데, 이때 듣기는 능동성을 넘어 액티비즘의 가능성과 공명한다.
+
+Single-channel video on active listening (with Kim Ji-yeon). National Museum of Modern and Contemporary Art (MMCA), Seoul, 2021.
 
 ![](/img/listening_session_1.jpg)
 ![](/img/listening_session_2.jpg)

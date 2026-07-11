@@ -1,6 +1,6 @@
 ---
 title: "캐치볼, 캐치밤"
-title_en: "Catch Ball, Catch Bomb"
+title_en: "Catch Ball Catch Bomb"
 year: 2018
 featured: true
 type: performance
@@ -21,6 +21,8 @@ links:
 캐치볼을 구상했다. 세계의 어딘가에서 공은 씨앗이 되기도, 폭탄이 되기도 한다. 선선한 가을 날씨에 나는 공던지기를 생각하며 놀고 있지만, 어느 날 어디선가 누군가는 아마도 진짜 폭탄 돌리기를 하고 있을지도 모르는 일이다. 이 작업은 내가 속했다고 믿는 한 세계에 존재하는 이면에 대한 이야기를 어떻게 불러내 올 것인가에 대한 고민이다.
 
 Mixed media (p5.js, node.js, IMU sensor etc.) audience relating performance
+
+Audience-participatory audiovisual performance using smartphone sensors. Sound Tour 2018, Donuimun Museum Village, Seoul, 2018.
 
 ![](/img/cbcb_0.jpg)
 ![](/img/cbcb_balls.jpg)

@@ -12,9 +12,9 @@ permalink: /about/
 
 이강일은 코딩으로 그림을 그리고, 소리를 만드는 미디어 아티스트입니다. 때로는 피지컬 컴퓨팅 기술을 활용하여 사운드를 기반으로 기술과 예술을 유기적으로 다루는 퍼포먼스와 전시를 합니다. 라이브 스트리밍 매체탐구 콜렉티브 ‘웨더리포트’에서 사운드 아티스트 김지연과 다양한 전시, 퍼포먼스등의 프로젝트를 함께 하고 있습니다.
 
-Gang il, Yi is a media artist who creates images and sounds through coding.
-He explores the organic relationship between technology and art through sound-based performances and installations, sometimes employing physical computing techniques.
-He is also a member of the live-streaming collective Weather Report, where he collaborates with sound artist Jiyeon Kim on various projects involving exhibitions and performances.
+## Profile (EN)
+
+Sound and media artist working across installation, audiovisual performance, and interactive media. With sound as my primary medium, I treat technology as artistic material, often through self-built hardware such as analog circuits and sound devices. As a member of WeatherReport (웨더리포트), a collective exploring live streaming as an artistic medium, I have created a wide range of sound-driven exhibitions, performances, and projects together with sound artist Kim Ji-yeon.
 
 ## 전시 Exhibition
 
@@ -290,4 +290,5 @@ EP 앨범 발매 (밴드 &lt;미르와나&gt;, 기타/보컬)
 
 ---
 
-[CV (PDF)](/docs/cv.pdf)
+[CV (PDF, 한국어)](/docs/cv.pdf)  
+[CV (PDF, English)](/docs/cv_en.pdf)

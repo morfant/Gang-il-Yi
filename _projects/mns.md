@@ -1,6 +1,6 @@
 ---
 title: "다중입력 네트워크 신디사이저"
-title_en: "Multi-input Network Synthesizer"
+title_en: "Multi-Input Network Synthesizer"
 year: 2017
 type: installation
 cover: /img/mns_0.jpg
@@ -19,5 +19,7 @@ media:
 일정한 간격의 메트로놈 소리는 루프를 통과하면서 예측 불가능한 리듬을 만들어내며 쌓이고 간섭하고 섞인다. 이는 여러 곳에서 메트로놈이 작동될 때 더욱 복잡해지고, 루프를 통과할수록 이전의 자신에 다시 되돌아 오는 자신을 더하는 가산합성적(Addtive synthetic) 양적 팽창의 기회를 갖는다.
 
 여기에 세 공간이 가지는 물리적 속성에 의한 소리 변형(filtering)의 요소가 더해져 시작 지점과 끝 지점을 분간할 수 없는, 세 공간을 공유하거나 넘나드는 상태의 새로운 소리를 합성해 낸다.
+
+Incheon Art Platform project — three-site live audio streaming installation (Seoul / Incheon / Songdo), 2017.
 
 ![](/img/mns_1.jpg)

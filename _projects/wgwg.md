@@ -1,5 +1,6 @@
 ---
 title: "WGWG ㅇㄱㅇㄱ"
+title_en: "WGWG ㅇㄱㅇㄱ"
 year: 2024
 featured: true
 type: performance
@@ -13,6 +14,8 @@ cover: /img/wgwg_0.jpg
 다양한 페르소나를 가진 인공지능 에이전트들의 토론에 기반한 사운드 생성형 사운드 퍼포먼스.
 
 WGWG는 사회적 담론의 교차점을 청각적/시각적 풍경으로 재구성한 메타적 사고 실험이다. 서로 다른 정치 성향을 지닌 5명의 Al 토론자들은 각자의 성향을 반영해 AI가 선정한 주제를 두고 토론을 벌이며, 그들의 발언은 실시 간으로 파라미터화되어 음향적 패턴을 형성한다. 두 명의 인간 퍼포머는 이 소리의 흐름에 개입해 함께 질감을 조율하고, 이룰 통해 AI의 발언은 시각적 으로 드러나는 동시에 소리로 변환되어 병치된다. 정치적 대립과 대화의 소음이 상호작용하는 순간들은 해체되며 예측할 수 없는 질서를 만들낸다. 끝없는 의견 교환 속에서 점차 흐려지는 방향성을 통해, 정보의 과잉과 소통의 복잡 성을 반영하는 현대적 소통의 역설을 은유한다.
+
+Generative sound performance driven by AI agents debating with distinct political personas (with Kayip). Art Space Hyu, 2024.
 
 ![](/img/wgwg_1.jpg)
 ![](/img/wgwg_2.jpg)

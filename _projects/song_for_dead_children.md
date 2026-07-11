@@ -1,5 +1,6 @@
 ---
 title: "죽은 아이들을 위한 노래 : 안녕"
+title_en: "Song for Dead Children: Goodbye"
 year: 2021
 type: sound
 media:
@@ -9,6 +10,8 @@ media:
 현대음악공연 &lt;죽은 아이들을 위한 노래 : 안녕&gt; 전자음악 작곡. Art space 3 (서울 종로구 효자동), 2021.5.8.
 
 공연에서는 &lt;There are lights that never go out&gt;와 &lt;51&gt;이 연주되었다.
+
+Electronic composition transforming Sewol Ferry route data into musical notation. Art Space 3, Seoul, 2021.
 
 #### 51
 

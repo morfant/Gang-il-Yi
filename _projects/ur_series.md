@@ -1,6 +1,6 @@
 ---
 title: "업사이클라운드업"
-title_en: "UR Series"
+title_en: "Upcycleroundup"
 year: 2013
 type: performance
 cover: /img/UR_4.jpg
@@ -14,7 +14,9 @@ links:
 ---
 
 <!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolute Future, Sunyoudo). It may be split into separate project pages later. -->
-<!-- year: 2013 = 시리즈 시작 연도. 이 페이지의 작업들은 2013-2016에 걸쳐 있음. -->
+<!-- year: 2013 유지 (변경 금지). 공식 영문 CV(2026.7)는 시리즈를 "Upcycleroundup" vol. 1–3, 2012–13로 기록. 이 페이지의 섹션들은 2013-2016에 걸쳐 있음 (vol.1 섹션 없음). -->
+
+Upcycleroundup (업사이클라운드업), vol. 1–3, 2012–13 — multimedia performance series with light-reactive analog oscillators, Mullae Art Factory and other venues, Seoul.
 
 #### 업사이클라운드업 vol.2 - 모터 포 (2013)
 

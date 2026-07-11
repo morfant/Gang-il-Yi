@@ -14,6 +14,8 @@ links:
 
 서울 도시건축 비엔날레 &lt;소리숲길(Soundlines)&gt;. 장소특정적 AR 사운드 생성 앱 및 현장설치 (프로그래밍, 컨셉, 사운드디자인) (공동기획 Kayip). 종로 및 DDP 일대, 2017.9 - 11.
 
+Location-based AR sound app and site installation (with Kayip). Seoul Biennale of Architecture and Urbanism, 2017.
+
 ![](/img/soundlines_1.png)
 
 #### 소리숲길 v2.0 (2023)
@@ -23,6 +25,8 @@ links:
 &lt;소리숲길 v2.0&gt;은 지율주행차가 주행의 과정에서 수집하는 데이터들을 바탕으로 만들어낸 증강 세계를 기반으로 작동하는 자율주행 차를 위한 멀티플레이어 게임입니다. 탑승지는 플레이어기 되어 기후위기로 인해 생태적 절멸을 맞은 세계를 재건히는 경험을 하게 됩니다.
 
 게임 상에서 세계의 '재건'은 식물들의 씨앗을 얻고 그 씨앗을 심어 자자게 하는 과정으로 함축되며, 식물들은 절멸에서 살아남을 수 있었던 이유인 간결한 소통 방식의 상징으로서 종마다 고유한 소리를 냅니다. 탑승자는 식물들이 소통하는 세계의 한 기운데에서 자신을 포함한 여러 플레이어들의 참여를 통해 자라나는 세계의 구성에 함께 하게 됩니다.
+
+Mixed-reality multiplayer game for autonomous vehicle environments (co-planning, scenario, sound design) (with Kayip). Hyundai ZER01NE Z-LAB "TIMESCAPER", S-Factory, Seoul, 2023.
 
 &lt;소리숲길 v2.0&gt;
 GV80, 홀로렌즈 2, LED 스크린, 2 채널 스테레오 사운드, AR 게임, 3D 애니메이션(01’35’’), 3D 프린팅, 가변설치

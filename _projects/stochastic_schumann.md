@@ -18,3 +18,5 @@ cover: /img/stochastic_schumann_0.png
 이렇게 만들어진 음악은 슈만적인 어떤 것으로 들리게 될까? 슈만적인 것 혹은 슈만의 음악은 과연 슈만이 선호한 어떤 확률들의 분포 혹은 재구성을 넘어서는 더 중요하고 개인적이며 고유한 결과물이라고 할 수 있을까.
 
 제 3자인 나를 최대한 개입시키지 않도록 노력하는 것은 슈만적인 것을 위함인가 아니면 ‘내 작업’을 위한 것인가. 그 최선의 확률은 소수점 몇 번째 자리의 숫자로, 어디쯤에 놓여 있을까.
+
+Algorithmic composition derived from probabilistic analysis of Schumann's works. AUDIOGUY, Seoul, 2019.
