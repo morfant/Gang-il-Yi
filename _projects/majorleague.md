@@ -1,5 +1,5 @@
 ---
-title: "매이저리그"
+title: "메이저리그"
 title_en: "Majorleague"
 year: 2018
 type: sound
