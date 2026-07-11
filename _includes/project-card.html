@@ -1,6 +1,11 @@
-<a class="card" href="{{ include.project.url | relative_url }}">
+<a class="card" href="{{ include.project.url | relative_url }}" data-type="{{ include.project.type }}">
   <div class="card-thumb">
-    {% if include.project.cover %}<img src="{{ include.project.cover | relative_url }}" alt="{{ include.project.title }}" loading="lazy">{% else %}<div class="thumb-empty" aria-hidden="true"></div>{% endif %}
+    {% if include.project.cover %}
+    <img src="{{ include.project.cover | relative_url }}" alt="{{ include.project.title }}" loading="lazy">
+    {% else %}
+    {% assign tilt = include.project.title | size | times: 37 | modulo: 130 | plus: 115 %}
+    <div class="thumb-typo" style="--tilt: {{ tilt }}deg" aria-hidden="true"><span>{{ include.project.title }}</span></div>
+    {% endif %}
   </div>
   <div class="card-meta">
     <h3>{{ include.project.title }}</h3>

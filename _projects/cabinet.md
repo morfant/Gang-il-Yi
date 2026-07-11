@@ -1,6 +1,8 @@
 ---
 title: "Cabinet"
 year: 2011
+featured: true
+type: performance
 cover: /img/cabinet_0.png
 media:
   - youtube: "jBUjoCyaFWs"

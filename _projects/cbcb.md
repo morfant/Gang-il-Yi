@@ -2,6 +2,7 @@
 title: "캐치볼, 캐치밤"
 title_en: "Catch Ball, Catch Bomb"
 year: 2018
+featured: true
 type: performance
 cover: /img/cbcb_main.jpg
 media:

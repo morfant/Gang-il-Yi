@@ -2,6 +2,7 @@
 title: "다중입력 네트워크 신디사이저"
 title_en: "Multi-input Network Synthesizer"
 year: 2017
+type: installation
 cover: /img/mns_0.jpg
 media:
   - youtube: "wYU9EeEITBQ"

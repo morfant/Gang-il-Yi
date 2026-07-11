@@ -2,6 +2,7 @@
 title: "히든프로토콜"
 title_en: "Hidden Protocol"
 year: 2019
+type: installation
 cover: /img/hidden_protocol_0.jpg
 links:
   - label: "code: controller server (GitHub)"

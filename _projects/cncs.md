@@ -2,6 +2,7 @@
 title: "우연한 잡음, 우연의 풍경"
 title_en: "Coincidence noise, coincidence scape"
 year: 2011
+type: installation
 cover: /img/cncs_0.png
 links:
   - label: "video (YouTube playlist)"

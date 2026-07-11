@@ -2,6 +2,7 @@
 title: "속삭임의 회랑"
 title_en: "Whispering Gallery"
 year: 2015
+type: installation
 cover: /img/whispering_gallery.jpg
 media:
   - vimeo: "124137674"

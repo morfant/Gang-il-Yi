@@ -1,6 +1,7 @@
 ---
 title: "The Leaks"
 year: 2016
+type: performance
 cover: /img/the_leaks.png
 ---
 

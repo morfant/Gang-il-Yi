@@ -1,6 +1,7 @@
 ---
 title: "Drawing Two+gether"
 year: 2022
+type: workshop
 cover: /img/drawing_together_0.png
 ---
 

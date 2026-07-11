@@ -2,6 +2,7 @@
 title: "메신저스"
 title_en: "Messengers"
 year: 2019
+type: workshop
 media:
   - youtube: "l-T-_zM6vyE"
 cover: /img/messengers_0.png

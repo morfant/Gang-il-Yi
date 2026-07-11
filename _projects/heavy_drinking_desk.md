@@ -2,6 +2,7 @@
 title: "무거운 술책상"
 title_en: "Heavy Drinking Desk"
 year: 2014
+type: installation
 cover: /img/heavy_drinking_desk.jpg
 links:
   - label: "video (YouTube, 28s~)"

@@ -2,6 +2,7 @@
 title: "말할 수 있기 위해서"
 title_en: "To be heard"
 year: 2020
+featured: true
 type: installation
 cover: /img/to_be_heard_0.png
 ---

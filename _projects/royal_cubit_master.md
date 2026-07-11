@@ -1,6 +1,7 @@
 ---
 title: "로열큐빗마스터"
 year: 2019
+type: sound
 links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2019_11_cubit"

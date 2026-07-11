@@ -11,6 +11,7 @@
   {% if page.layout == 'home' or page.url == '/' %}
   <script defer src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
   <script defer src="{{ '/assets/js/home-sketch.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/home-filter.js' | relative_url }}"></script>
   {% endif %}
 </head>
 <body class="{{ page.body_class | default: '' }}">

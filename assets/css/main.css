@@ -89,12 +89,60 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ─── project grid ─────────────────────────────────────────────── */
 
+.section-label {
+  margin: 3rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem 1.25rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
+
+/* featured (selected works) — 큰 카드 */
+.grid-featured { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem 1.5rem; }
+.grid-featured .card-meta h3 { font-size: 1.15rem; }
+
+/* 타입 필터 바 */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+
+.filter-btn {
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--fg-dim);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+/* 연도 디바이더 */
+.year-group { margin-top: 2.5rem; }
+.year-label {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--fg-dim);
+}
+.year-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.year-group .grid { margin-top: 1.1rem; }
+
+/* 필터로 숨김 */
+.is-hidden { display: none !important; }
 
 .card { display: block; }
 
@@ -106,14 +154,32 @@ img { max-width: 100%; height: auto; display: block; }
   border: 1px solid var(--line);
 }
 
-.card-thumb img,
-.card-thumb .thumb-empty {
+.card-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.45s ease, filter 0.45s ease;
   filter: saturate(0.85);
 }
+
+/* 이미지 없는 카드: 타이포그래피 타일 */
+.thumb-typo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.9rem;
+  background: linear-gradient(var(--tilt, 160deg), #1d2a24 0%, var(--bg-soft) 55%, #16161a 100%);
+  border-top: 2px solid var(--accent);
+}
+.thumb-typo span {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--fg-dim);
+  word-break: keep-all;
+}
+.card:hover .thumb-typo span { color: var(--accent); }
 
 .card:hover .card-thumb img { transform: scale(1.04); filter: saturate(1.1); }
 

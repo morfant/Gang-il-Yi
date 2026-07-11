@@ -1,6 +1,8 @@
 ---
 title: "리스닝 세션-크게 듣기"
 year: 2021
+featured: true
+type: sound
 media:
   - youtube: "GgAr2l-OeyU"
 cover: /img/listening_session_0.jpg

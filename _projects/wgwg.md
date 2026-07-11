@@ -1,6 +1,7 @@
 ---
 title: "WGWG ㅇㄱㅇㄱ"
 year: 2024
+featured: true
 type: performance
 media:
   - youtube: "zOkTTTBSqTY"

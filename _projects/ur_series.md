@@ -1,6 +1,8 @@
 ---
 title: "업사이클라운드업"
 title_en: "UR Series"
+year: 2013
+type: performance
 cover: /img/UR_4.jpg
 media:
   - youtube: "djfAWeTMEAc"
@@ -12,7 +14,7 @@ links:
 ---
 
 <!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolute Future, Sunyoudo). It may be split into separate project pages later. -->
-<!-- No top-level year is set: the works on this page span 2013 - 2016. -->
+<!-- year: 2013 = 시리즈 시작 연도. 이 페이지의 작업들은 2013-2016에 걸쳐 있음. -->
 
 #### 업사이클라운드업 vol.2 - 모터 포 (2013)
 

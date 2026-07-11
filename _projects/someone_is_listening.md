@@ -2,6 +2,7 @@
 title: "누군가 듣고 있어"
 title_en: "Some-bodies are listening, too"
 year: 2025
+featured: true
 type: installation
 links:
   - label: "web (stream-paint-poem)"

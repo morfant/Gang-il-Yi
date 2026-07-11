@@ -2,6 +2,7 @@
 title: "애착의 재활용"
 title_en: "Recycle of Attachment"
 year: 2012
+type: performance
 cover: /img/recycle_of_attachment.jpg
 media:
   - vimeo: "52057509"

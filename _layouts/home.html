@@ -11,13 +11,34 @@ layout: default
 <main class="container">
   {{ content }}
 
-  {% assign sorted = site.projects | sort: "year", "first" | reverse %}
-  {% assign featured = sorted | where: "featured", true %}
-  {% assign rest = "" | split: "" %}
-  {% for p in sorted %}{% unless p.featured %}{% assign rest = rest | push: p %}{% endunless %}{% endfor %}
+  {% assign featured = site.projects | where: "featured", true | sort: "year", "first" | reverse %}
+  {% if featured.size > 0 %}
+  <section class="featured" id="work">
+    <h2 class="section-label">selected works</h2>
+    <div class="grid grid-featured">
+      {% for p in featured %}{% include project-card.html project=p %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
-  <section class="grid" id="work">
-    {% for p in featured %}{% include project-card.html project=p %}{% endfor %}
-    {% for p in rest %}{% include project-card.html project=p %}{% endfor %}
+  <section class="archive"{% if featured.size == 0 %} id="work"{% endif %}>
+    <h2 class="section-label">all works</h2>
+
+    {% assign types = site.projects | map: "type" | compact | uniq %}
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">all</button>
+      {% for t in types %}<button class="filter-btn" data-filter="{{ t }}">{{ t }}</button>{% endfor %}
+    </div>
+
+    {% assign sorted = site.projects | sort: "year", "first" | reverse %}
+    {% assign by_year = sorted | group_by: "year" %}
+    {% for g in by_year %}
+    <section class="year-group">
+      <h3 class="year-label">{% if g.name == "" %}etc{% else %}{{ g.name }}{% endif %}</h3>
+      <div class="grid">
+        {% for p in g.items %}{% include project-card.html project=p %}{% endfor %}
+      </div>
+    </section>
+    {% endfor %}
   </section>
 </main>

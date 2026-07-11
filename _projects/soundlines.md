@@ -2,6 +2,7 @@
 title: "소리숲길"
 title_en: "Soundlines"
 year: 2017
+featured: true
 type: sound
 cover: /img/soundlines_0.png
 media:

@@ -2,6 +2,7 @@
 title: "객체지향존재론(OOO) 컨셉의 아트게임"
 title_en: "OOO Game"
 year: 2018
+type: installation
 cover: /img/ooo_game.png
 ---
 

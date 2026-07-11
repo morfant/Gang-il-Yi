@@ -1,6 +1,7 @@
 ---
 title: "퓨처클럽: 함께 그리기"
 year: 2022
+type: workshop
 cover: /img/future_club_0.png
 ---
 

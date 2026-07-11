@@ -1,6 +1,8 @@
 ---
 title: "Lone Wolf"
 year: 2015
+featured: true
+type: performance
 cover: /img/lone_wolf_0.png
 media:
   - youtube: "kpuLvNyF_CU"
