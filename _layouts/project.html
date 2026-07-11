@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<main class="container project">
+  <header class="project-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.title_en and page.title_en != page.title %}<p class="title-en">{{ page.title_en }}</p>{% endif %}
+    <p class="meta">
+      {%- if page.year %}<span>{{ page.year }}</span>{% endif -%}
+      {%- if page.type %}<span class="type">{{ page.type }}</span>{% endif -%}
+    </p>
+  </header>
+
+  {% if page.media %}
+  <div class="media-list">
+    {% for m in page.media %}
+      {% if m.youtube %}{% include youtube.html id=m.youtube %}
+      {% elsif m.vimeo %}{% include vimeo.html id=m.vimeo %}
+      {% elsif m.soundcloud %}{% include soundcloud.html url=m.soundcloud %}
+      {% elsif m.bandcamp %}{% include bandcamp.html album=m.bandcamp.album track=m.bandcamp.track %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <article class="project-body">
+    {{ content }}
+  </article>
+
+  {% if page.links %}
+  <p class="ext-links">
+    {% for l in page.links %}<a class="btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}&nbsp;↗</a>{% endfor %}
+  </p>
+  {% endif %}
+
+  <nav class="project-back"><a href="{{ '/' | relative_url }}">← work</a></nav>
+</main>

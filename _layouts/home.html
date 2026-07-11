@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<header class="hero" id="p5-header">
+  <div class="hero-inner">
+    <h1>이강일 <span class="latin">Gang il Yi</span></h1>
+    <p class="tagline">sound · performance · installation</p>
+  </div>
+</header>
+
+<main class="container">
+  {{ content }}
+
+  {% assign sorted = site.projects | sort: "year", "first" | reverse %}
+  {% assign featured = sorted | where: "featured", true %}
+  {% assign rest = "" | split: "" %}
+  {% for p in sorted %}{% unless p.featured %}{% assign rest = rest | push: p %}{% endunless %}{% endfor %}
+
+  <section class="grid" id="work">
+    {% for p in featured %}{% include project-card.html project=p %}{% endfor %}
+    {% for p in rest %}{% include project-card.html project=p %}{% endfor %}
+  </section>
+</main>

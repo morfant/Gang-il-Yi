@@ -1,0 +1,10 @@
+<a class="card" href="{{ include.project.url | relative_url }}">
+  <div class="card-thumb">
+    {% if include.project.cover %}<img src="{{ include.project.cover | relative_url }}" alt="{{ include.project.title }}" loading="lazy">{% else %}<div class="thumb-empty" aria-hidden="true"></div>{% endif %}
+  </div>
+  <div class="card-meta">
+    <h3>{{ include.project.title }}</h3>
+    {% if include.project.title_en and include.project.title_en != include.project.title %}<p class="en">{{ include.project.title_en }}</p>{% endif %}
+    <p class="sub">{% if include.project.year %}{{ include.project.year }}{% endif %}{% if include.project.year and include.project.type %} · {% endif %}{% if include.project.type %}{{ include.project.type }}{% endif %}</p>
+  </div>
+</a>
