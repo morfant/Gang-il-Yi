@@ -278,6 +278,8 @@ img { max-width: 100%; height: auto; display: block; }
 .cv-lang a { color: var(--accent); }
 .cv-pdf a { color: var(--accent); border-bottom: 1px solid var(--line); }
 .cv-detail { display: none; }
+.cv-bio h2 { display: none; }          /* 화면에서는 소제목 생략, PDF에서만 표시 */
+.cv-bio { margin-top: 2rem; }
 .cv-bio p { margin: 0; }
 .cv-list { margin: 0; }
 .cv-entry { display: grid; grid-template-columns: 8.5em 1fr; column-gap: 1rem; margin: 0 0 0.55rem; }
@@ -297,6 +299,7 @@ img { max-width: 100%; height: auto; display: block; }
   body { font-size: 9.6pt; line-height: 1.42; -webkit-print-color-adjust: exact; }
   .site-nav, .site-footer, .cv-switch, .cv-lang { display: none !important; }
   .cv-detail { display: block !important; }
+  .cv-bio h2 { display: block; }
   .container.cv { max-width: none; padding: 0; }
   .page-plain h1 { font-size: 21pt; margin: 0 0 4pt; }
   .cv-role { font-size: 10.5pt; margin: 0 0 3pt; }
