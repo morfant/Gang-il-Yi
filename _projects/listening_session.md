@@ -7,6 +7,15 @@ type: sound
 media:
   - youtube: "GgAr2l-OeyU"
 cover: /img/listening_session_0.jpg
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2021.06"
+event: "〈재난과 치유〉 위성 프로젝트 〈반향하는 동사들〉"
+event_en: "satellite project of MMCA “Catastrophe and Recovery”"
+venue: "국립현대미술관 서울"
+venue_en: "National Museum of Modern and Contemporary Art (MMCA), Seoul"
+role: "1채널 영상 (w/ 김지연)"
+role_en: "single-channel video (with Ji-yeon Kim)"
 ---
 
 재난과 치유 위성 프로젝트 &lt;반향하는 동사들&gt; 중 &lt;리스닝 세션-크게 듣기&gt; (w/ 김지연). 1채널 영상 + 상영 및 아티스트 토크. 국립현대미술관 서울관, 2021.6.

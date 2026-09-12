@@ -9,6 +9,11 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2011_12_latch"
 cover: /img/latch_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2011.12"
+role: "오디오비주얼 퍼포먼스"
+role_en: "audiovisual performance"
 ---
 
 기억적 자폭을 위한 게임 &lt;latch&gt;. 오디오 비주얼 퍼포먼스, 러닝타임 7분 가량. Supercollider + processing + wii remote. 2011.12.

@@ -7,6 +7,15 @@ cover: /img/transparent_music_0.jpg
 media:
   - youtube: "wXxLBe9WCtQ"
   - youtube: "f401RPKSiqw"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2017.02"
+event: "멀티미디어 음악공연"
+event_en: "multimedia music performance"
+venue: "문래예술공장, 서울"
+venue_en: "Mullae Art Factory, Seoul"
+role: "오디오 스트리밍·영상 기술, 웹 앱 제작"
+role_en: "audio streaming, video, web app development"
 ---
 
 멀티미디어 음악공연 &lt;투명한 음악&gt; 참여 (오디오 스트리밍 및 영상 기술 지원, web 기반 스마트폰 앱 제작). 문래예술공장, 2017.2.

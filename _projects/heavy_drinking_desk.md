@@ -7,6 +7,15 @@ cover: /img/heavy_drinking_desk.jpg
 links:
   - label: "video (YouTube, 28s~)"
     url: "https://youtu.be/p0HQB5vuegM?t=28"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2014.01"
+event: "서울문화재단 MAP 프로젝트 〈Sounding Sounder〉"
+event_en: "SFAC MAP Project “Sounding Sounder”"
+venue: "문래예술공장, 서울"
+venue_en: "Mullae Art Factory, Seoul"
+role: "빛 반응 아날로그 오실레이터 77개 사운드 인스톨레이션"
+role_en: "light-reactive installation of 77 analog oscillators"
 ---
 
 &lt;무거운 술책상&gt; 빛 반응 아날로그 오실레이터 매트릭스 사운드 인스톨레이션. 서울문화재단 MAP 프로젝트 전시 &lt;Sounding Sounder&gt; 참여, 문래예술공장, 2014.1.

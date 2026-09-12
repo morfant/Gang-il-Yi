@@ -5,6 +5,15 @@ year: 2021
 type: sound
 media:
   - soundcloud: "https://soundcloud.com/thisriver/51a"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2021.05"
+event: "현대음악 공연"
+event_en: "contemporary music concert"
+venue: "Art Space 3, 서울"
+venue_en: "Art Space 3, Seoul"
+role: "전자음악 작곡"
+role_en: "electronic composition"
 ---
 
 현대음악공연 &lt;죽은 아이들을 위한 노래 : 안녕&gt; 전자음악 작곡. Art space 3 (서울 종로구 효자동), 2021.5.8.

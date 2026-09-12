@@ -10,6 +10,15 @@ media:
 links:
   - label: "v2.0 video: 차량 내부 (YouTube, 9:24~)"
     url: "https://www.youtube.com/watch?v=EYb-CskzHiI&t=564s"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2017.09 – 11"
+event: "서울도시건축비엔날레 2017"
+event_en: "Seoul Biennale of Architecture and Urbanism 2017"
+venue: "종로 및 DDP 일대, 서울"
+venue_en: "Jongno and DDP, Seoul"
+role: "장소특정적 AR 사운드 앱 및 현장설치 (w/ Kayip)"
+role_en: "location-based AR sound app and site installation (with Kayip)"
 ---
 
 서울 도시건축 비엔날레 &lt;소리숲길(Soundlines)&gt;. 장소특정적 AR 사운드 생성 앱 및 현장설치 (프로그래밍, 컨셉, 사운드디자인) (공동기획 Kayip). 종로 및 DDP 일대, 2017.9 - 11.

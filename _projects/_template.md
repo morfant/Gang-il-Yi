@@ -22,6 +22,16 @@ links:                           # 관련 링크 목록 (제목 + 주소)
     url: "https://example.com/article"
 
 featured: true                   # true 로 설정하면 메인 페이지에 강조 표시
+
+# ── CV 항목 (/cv/ 페이지와 PDF에 자동으로 들어갑니다) ─────────────
+cv: exhibition                   # CV 섹션: exhibition | performance | dance | workshop | research | false(CV에서 제외)
+period: "2024.10"                # 표시용 기간. "2024.10" / "2024.10 – 11" / "2019.11 – 2020.01" — 항상 연도부터
+venue: "문화공간 양, 제주"          # 장소 (한국어)
+venue_en: "Culture Space Yang, Jeju"
+event: "파라다이스아트랩 쇼케이스 2024"  # 소속 전시·페스티벌·행사명 (없으면 지우세요)
+event_en: "Paradise Art Lab Showcase 2024"
+role: "사운드 인스톨레이션 (w/ 김지연)"   # 역할·형식·협업자
+role_en: "sound installation (with Ji-yeon Kim)"
 # draft_stub: true               # 아직 내용이 없는 임시 페이지일 때만 사용
 ---
 

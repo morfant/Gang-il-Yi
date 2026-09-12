@@ -7,6 +7,15 @@ type: performance
 media:
   - youtube: "zOkTTTBSqTY"
 cover: /img/wgwg_0.jpg
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2024.10"
+event: "전시 〈소리를 보여주마〉 연계"
+event_en: "in conjunction with the exhibition 〈소리를 보여주마〉"
+venue: "아트스페이스 휴, 파주"
+venue_en: "Art Space Hyu, Paju"
+role: "AI 토론 기반 생성형 사운드 퍼포먼스 (w/ Kayip)"
+role_en: "generative sound performance driven by debating AI agents (with Kayip)"
 ---
 
 전시 &lt;소리를 보여주마&gt; 연계 오디오 비디오 퍼포먼스 &lt;WGWG ㅇㄱㅇㄱ&gt; (Kayip + 이강일). 아트스페이스 휴, 2024.10.

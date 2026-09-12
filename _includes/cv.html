@@ -1,0 +1,49 @@
+{%- comment -%}
+CV 본문. include 시 lang 인자를 넘깁니다: {% include cv.html lang="ko" %} / lang="en"
+프로젝트(_projects, cv: 값으로 섹션 결정)와 _data/cv.yml 의 items 를 섹션별로 합쳐 period 최신순으로 정렬합니다.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "ko" -%}
+{%- for sec in site.data.cv.sections -%}
+  {%- assign lines = "" | split: "" -%}
+
+  {%- for p in site.projects -%}
+    {%- if p.cv == sec.id -%}
+      {%- assign period = p.period | default: p.year -%}
+      {%- if lang == "en" -%}
+        {%- assign t = p.title_en | default: p.title -%}
+        {%- assign ev = p.event_en | default: p.event -%}
+        {%- assign v = p.venue_en | default: p.venue -%}
+        {%- assign r = p.role_en | default: p.role -%}
+        {%- capture line -%}<a href="{{ p.url | relative_url }}"><i>{{ t }}</i></a>{%- if ev %}, {{ ev }}{% endif -%}{%- if v %}, {{ v }}{% endif -%}{%- if r %} — {{ r }}{% endif -%}{%- endcapture -%}
+      {%- else -%}
+        {%- capture line -%}<a href="{{ p.url | relative_url }}">〈{{ p.title }}〉</a>{%- if p.event %}, {{ p.event }}{% endif -%}{%- if p.venue %}, {{ p.venue }}{% endif -%}{%- if p.role %} — {{ p.role }}{% endif -%}{%- endcapture -%}
+      {%- endif -%}
+      {%- capture entry -%}{{ period }}::{{ line }}{%- endcapture -%}
+      {%- assign lines = lines | push: entry -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for it in sec.items -%}
+    {%- if lang == "en" -%}{%- assign txt = it.en | default: it.ko -%}{%- else -%}{%- assign txt = it.ko -%}{%- endif -%}
+    {%- if it.url -%}
+      {%- capture line -%}<a href="{{ it.url | relative_url }}">{{ txt }}</a>{%- endcapture -%}
+    {%- else -%}
+      {%- assign line = txt -%}
+    {%- endif -%}
+    {%- capture entry -%}{{ it.period }}::{{ line }}{%- endcapture -%}
+    {%- assign lines = lines | push: entry -%}
+  {%- endfor -%}
+
+  {%- if lines.size > 0 -%}
+  <section class="cv-section">
+    <h2>{% if lang == "en" %}{{ sec.title_en }}{% else %}{{ sec.title_ko }}{% endif %}</h2>
+    <dl class="cv-list">
+    {%- assign sorted = lines | sort | reverse -%}
+    {%- for e in sorted -%}
+      {%- assign parts = e | split: "::" -%}
+      <div class="cv-entry"><dt>{{ parts[0] }}</dt><dd>{{ parts[1] }}</dd></div>
+    {%- endfor -%}
+    </dl>
+  </section>
+  {%- endif -%}
+{%- endfor -%}

@@ -8,6 +8,13 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2012_6_mixture"
 cover: /img/mixture_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2012.06"
+venue: "KNUA 홀, 서울"
+venue_en: "KNUA Hall, Seoul"
+role: "멀티미디어 퍼포먼스"
+role_en: "multimedia performance"
 ---
 
 멀티미디어 퍼포먼스 &lt;Mixture&gt;. KNUA 홀, 2012.6.

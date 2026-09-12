@@ -15,6 +15,13 @@ links:
     url: "https://www.youtube.com/watch?v=K1_8VGqMJb4"
   - label: "video pt.4 (YouTube)"
     url: "https://www.youtube.com/watch?v=Cmec6gXdNlk"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2011.06"
+venue: "문래예술공장, 서울"
+venue_en: "Mullae Art Factory, Seoul"
+role: "멀티미디어 퍼포먼스 기획·제작·참여"
+role_en: "multimedia performance, planning and production"
 ---
 
 멀티미디어 퍼포먼스 &lt;Cabinet&gt; 기획, 제작, 참여. 문래예술공장, 2011.6.

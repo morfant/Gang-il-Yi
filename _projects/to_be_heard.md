@@ -5,6 +5,15 @@ year: 2020
 featured: true
 type: installation
 cover: /img/to_be_heard_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2020.10 – 11"
+event: "ZER01NE OPEN STUDIO with P:LAYERS"
+event_en: "ZER01NE OPEN STUDIO with P:LAYERS"
+venue: "제로원, 서울"
+venue_en: "ZER01NE, Seoul"
+role: "2채널 영상 (w/ UNBARRIER)"
+role_en: "two-channel video (with UNBARRIER)"
 ---
 
 제로원 오픈스튜디오 2020 — 수어통역 디바이스를 활용한 2채널 영상 작업 &lt;말할 수 있기 위해서&gt; (To be heard). 강남 드림플러스 6층 제로원, 2020.10 - 2020.11.

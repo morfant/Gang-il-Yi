@@ -5,6 +5,13 @@ type: performance
 media:
   - vimeo: "19301122"
 cover: /img/in_visible_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2010.12"
+venue: "KNUA 홀, 서울"
+venue_en: "KNUA Hall, Seoul"
+role: "멀티미디어 퍼포먼스"
+role_en: "multimedia performance"
 ---
 
 멀티미디어 퍼포먼스 &lt;in-visible&gt;. KNUA 홀, 2010.12.

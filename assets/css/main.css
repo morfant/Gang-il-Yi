@@ -263,3 +263,41 @@ img { max-width: 100%; height: auto; display: block; }
   html { scroll-behavior: auto; }
   .card-thumb img { transition: none; }
 }
+
+/* ─── CV page (/cv/, /cv/en/) ──────────────────────────────────── */
+
+.cv-head h1 .ko { font-size: 0.6em; font-weight: 400; color: var(--fg-dim); margin-left: 0.4em; }
+.cv-role { margin: -0.4rem 0 0.2rem; color: var(--fg); }
+.cv-contact { margin: 0; color: var(--fg-dim); font-size: 0.9rem; }
+.cv-contact span + span::before { content: "·"; margin: 0 0.5em; }
+.cv-switch { margin: 0.6rem 0 0; font-size: 0.9rem; }
+.cv-switch a { color: var(--accent); margin-right: 1.2em; }
+.cv-bio p { margin: 0; }
+.cv-list { margin: 0; }
+.cv-entry { display: grid; grid-template-columns: 8.5em 1fr; column-gap: 1rem; margin: 0 0 0.55rem; }
+.cv-entry dt { color: var(--fg-dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cv-entry dd { margin: 0; }
+.cv-entry dd a { border-bottom: 1px solid var(--line); }
+.cv-entry dd a:hover { border-color: var(--accent); }
+@media (max-width: 560px) {
+  .cv-entry { grid-template-columns: 1fr; row-gap: 0.1rem; margin-bottom: 0.8rem; }
+}
+
+/* 인쇄 / PDF 저장: 밝은 배경, A4, 메뉴·푸터 숨김 */
+@media print {
+  @page { size: A4; margin: 16mm 18mm; }
+  :root { --bg: #fff; --bg-soft: #fff; --fg: #111; --fg-dim: #555; --accent: #111; --line: #333; }
+  html { background: #fff; }
+  body { font-size: 9.6pt; line-height: 1.42; -webkit-print-color-adjust: exact; }
+  .site-nav, .site-footer, .cv-switch { display: none !important; }
+  .container.cv { max-width: none; padding: 0; }
+  .page-plain h1 { font-size: 21pt; margin: 0 0 4pt; }
+  .cv-role { font-size: 10.5pt; margin: 0 0 3pt; }
+  .cv-contact { font-size: 8.4pt; margin: 0 0 8pt; }
+  .page-plain h2 { font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; margin: 12pt 0 5pt; padding-bottom: 3pt; break-after: avoid; }
+  .cv-entry { grid-template-columns: 92pt 1fr; column-gap: 8pt; margin-bottom: 4pt; break-inside: avoid; }
+  .cv-entry dt { white-space: normal; }
+  .cv-entry dt { color: #111; font-weight: 700; }
+  a { color: inherit; }
+  .cv-entry dd a { border: 0; }
+}

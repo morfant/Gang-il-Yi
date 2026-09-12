@@ -7,6 +7,13 @@ cover: /img/cncs_0.png
 links:
   - label: "video (YouTube playlist)"
     url: "https://www.youtube.com/playlist?list=PLqefid9iG-IhB5LLLBlQaiguh5PGs8-aB"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2011.12 – 2012.01"
+venue: "갤러리요기가, 서울"
+venue_en: "Gallery Yogiga, Seoul"
+role: "개인전"
+role_en: "solo exhibition"
 ---
 
 개인 전시 &lt;우연한 잡음, 우연의 풍경&gt; / Solo exhibition, &lt;Coincidence noise, coincidence scape&gt;. 상수동 갤러리요기가, 2011.12.27 - 2012.1.4. (한국문화예술위원회 차세대예술인력 집중육성 지원사업 선정)

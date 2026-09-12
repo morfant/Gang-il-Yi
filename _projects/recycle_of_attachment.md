@@ -6,6 +6,15 @@ type: performance
 cover: /img/recycle_of_attachment.jpg
 media:
   - vimeo: "52057509"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2012.01"
+event: "다매체 공연 〈업사이클라운드업 vol.1〉"
+event_en: "Upcycleroundup vol. 1"
+venue: "문래예술공장, 서울"
+venue_en: "Mullae Art Factory, Seoul"
+role: "형광등과 빛 반응 아날로그 오실레이터 라이브 퍼포먼스"
+role_en: "live performance with fluorescent lights and light-reactive analog oscillators"
 ---
 
 형광등과 빛반응 아날로그 오실레이터를 활용한 라이브 퍼포먼스 &lt;애착의 재활용&gt;. 다매체 공연 &lt;업사이클라운드업 vol.1 - 업사이클라운드업&gt; 참여, 문래예술공장, 2012.10.

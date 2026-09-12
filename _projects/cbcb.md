@@ -10,6 +10,15 @@ media:
 links:
   - label: "code (GitHub)"
     url: "https://github.com/morfant/catch_balls"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2018.09"
+event: "〈사운드 투어 2018〉"
+event_en: "Sound Tour 2018"
+venue: "돈의문박물관마을, 서울"
+venue_en: "Donuimun Museum Village, Seoul"
+role: "관객 참여형 오디오 비주얼 퍼포먼스"
+role_en: "audience-participatory audiovisual performance"
 ---
 
 &lt;사운드 투어 2018&gt; 참여, 돈의문 박물관 마을, 2018.9.26. 가속도 센서와 스마트폰 어플리케이션을 활용한 관객 참여형 오디오 비주얼 퍼포먼스.

@@ -9,6 +9,11 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2013_6_my_noisy_heart"
 cover: /img/my_noisy_heart_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2013.06"
+role: "오디오비주얼 퍼포먼스"
+role_en: "audiovisual performance"
 ---
 
 오디오비주얼 &lt;내 마음은 노이즈 My noisy heart&gt; (developed from &lt;latch&gt;). 2013.6.

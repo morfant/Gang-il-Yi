@@ -8,6 +8,13 @@ links:
   - label: "web (stream-paint-poem)"
     url: "https://morfant.github.io/stream-paint-poem/"
 cover: /img/someone_is_listening_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2025.08 – 10"
+venue: "문화공간 양, 제주"
+venue_en: "Culture Space Yang, Jeju"
+role: "웨더리포트(김지연, 이강일) 전시"
+role_en: "as Weather Report, with Ji-yeon Kim"
 ---
 
 웨더리포트(김지연 + 이강일) 전시 &lt;누군가 듣고 있어&gt;. 문화공간 양 (제주), 2025.8.23 - 9.30.

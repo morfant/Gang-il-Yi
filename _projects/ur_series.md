@@ -11,6 +11,13 @@ links:
     url: "https://youtu.be/6a-gsSG3Ajs"
   - label: "단조로운 생활 video (Vimeo, 20:24 ~ 28:20)"
     url: "https://vimeo.com/165497624#t=1224s"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2012 – 2016"
+venue: "문래예술공장 외, 서울"
+venue_en: "Mullae Art Factory and other venues, Seoul"
+role: "빛 반응 아날로그 오실레이터를 활용한 멀티미디어 퍼포먼스 시리즈"
+role_en: "multimedia performance series with light-reactive analog oscillators"
 ---
 
 <!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolute Future, Sunyoudo). It may be split into separate project pages later. -->

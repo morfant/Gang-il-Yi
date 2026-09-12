@@ -6,6 +6,15 @@ type: installation
 cover: /img/mns_0.jpg
 media:
   - youtube: "wYU9EeEITBQ"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: exhibition
+period: "2017.11 – 12"
+event: "인천시립미술관 〈두 번째 도시, 세 번째 공동체〉"
+event_en: "Incheon Art Platform “The Second City, the Third Community”"
+venue: "서울 문래 · 인천 · 송도"
+venue_en: "Seoul / Incheon / Songdo"
+role: "라이브 오디오 스트리밍 인스톨레이션 (w/ 김지연)"
+role_en: "three-site live audio streaming installation (with Ji-yeon Kim)"
 ---
 
 ‹다중입력 네트워크 신디사이저›, 라이브 오디오 스트리밍 인스톨레이션 (w/ 김지연). 인천시립미술관人千始湁美述觀 : 두 번째 도시, 세 번째 공동체. 서울 문래동, 인천 중구, 송도 신도시, 2017.11 - 12.

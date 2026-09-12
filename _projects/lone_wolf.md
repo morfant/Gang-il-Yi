@@ -7,6 +7,15 @@ type: performance
 cover: /img/lone_wolf_0.png
 media:
   - youtube: "kpuLvNyF_CU"
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: performance
+period: "2015.12"
+event: "오디오비주얼 페스티벌 〈WeSA 2015〉"
+event_en: "WeSA 2015"
+venue: "5.5 UNDER, 서울"
+venue_en: "5.5 UNDER, Seoul"
+role: "레이저 포인팅 FPS 멀티미디어 퍼포먼스"
+role_en: "laser-pointing FPS multimedia performance"
 ---
 
 레이저 포인팅 디텍션 시스템을 활용한 FPS 멀티미디어 퍼포먼스 &lt;Lone wolf&gt;. 오디오비주얼 페스티벌 &lt;WeSA&gt; 참여, 5.5 UNDER, 2015.12.

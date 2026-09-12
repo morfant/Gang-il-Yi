@@ -6,6 +6,15 @@ type: workshop
 media:
   - youtube: "l-T-_zM6vyE"
 cover: /img/messengers_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: workshop
+period: "2019.11"
+event: "게임 코딩 워크숍 〈균형이 살아있는 슛팅게임 만들기〉"
+event_en: "game-coding workshop"
+venue: "모두의학교, 서울"
+venue_en: "Modu School, Seoul"
+role: "로컬 멀티플레이어 게임 제작"
+role_en: "local multiplayer game"
 ---
 
 모두의 학교 &lt;게임 코딩 균형이 살아있는 슛팅게임 만들기&gt; — 로컬멀티플레이어 게임 &lt;메신저스&gt;. 모두의 학교, 2019.9.

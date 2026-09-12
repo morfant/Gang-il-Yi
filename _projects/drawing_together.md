@@ -3,6 +3,15 @@ title: "Drawing Two+gether"
 year: 2022
 type: workshop
 cover: /img/drawing_together_0.png
+# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
+cv: workshop
+period: "2022.04 – 05"
+event: "아츠포틴즈(ARTS FOR TEENS)"
+event_en: "Arts for Teens"
+venue: "서울예술교육센터"
+venue_en: "Seoul Arts Education Center"
+role: "농인/청인 청소년과 함께하는 코딩 드로잉 워크숍"
+role_en: "coding-drawing workshop with Deaf and hearing teenagers"
 ---
 
 농인/청인 청소년이 함께하는 게임을 활용한 예술 코딩 워크숍 &lt;Drawing Two+gether&gt;. 서울예술교육센터, 2022.4.
