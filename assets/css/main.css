@@ -272,7 +272,7 @@ img { max-width: 100%; height: auto; display: block; }
 .cv-contact span + span::before { content: "·"; margin: 0 0.5em; }
 .cv-switch { margin: 1.6rem 0 0; }
 .cv-switch p { margin: 0 0 0.4rem; }
-.cv-lang { margin: 0.5rem 0 0 !important; font-size: 0.95rem; }
+.cv-lang { margin: -0.6rem 0 1rem !important; font-size: 0.95rem; }
 .cv-lang a, .cv-lang .current { margin-right: 1.2em; }
 .cv-lang .current { color: var(--fg-dim); }
 .cv-lang a { color: var(--accent); }
