@@ -295,7 +295,7 @@ img { max-width: 100%; height: auto; display: block; }
   html { background: #fff; }
   body { font-size: 9.6pt; line-height: 1.42; -webkit-print-color-adjust: exact; }
   .site-nav, .site-footer, .cv-switch { display: none !important; }
-  .cv-detail { display: block; }
+  .cv-detail { display: block !important; }
   .container.cv { max-width: none; padding: 0; }
   .page-plain h1 { font-size: 21pt; margin: 0 0 4pt; }
   .cv-role { font-size: 10.5pt; margin: 0 0 3pt; }

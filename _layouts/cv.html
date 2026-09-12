@@ -22,7 +22,7 @@ layout: default
   </nav>
 
   {%- comment -%} 세부 항목은 화면에서는 숨기고 인쇄/PDF에서만 보입니다 (main.css .cv-detail) {%- endcomment -%}
-  <div class="cv-detail">
+  <div class="cv-detail" hidden>
     {% include cv.html lang=lang %}
   </div>
   {{ content }}
