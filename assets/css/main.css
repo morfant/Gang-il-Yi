@@ -272,6 +272,7 @@ img { max-width: 100%; height: auto; display: block; }
 .cv-contact span + span::before { content: "·"; margin: 0 0.5em; }
 .cv-switch { margin: 1.6rem 0 0; }
 .cv-switch p { margin: 0 0 0.4rem; }
+.cv-lang { margin: 0.5rem 0 0 !important; font-size: 0.95rem; }
 .cv-lang a, .cv-lang .current { margin-right: 1.2em; }
 .cv-lang .current { color: var(--fg-dim); }
 .cv-lang a { color: var(--accent); }
@@ -294,7 +295,7 @@ img { max-width: 100%; height: auto; display: block; }
   :root { --bg: #fff; --bg-soft: #fff; --fg: #111; --fg-dim: #555; --accent: #111; --line: #333; }
   html { background: #fff; }
   body { font-size: 9.6pt; line-height: 1.42; -webkit-print-color-adjust: exact; }
-  .site-nav, .site-footer, .cv-switch { display: none !important; }
+  .site-nav, .site-footer, .cv-switch, .cv-lang { display: none !important; }
   .cv-detail { display: block !important; }
   .container.cv { max-width: none; padding: 0; }
   .page-plain h1 { font-size: 21pt; margin: 0 0 4pt; }
