@@ -3,6 +3,7 @@ title: "내 마음은 노이즈"
 title_en: "My noisy heart"
 year: 2013
 type: performance
+tags: [게임, 오디오비주얼]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "vPvJSugrqyA"
 links:

@@ -3,6 +3,7 @@ title: "퓨처클럽: 함께 그리기"
 title_en: "Future Club: Drawing Together"
 year: 2022
 type: workshop
+tags: [코딩 교육, 접근성, 웹]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/future_club_0.png
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: workshop

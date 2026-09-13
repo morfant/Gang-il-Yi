@@ -4,6 +4,7 @@ title_en: "Lone Wolf"
 year: 2015
 featured: true
 type: performance
+tags: [레이저, 게임, 오디오비주얼, 영상]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/lone_wolf_0.png
 media:
   - youtube: "kpuLvNyF_CU"

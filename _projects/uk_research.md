@@ -3,6 +3,7 @@ title: "한영 리서치"
 title_en: "UK Research"
 year: 2016
 type: research
+tags: [웨더리포트, 라이브 스트리밍, 자작 하드웨어, 필드레코딩]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/UK_research.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: research

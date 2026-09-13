@@ -3,6 +3,7 @@ title: "속삭임의 회랑"
 title_en: "Whispering Gallery"
 year: 2015
 type: installation
+tags: [웹, 설치]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/whispering_gallery.jpg
 media:
   - vimeo: "124137674"

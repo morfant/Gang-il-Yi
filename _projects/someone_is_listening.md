@@ -4,6 +4,7 @@ title_en: "Somebodies Are Listening, Too"
 year: 2025
 featured: true
 type: installation
+tags: [김지연, 웨더리포트, 라이브 스트리밍, 시각화, 듣기, 텍스트]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 links:
   - label: "web (stream-paint-poem)"
     url: "https://morfant.github.io/stream-paint-poem/"

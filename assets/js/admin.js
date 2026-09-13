@@ -110,6 +110,8 @@
     const fm = [`title: ${q(v('title'))}`];
     if (v('title_en')) fm.push(`title_en: ${q(v('title_en'))}`);
     fm.push(`year: ${v('year')}`, `type: ${v('type')}`);
+    const tags = v('tags').split(/[,，]/).map(t => t.trim()).filter(Boolean);
+    fm.push(`tags: [${tags.join(', ')}]`);
     const coverFile = files.find(f => f.cover);
     if (coverFile) fm.push(`cover: /img/${coverFile.name}`);
     if (pf.featured.checked) fm.push('featured: true');

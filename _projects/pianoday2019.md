@@ -3,6 +3,7 @@ title: "피아노데이"
 title_en: "PianoDay"
 year: 2019
 type: performance
+tags: [김지연, 웨더리포트, 라이브 스트리밍, 시각화, 적도]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/pianoday_0.png
 media:
   - youtube: "30gcMHYvaIQ"

@@ -2,6 +2,7 @@
 title: "Round, Convex, them"
 year: 2022
 type: sound
+tags: [전자음악]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - soundcloud: "https://soundcloud.com/thisriver/round-convex-them-bgm"
 links:

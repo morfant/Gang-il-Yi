@@ -2,6 +2,7 @@
 title: "see and sing"
 year: 2012
 type: performance
+tags: [멀티미디어 퍼포먼스]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "1MsWShq93HA"
   - youtube: "eFTF7d8jSb4"

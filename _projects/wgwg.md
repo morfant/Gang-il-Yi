@@ -4,6 +4,7 @@ title_en: "WGWG ㅇㄱㅇㄱ"
 year: 2024
 featured: true
 type: performance
+tags: [Kayip, AI, 오디오비주얼]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "zOkTTTBSqTY"
 cover: /img/wgwg_0.jpg

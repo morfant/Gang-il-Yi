@@ -4,6 +4,7 @@ title_en: "Catch Ball Catch Bomb"
 year: 2018
 featured: true
 type: performance
+tags: [관객 참여, 센서, 스마트폰, 게임]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/cbcb_main.jpg
 media:
   - youtube: "-8mqZjqoUN4"

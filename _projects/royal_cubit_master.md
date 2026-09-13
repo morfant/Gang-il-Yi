@@ -3,6 +3,7 @@ title: "로열큐빗마스터"
 title_en: "Royal Cubit Master"
 year: 2019
 type: sound
+tags: [무용]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2019_11_cubit"

@@ -3,6 +3,7 @@ title: "사운드캠프"
 title_en: "Soundcamp"
 year: 2019
 type: sound
+tags: [김지연, 웨더리포트, 라이브 스트리밍, 시각화]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/soundcamp2018_main.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance

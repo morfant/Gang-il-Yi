@@ -3,6 +3,7 @@ title: "고독한 천 개의 사건"
 title_en: "A Thousand Lonely Events"
 year: 2010
 type: installation
+tags: [전자음악, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "5b6FJDW8WTY"
   - soundcloud: "https://soundcloud.com/morp/sets/the-adventure-of-ophelia"

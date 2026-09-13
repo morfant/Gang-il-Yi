@@ -3,6 +3,7 @@ title: "메이저리그"
 title_en: "Majorleague"
 year: 2018
 type: sound
+tags: [무용]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/majorleague_main.png
 links:
   - label: "audio (Google Drive)"

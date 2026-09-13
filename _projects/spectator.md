@@ -3,6 +3,7 @@ title: "구경꾼"
 title_en: "Spectator"
 year: 2015
 type: performance
+tags: [김지연, 무용]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/spectator_0.png
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: dance

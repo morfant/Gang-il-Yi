@@ -31,6 +31,9 @@ noindex: true
     <label>유형 *<select name="type">{% assign types = site.projects | map: "type" | compact | uniq | sort %}{% for t in types %}<option>{{ t }}</option>{% endfor %}</select></label>
     <label class="check"><input type="checkbox" name="featured"> 대표 작업 (홈 상단 selected works)</label>
   </div>
+  <label>태그 (쉼표로 구분 — 그래프 뷰에서 연결선이 됩니다)<input name="tags" list="tag-list" placeholder="김지연, 라이브 스트리밍, 자작 하드웨어"></label>
+  <datalist id="tag-list">{% assign alltags = site.projects | map: "tags" | compact | join: "," | split: "," | uniq | sort %}{% for t in alltags %}{% if t != "" %}<option value="{{ t }}">{% endif %}{% endfor %}</datalist>
+  <p class="dim">이미 쓰이는 태그: {{ alltags | join: " · " }}</p>
 
   <h2>이미지</h2>
   <div class="grid2">

@@ -2,6 +2,7 @@
 title: "five walks"
 year: 2011
 type: sound
+tags: [알고리즘 작곡, 자작 하드웨어, 전자음악]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - soundcloud: "https://soundcloud.com/morp/sets/five-walks"
 links:

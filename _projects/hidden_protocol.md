@@ -3,6 +3,7 @@ title: "히든프로토콜"
 title_en: "Hidden Protocol"
 year: 2019
 type: installation
+tags: [룹앤테일, AI, 게임, 관객 참여]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/hidden_protocol_0.jpg
 links:
   - label: "code: controller server (GitHub)"

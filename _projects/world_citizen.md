@@ -3,6 +3,7 @@ title: "빛 바랜 미래, 쓸모 없는 미래"
 title_en: "Obsolete Future"
 year: 2016
 type: performance
+tags: [업사이클라운드업, 시각화, 영상]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/world_citizen_0.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance

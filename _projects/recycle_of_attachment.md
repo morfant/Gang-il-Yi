@@ -3,6 +3,7 @@ title: "애착의 재활용"
 title_en: "Recycle of Attachment"
 year: 2012
 type: performance
+tags: [업사이클라운드업, 아날로그 오실레이터, 빛 반응, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/recycle_of_attachment.jpg
 media:
   - vimeo: "52057509"

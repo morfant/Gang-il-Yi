@@ -4,6 +4,7 @@ title_en: "Soundlines"
 year: 2017
 featured: true
 type: sound
+tags: [Kayip, AR, 게임, 스마트폰, 웹]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/soundlines_0.png
 media:
   - youtube: "TeRWOICqVLw"

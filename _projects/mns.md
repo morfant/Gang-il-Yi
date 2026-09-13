@@ -3,6 +3,7 @@ title: "다중입력 네트워크 신디사이저"
 title_en: "Multi-Input Network Synthesizer"
 year: 2017
 type: installation
+tags: [김지연, 웨더리포트, 라이브 스트리밍, 네트워크, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/mns_0.jpg
 media:
   - youtube: "wYU9EeEITBQ"

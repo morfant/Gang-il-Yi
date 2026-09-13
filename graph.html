@@ -1,0 +1,23 @@
+---
+layout: default
+title: Graph
+permalink: /graph/
+body_class: graph-page
+---
+<main class="graph-main">
+  <div class="graph-bar">
+    <div class="graph-legend" id="graph-legend"></div>
+    <div class="graph-hint dim">노드를 끌어 움직이고, 휠/핀치로 확대, 작업 노드를 클릭하면 페이지로 이동합니다. 크기 = 대표 작업 · 미디어 수 · 연결 수</div>
+  </div>
+  <div id="graph" class="graph-canvas"></div>
+  <div id="graph-tip" class="graph-tip" hidden></div>
+</main>
+
+<script>
+window.GRAPH_DATA = { works: [], typeLabels: { installation: "설치", performance: "퍼포먼스", sound: "사운드", workshop: "워크숍", research: "리서치" } };
+{% for p in site.projects %}{% unless p.draft_stub %}{% if p.type %}
+window.GRAPH_DATA.works.push({ id: {{ p.url | jsonify }}, title: {{ p.title | jsonify }}, title_en: {{ p.title_en | default: "" | jsonify }}, year: {{ p.year | default: 0 }}, type: {{ p.type | jsonify }}, tags: {{ p.tags | default: empty_array | jsonify }}, featured: {% if p.featured %}true{% else %}false{% endif %}, media: {{ p.media | size | default: 0 }}, cover: {{ p.cover | default: "" | jsonify }} });
+{% endif %}{% endunless %}{% endfor %}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="{{ '/assets/js/graph.js' | relative_url }}"></script>

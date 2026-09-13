@@ -2,6 +2,7 @@
 title: "REVEIL 2015 Streams"
 year: 2015
 type: sound
+tags: [김지연, 웨더리포트, 라이브 스트리밍, 필드레코딩]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 links:
   - label: "web page (soundtent.org)"
     url: "http://soundtent.org/2015/streams/streams_2015_UTC+9_jeju.html"

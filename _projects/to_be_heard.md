@@ -4,6 +4,7 @@ title_en: "To Be Heard"
 year: 2020
 featured: true
 type: installation
+tags: [UNBARRIER, 접근성, 영상, 듣기]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/to_be_heard_0.png
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition

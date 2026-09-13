@@ -2,6 +2,7 @@
 title: "합창"
 year: 2019
 type: performance
+tags: [적도, 오디오비주얼]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/hapchang_jeokdo_0.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance

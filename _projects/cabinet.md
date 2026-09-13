@@ -3,6 +3,7 @@ title: "Cabinet"
 year: 2011
 featured: true
 type: performance
+tags: [오브제, 멀티미디어 퍼포먼스]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/cabinet_0.png
 media:
   - youtube: "jBUjoCyaFWs"

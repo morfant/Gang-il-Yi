@@ -3,6 +3,7 @@ title: "죽은 아이들을 위한 노래 : 안녕"
 title_en: "Song for Dead Children: Goodbye"
 year: 2021
 type: sound
+tags: [전자음악, 데이터, 알고리즘 작곡]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - soundcloud: "https://soundcloud.com/thisriver/51a"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)

@@ -3,6 +3,7 @@ title: "동시대의 무용공연 향유자와..."
 title_en: "Contemporary Dance Audiences and…"
 year: 2016
 type: sound
+tags: [무용]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - soundcloud: "https://soundcloud.com/thisriver/live-recording"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)

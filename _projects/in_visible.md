@@ -2,6 +2,7 @@
 title: "in-visible"
 year: 2010
 type: performance
+tags: [센서, 오브제, 멀티미디어 퍼포먼스]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - vimeo: "19301122"
 cover: /img/in_visible_0.png

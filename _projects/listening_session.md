@@ -4,6 +4,7 @@ title_en: "Listening Session: Listening Loudly"
 year: 2021
 featured: true
 type: sound
+tags: [김지연, 웨더리포트, 영상, 듣기]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "GgAr2l-OeyU"
 cover: /img/listening_session_0.jpg

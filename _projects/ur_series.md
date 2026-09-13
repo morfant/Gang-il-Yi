@@ -3,6 +3,7 @@ title: "업사이클라운드업"
 title_en: "Upcycleroundup"
 year: 2013
 type: performance
+tags: [업사이클라운드업, 아날로그 오실레이터, 빛 반응, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/UR_4.jpg
 media:
   - youtube: "djfAWeTMEAc"

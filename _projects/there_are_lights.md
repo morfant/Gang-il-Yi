@@ -3,6 +3,7 @@ title: "There are lights that never go out"
 title_en: "There Are Lights That Never Go Out"
 year: 2015
 type: sound
+tags: [전자음악, 데이터, 알고리즘 작곡]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - soundcloud: "https://soundcloud.com/thisriver/there-are-lights-that-never-go-out"
 links:

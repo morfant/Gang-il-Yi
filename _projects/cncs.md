@@ -3,6 +3,7 @@ title: "우연한 잡음, 우연의 풍경"
 title_en: "Coincidence Noise, Coincidence Scape"
 year: 2011
 type: installation
+tags: [아날로그 오실레이터, 빛 반응, 자작 하드웨어, 네트워크]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/cncs_0.png
 links:
   - label: "video (YouTube playlist)"

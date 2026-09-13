@@ -2,6 +2,7 @@
 title: "latch"
 year: 2011
 type: performance
+tags: [게임, 오디오비주얼, 센서]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "XRacnmPv25s"
   - youtube: "vjCixfyEi_I"

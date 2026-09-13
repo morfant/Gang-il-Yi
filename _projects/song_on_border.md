@@ -3,6 +3,7 @@ title: "경계들로 이루어진 음악을 연주"
 title_en: "Song on Border"
 year: 2016
 type: sound
+tags: [오디오비주얼, 노래]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/song_on_border_0.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance

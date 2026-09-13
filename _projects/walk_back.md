@@ -2,6 +2,7 @@
 title: "walk back"
 year: 2012
 type: performance
+tags: [오디오비주얼]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 media:
   - youtube: "fyuCUvMQXiY"
 links:

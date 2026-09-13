@@ -3,6 +3,7 @@ title: "무거운 술책상"
 title_en: "Heavy Liquor Bookshelf"
 year: 2014
 type: installation
+tags: [아날로그 오실레이터, 빛 반응, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/heavy_drinking_desk.jpg
 links:
   - label: "video (YouTube, 28s~)"

@@ -8,6 +8,7 @@ title: "프로젝트 제목"            # 한국어 제목 (예: "숨겨진 프�
 title_en: "Project Title"        # 영어 제목 (예: "Hidden Protocol")
 year: 2024                       # 제작/발표 연도
 type: installation               # 작업 유형: performance | installation | sound | research 중 하나
+tags: [김지연, 라이브 스트리밍]     # 그래프 뷰(/graph/) 연결용 키워드: 협업자, 기법, 주제. 기존 태그와 같은 표기를 쓰세요
 cover: /img/example_0.jpg        # 목록에 표시될 대표 이미지 (img/ 폴더의 정확한 파일명)
 
 media:                           # 임베드할 미디어 (필요한 것만 남기세요). 목록 형식(- )을 지켜 주세요.
