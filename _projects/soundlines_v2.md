@@ -8,8 +8,8 @@ cover: /img/soundlines_doc_0.png
 medium: "GV80, 홀로렌즈 2, LED 스크린, 2채널 스테레오 사운드, AR 게임, 3D 애니메이션(1분 35초), 3D 프린팅, 가변 설치"
 medium_en: "GV80, HoloLens 2, LED screen, 2-channel stereo sound, AR game, 3D animation (1 min 35 sec), 3D printing, dimensions variable"
 media:
-  - youtube: "TeRWOICqVLw"
   - youtube: "EYb-CskzHiI"
+  - youtube: "TeRWOICqVLw"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2023.10"

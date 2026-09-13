@@ -25,4 +25,10 @@ Location-based AR sound app and site installation (with Kayip). Seoul Biennale o
 
 ![](/img/soundlines_1.png)
 
-→ 후속 작업: [소리숲길 v2.0 (2023)](/projects/soundlines-v2/)
+![](/img/soundlines_2.jpg)
+
+![](/img/soundlines_3.jpg)
+
+![](/img/soundlines_4.jpg)
+
+→ [소리숲길 v2.0 (2023)](/projects/soundlines-v2/)
