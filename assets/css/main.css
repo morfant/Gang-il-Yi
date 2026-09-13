@@ -216,10 +216,15 @@ img { max-width: 100%; height: auto; display: block; }
 .project-back .edit-link { margin-left: 1.2rem; color: var(--fg-dim); font-size: 0.85rem; }
 .project-back .edit-link:hover { color: var(--accent); }
 .project-body img { display: block; margin: 1.5rem auto; border-radius: 6px; }
+/* 사진과 같은 문단에 쓴 글 = 캡션: 사진에 붙이고, 묶음 사이는 더 띄움 (위/아래 어느 쪽에 써도 됨) */
+.project-body p:has(> img) { margin: 2.4rem 0; font-size: 0.9rem; color: var(--fg-dim); line-height: 1.5; }
+.project-body p:has(> img) img { margin: 0.5rem auto; }
+.project-body p:has(> img) > img:first-child { margin-top: 0; }
+.project-body p:has(> img) > img:last-child { margin-bottom: 0; }
 /* 이미지가 연달아 있는 단락 → 같은 크기의 타일 격자 (잘리지 않게 letterbox) */
 .project-body p:has(> img:nth-of-type(2)) {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
-  gap: 0.8rem; justify-content: center; margin: 1.5rem 0;
+  gap: 0.8rem; justify-content: center; margin: 1.5rem 0; font-size: inherit; color: inherit;
 }
 .project-body p:has(> img:nth-of-type(2)) br { display: none; }  /* 줄바꿈이 <br>로 바뀌어도 격자엔 영향 없게 */
 .project-body p:has(> img:nth-of-type(2)) img {
