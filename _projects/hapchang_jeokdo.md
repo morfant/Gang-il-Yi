@@ -5,7 +5,7 @@ type: performance
 cover: /img/hapchang_jeokdo_0.jpg
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
-period: "2019.11 – 2020.01"
+period: "2019.11"
 event: "인사미술공간 주제기획 프로젝트 〈막간극〉"
 event_en: "Insa Art Space thematic project 〈막간극〉"
 venue: "인사미술공간, 서울"

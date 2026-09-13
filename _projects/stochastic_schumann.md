@@ -17,7 +17,7 @@ event_en: "contemporary music concert “Dichterliebe: Detachment”"
 venue: "AUDIOGUY, 서울"
 venue_en: "AUDIOGUY, Seoul"
 role: "전자음악 작곡"
-role_en: "electronic composition"
+role_en: "electronic music composition"
 ---
 
 현대음악 공연 &lt;Dichterliebe : Detachment&gt; 전자음악 작곡. AUDIOGUY, 2019.12.

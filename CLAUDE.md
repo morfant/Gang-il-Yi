@@ -30,7 +30,7 @@ There are no tests or linters. Verify by building and spot-checking pages in `_s
 
 ## Content state (2026-07)
 
-48 project pages sourced from the artist's posts, portfolio Google Doc, and CV. Known loose ends: `vtouch.md` is a stub with no description/year/type; `ur_series.md` bundles four UR works (year: 2013 = series start, spans to 2016, may be split later; its "Obsolute Future" section is unconfirmed); `soundcamp2018.md` slug says 2018 but the event was 2019 (year is set to 2019); Google Drive media on majorleague/n2b should become embeds once re-hosted. The Korean maintenance guide for the artist is `사이트-관리-가이드.md` (excluded from build, keep in sync when the workflow changes).
+48 project pages sourced from the artist's posts, portfolio Google Doc, and CV. Known loose ends: `vtouch.md` is a stub with no description/year/type; `ur_series.md` bundles four UR works (year: 2013 = series start, spans to 2016, may be split later; its Obsolete Future section is the 2016 Leeum performance, see world_citizen.md); `soundcamp2018.md` slug says 2018 but the event was 2019 (year is set to 2019); Google Drive media on majorleague/n2b should become embeds once re-hosted. The Korean maintenance guide for the artist is `사이트-관리-가이드.md` (excluded from build, keep in sync when the workflow changes).
 
 ## Constraints
 

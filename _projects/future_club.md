@@ -10,7 +10,7 @@ period: "2022.07 – 08"
 venue: "제로원, 서울"
 venue_en: "ZER01NE, Seoul"
 role: "농인과 청인이 함께하는 예술 코딩 워크숍"
-role_en: "art-coding workshop for Deaf and hearing participants"
+role_en: "art-coding workshop where Deaf and hearing participants create together"
 ---
 
 농인과 청인이 함께하는 예술 코딩 워크숍 &lt;퓨처클럽: 함께 그리기&gt;. 현대자동차 제로원, 2022.8.

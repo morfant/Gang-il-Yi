@@ -280,7 +280,7 @@ img { max-width: 100%; height: auto; display: block; }
 .cv-detail { display: none; }
 .cv-bio h2 { display: none; }          /* 화면에서는 소제목 생략, PDF에서만 표시 */
 .cv-bio { margin-top: 2rem; }
-.cv-bio p { margin: 0; }
+.cv-bio p { margin: 0; text-align: justify; }
 .cv-list { margin: 0; }
 .cv-entry { display: grid; grid-template-columns: 8.5em 1fr; column-gap: 1rem; margin: 0 0 0.55rem; }
 .cv-entry dt { color: var(--fg-dim); font-variant-numeric: tabular-nums; white-space: nowrap; }

@@ -17,7 +17,7 @@ event_en: "Paradise Art Lab Showcase 2019"
 venue: "인천 스튜디오 파라다이스"
 venue_en: "Studio Paradise, Incheon"
 role: "머신러닝 기반 관객참여형 게임 (as 룹앤테일)"
-role_en: "machine-learning-based participatory game (as Loop&Tail)"
+role_en: "machine-learning-based participatory game (as Loopntale)"
 ---
 
 머신러닝을 활용한 관객참여형 멀티미디어 게임 &lt;히든프로토콜&gt; / Machine learning related simulation &lt;Hidden protocol&gt;. 파라다이스아트랩 쇼케이스 2019 참여 (as 룹앤테일), 인천 스튜디오 파라다이스, 2019.10 - 11.

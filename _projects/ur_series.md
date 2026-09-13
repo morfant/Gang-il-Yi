@@ -20,7 +20,7 @@ role: "빛 반응 아날로그 오실레이터를 활용한 멀티미디어 퍼�
 role_en: "multimedia performance series with light-reactive analog oscillators"
 ---
 
-<!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolute Future, Sunyoudo). It may be split into separate project pages later. -->
+<!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolete Future, Sunyoudo). It may be split into separate project pages later. -->
 <!-- year: 2013 유지 (변경 금지). 공식 영문 CV(2026.7)는 시리즈를 "Upcycleroundup" vol. 1–3, 2012–13로 기록. 이 페이지의 섹션들은 2013-2016에 걸쳐 있음 (vol.1 섹션 없음). -->
 
 Upcycleroundup (업사이클라운드업), vol. 1–3, 2012–13 — multimedia performance series with light-reactive analog oscillators, Mullae Art Factory and other venues, Seoul.
@@ -51,8 +51,8 @@ Upcycleroundup (업사이클라운드업), vol. 1–3, 2012–13 — multimedia 
 
 ![](/img/UR_sunyoudo.png)
 
-#### Obsolute Future
+#### 빛 바랜 미래, 쓸모 없는 미래 (Obsolete Future) (2016)
 
-<!-- No confident match in the portfolio doc for "UR_obsolute_future". The only UR (업사이클라운드업) event without its own slug is the 2016.11.25 인터미디어극장 <세계시민 5 - 소리로 짓는 환경> at 삼성미술관 Leeum (멀티미디어 퍼포먼스 <세계 시민 - 소리로 짓는 환경> 참여, 비주얼 프로그래밍), which is the most plausible candidate — unconfirmed. -->
+공연 &lt;빛 바랜 미래, 쓸모 없는 미래(Obsolete Future)&gt;. 인터미디어극장 &lt;세계시민 5 – 소리로 짓는 환경&gt; 참여, 삼성미술관 Leeum, 2016.11.25. → [작품 페이지](/projects/world-citizen/)
 
 ![](/img/UR_obsolute_future.jpg)
