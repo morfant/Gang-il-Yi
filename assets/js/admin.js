@@ -4,6 +4,7 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   let root = null; // DirectoryHandle
+  try { localStorage.setItem('gy-admin', '1'); } catch (e) {} // 이 브라우저를 관리자용으로 표시 → 작업 페이지에 'edit' 링크와 'e' 단축키가 생김
 
   // ── 폴더 연결 (핸들은 IndexedDB에 저장해 다음에도 재사용) ─────────────
   const DB = 'gangilyi-admin', STORE = 'handles';
@@ -36,12 +37,15 @@
     if (!(await verify(h))) { setStatus(false, `${h.name} 안에 _projects / img / _data 폴더가 없습니다. 사이트 폴더(Gang-il-Yi)를 선택하세요.`); return; }
     root = h; await saveHandle(h);
     setStatus(true, `연결됨: ${h.name}`);
+    if (window.__pendingEdit) { const slug = window.__pendingEdit; window.__pendingEdit = null; if (pf.load.querySelector(`option[value="${slug}"]`)) { pf.load.value = slug; pf.load.dispatchEvent(new Event('change')); } }
   }
   $('#btn-connect').addEventListener('click', async () => {
     const prev = await loadHandle();
     if (prev && !root) { await connect(false); if (root) return; }
     await connect(true);
   });
+  const editParam = new URLSearchParams(location.search).get('edit');
+  if (editParam) { window.__pendingEdit = editParam; $('#connect-status').textContent = `'${editParam}' 을(를) 불러오려면 폴더 연결이 필요합니다.`; }
   connect(false);
 
   // ── 파일 유틸 ─────────────────────────────────────────────────────
