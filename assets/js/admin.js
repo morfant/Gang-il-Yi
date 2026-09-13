@@ -287,9 +287,15 @@
       pubChanges.textContent = n ? `올릴 변경 사항 ${n}개 파일:` : '올릴 변경 사항이 없습니다.';
       if (n) { const ul = document.createElement('ul'); ul.className = 'dim'; t.split('\n').forEach(l => { const li = document.createElement('li'); li.textContent = l.trim(); ul.appendChild(li); }); pubChanges.appendChild(ul); }
       $('#btn-publish').disabled = !n;
+      // 배포 중 PDF가 다시 생성되면 미리보기가 페이지를 새로고침하므로, 마지막 결과를 도우미에서 다시 받아 보여 줍니다
+      const last = await (await fetch(HELPER + '/last', { cache: 'no-store' })).json();
+      const b = $('#btn-publish');
+      if (last.state === 'running') { b.disabled = true; b.textContent = '올리는 중… (PDF 생성 포함, 30초쯤)'; pubLog.hidden = false; pubLog.textContent = '진행 중입니다…'; pubLog.className = 'preview'; }
+      else if (b.textContent !== '사이트에 올리기') { b.textContent = '사이트에 올리기'; }
+      if (last.state !== 'running' && last.output && Date.now() / 1000 - last.ts < 600) { pubLog.hidden = false; pubLog.textContent = last.output; pubLog.className = 'preview ' + (last.state === 'ok' ? 'ok' : 'err'); }
     } catch { pubReady.hidden = true; pubFallback.hidden = false; }
   }
-  refreshStatus(); setInterval(refreshStatus, 8000);
+  refreshStatus(); setInterval(refreshStatus, 4000);
   $('#btn-publish').addEventListener('click', async () => {
     const b = $('#btn-publish'); b.disabled = true; b.textContent = '올리는 중… (PDF 생성 포함, 30초쯤)';
     pubLog.hidden = false; pubLog.textContent = '';
