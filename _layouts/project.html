@@ -34,7 +34,7 @@ layout: default
   </p>
   {% endif %}
 
-  <nav class="project-back"><a href="{{ '/' | relative_url }}" id="back-to-work">← work</a><a class="edit-link" id="edit-link" hidden>edit ↗</a></nav>
+  <nav class="project-back"><a href="{{ '/' | relative_url }}" id="back-to-work">← work</a><a class="edit-link" id="edit-link" target="_blank" rel="noopener" hidden>edit ↗</a></nav>
 </main>
 <script>
   // 관리자용: 이 작업을 관리 페이지에서 바로 편집. 키보드 'e' (어디서 보든), 로컬 미리보기에서는 'edit' 링크도 표시.
@@ -47,7 +47,7 @@ layout: default
     if (!isLocal && !isAdmin) return; // 방문자에게는 아무 동작도 하지 않음 (관리 페이지를 열어 본 브라우저에만 표시가 남음)
     link.hidden = false;
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'e' && !e.metaKey && !e.ctrlKey && !e.altKey && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && document.querySelector('.lightbox:not([hidden])') === null) location.href = adminUrl;
+      if (e.key === 'e' && !e.metaKey && !e.ctrlKey && !e.altKey && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && document.querySelector('.lightbox:not([hidden])') === null) window.open(adminUrl, '_blank', 'noopener');
     });
   })();
   // 홈에서 들어온 경우 '← work'는 브라우저 뒤로가기처럼 동작해 스크롤 위치가 유지됩니다. 직접 링크로 온 경우엔 홈으로 이동.
