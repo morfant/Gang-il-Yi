@@ -34,5 +34,12 @@ layout: default
   </p>
   {% endif %}
 
-  <nav class="project-back"><a href="{{ '/' | relative_url }}">← work</a></nav>
+  <nav class="project-back"><a href="{{ '/' | relative_url }}" id="back-to-work">← work</a></nav>
 </main>
+<script>
+  // 홈에서 들어온 경우 '← work'는 브라우저 뒤로가기처럼 동작해 스크롤 위치가 유지됩니다. 직접 링크로 온 경우엔 홈으로 이동.
+  document.getElementById('back-to-work').addEventListener('click', function (e) {
+    var fromHome = document.referrer && new URL(document.referrer).origin === location.origin && /^\/(#.*)?$/.test(new URL(document.referrer).pathname + new URL(document.referrer).hash);
+    if (fromHome && history.length > 1) { e.preventDefault(); history.back(); }
+  });
+</script>
