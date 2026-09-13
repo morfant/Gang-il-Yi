@@ -7,7 +7,7 @@ noindex: true
 ---
 <main class="container page-plain admin">
 <h1>관리</h1>
-<p class="admin-intro">프로젝트 추가, CV 항목 추가, 소개글 수정을 한 곳에서 합니다. 저장하면 내 컴퓨터의 사이트 폴더에 파일이 바로 쓰이고, 로컬 미리보기가 켜져 있으면 몇 초 뒤 반영됩니다. 사이트에 올리려면 마지막에 터미널에서 <code>./publish.sh</code>를 실행하세요.</p>
+<p class="admin-intro">프로젝트 추가·편집, CV 항목 추가, 소개글 수정을 한 곳에서 합니다. 저장하면 내 컴퓨터의 사이트 폴더에 파일이 바로 쓰이고, 로컬 미리보기가 켜져 있으면 몇 초 뒤 반영됩니다. 사이트에 올리려면 마지막에 터미널에서 <code>./publish.sh</code>를 실행하세요.</p>
 
 <section class="admin-connect" id="connect">
   <button id="btn-connect" class="btn">사이트 폴더 연결</button>
@@ -15,13 +15,18 @@ noindex: true
 </section>
 
 <nav class="admin-tabs">
-  <button data-tab="project" class="on">프로젝트 추가</button>
+  <button data-tab="project" class="on">프로젝트 추가 / 편집</button>
   <button data-tab="cvitem">CV 항목 추가 (작업 외)</button>
   <button data-tab="bio">소개글</button>
 </nav>
 
 <!-- ───────── 프로젝트 ───────── -->
 <form id="tab-project" class="admin-tab on" autocomplete="off">
+  <div class="admin-load">
+    <label>기존 작업 불러와 편집<select name="load"><option value="">— 선택 —</option>{% assign sorted = site.projects | sort: "year" | reverse %}{% for p in sorted %}<option value="{{ p.path | split: "/" | last | remove: ".md" }}">{{ p.year }} · {{ p.title }}</option>{% endfor %}</select></label>
+    <button type="button" class="btn small" id="btn-new" hidden>＋ 새 작업으로 전환</button>
+    <span id="edit-status" class="dim"></span>
+  </div>
   <h2>기본 정보</h2>
   <div class="grid2">
     <label>제목 (한국어) *<input name="title" required placeholder="누군가 듣고 있어"></label>
@@ -37,7 +42,7 @@ noindex: true
 
   <h2>이미지</h2>
   <div class="grid2">
-    <label>커버 이미지 (홈 카드용)<input type="file" name="cover" accept="image/*"></label>
+    <label>커버 이미지 (홈 카드용)<span id="cover-current" class="dim"></span><input type="file" name="cover" accept="image/*"></label>
     <label>추가 이미지 (본문에 순서대로 삽입)<input type="file" name="images" accept="image/*" multiple></label>
   </div>
   <p class="dim">이미지는 <code>img/파일이름_0.jpg</code>, <code>_1.jpg</code>… 로 복사됩니다. 웹용으로 가로 2000px 이하, 1MB 안쪽을 권합니다.</p>
@@ -52,8 +57,11 @@ noindex: true
   <button type="button" class="btn small" data-add="link">+ 링크</button>
 
   <h2>본문</h2>
+  <div id="body-new">
   <label>설명 (한국어)<textarea name="body_ko" rows="7" placeholder="첫 줄에 한 줄 요약 + 장소, 날짜. 그 아래 자유롭게."></textarea></label>
   <label>설명 (영어)<textarea name="body_en" rows="4"></textarea></label>
+  </div>
+  <label id="body-edit" hidden>본문 (마크다운 그대로 — 이미지는 <code>![](/img/파일.jpg)</code> 형식)<textarea name="body_raw" rows="14"></textarea></label>
 
   <h2>CV 항목</h2>
   <p class="dim">따로 CV를 쓰는 것이 아닙니다. 이 프로젝트가 CV에 한 줄로 나올 때 필요한 정보(기간·장소·역할)를 칸으로 나눠 적는 것이고, 저장하면 /cv/ 와 PDF에 자동으로 들어갑니다.</p>

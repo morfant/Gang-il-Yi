@@ -74,62 +74,132 @@
   function vimeoId(v) { const m = v.match(/vimeo\.com\/(?:video\/)?(\d+)/); return m ? m[1] : v.trim(); }
   function bcId(v) { const m = v.match(/(?:album|track)=(\d+)/); return m ? m[1] : v.replace(/\D/g, ''); }
 
+
+  // ── 프로젝트 파일 읽기/쓰기 (front matter 부분집합) ────────────────
+  const SCALARS = ['title', 'title_en', 'year', 'type', 'cover', 'featured', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en'];
+  const unq = v => { v = v.trim(); const m = v.match(/^"((?:[^"\\]|\\.)*)"\s*(?:#.*)?$/) || v.match(/^'([^']*)'\s*(?:#.*)?$/); if (m) return m[1].replace(/\\(["\\])/g, '$1'); return v.replace(/\s+#.*$/, '').trim(); };
+  function parseProject(text) {
+    const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/); if (!m) throw new Error('front matter(---)를 찾을 수 없습니다.');
+    const fm = m[1].split(/\r?\n/), body = m[2].replace(/^\n+/, '');
+    const out = { scalars: {}, tags: [], media: [], links: [], extra: [] };
+    let mode = null, cur = null;
+    for (const raw of fm) {
+      if (!raw.trim() || /^\s*#/.test(raw)) continue;
+      if (/^\S/.test(raw)) { // 최상위 키
+        mode = null; cur = null;
+        const k = raw.match(/^([\w-]+):\s*(.*)$/); if (!k) { out.extra.push(raw); continue; }
+        const key = k[1], val = k[2];
+        if (key === 'tags') { const l = val.match(/^\[(.*)\]/); out.tags = l ? l[1].split(',').map(x => unq(x)).filter(Boolean) : []; if (!l && val.trim() === '') mode = 'tags'; }
+        else if (key === 'media') mode = 'media';
+        else if (key === 'links') mode = 'links';
+        else if (SCALARS.includes(key)) out.scalars[key] = unq(val);
+        else out.extra.push(raw);
+        continue;
+      }
+      const t = raw.trim();
+      if (mode === 'tags' && t.startsWith('- ')) out.tags.push(unq(t.slice(2)));
+      else if (mode === 'media' && t.startsWith('- ')) {
+        const mm = t.slice(2).match(/^(\w+):\s*(.*)$/); if (!mm) continue;
+        if (mm[1] === 'bandcamp') { const b = mm[2].match(/(album|track):\s*"?(\d+)"?/); if (b) out.media.push({ kind: 'bandcamp_' + b[1], val: b[2] }); }
+        else out.media.push({ kind: mm[1], val: unq(mm[2]) });
+      }
+      else if (mode === 'links') {
+        if (t.startsWith('- ')) { cur = {}; out.links.push(cur); const mm = t.slice(2).match(/^(\w+):\s*(.*)$/); if (mm) cur[mm[1]] = unq(mm[2]); }
+        else if (cur) { const mm = t.match(/^(\w+):\s*(.*)$/); if (mm) cur[mm[1]] = unq(mm[2]); }
+      }
+    }
+    return { ...out, body };
+  }
+  function mediaLine(kind, val) {
+    if (kind === 'youtube') return `  - youtube: ${q(ytId(val))}`;
+    if (kind === 'vimeo') return `  - vimeo: ${q(vimeoId(val))}`;
+    if (kind === 'soundcloud') return `  - soundcloud: ${q(val)}`;
+    if (kind === 'bandcamp_album') return `  - bandcamp: { album: ${q(bcId(val))} }`;
+    if (kind === 'bandcamp_track') return `  - bandcamp: { track: ${q(bcId(val))} }`;
+    return `  - ${kind}: ${q(val)}`;
+  }
+  function serializeProject(d) {
+    const s = d.scalars, fm = [`title: ${q(s.title)}`];
+    if (s.title_en) fm.push(`title_en: ${q(s.title_en)}`);
+    if (s.year) fm.push(`year: ${s.year}`);
+    if (s.type) fm.push(`type: ${s.type}`);
+    fm.push(`tags: [${d.tags.join(', ')}]`);
+    if (s.cover) fm.push(`cover: ${s.cover}`);
+    if (s.featured === true || s.featured === 'true') fm.push('featured: true');
+    if (d.media.length) fm.push('media:', ...d.media.map(m => mediaLine(m.kind, m.val)));
+    if (d.links.length) fm.push('links:', ...d.links.map(l => `  - label: ${q(l.label || l.url)}\n    url: ${q(l.url)}`));
+    fm.push(...d.extra);
+    fm.push('# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)', `cv: ${s.cv || 'false'}`);
+    if (s.cv && s.cv !== 'false') { fm.push(`period: ${q(s.period || s.year)}`); for (const k of ['event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) if (s[k]) fm.push(`${k}: ${q(s[k])}`); }
+    return `---\n${fm.join('\n')}\n---\n\n${d.body.replace(/\s+$/, '')}\n`;
+  }
+  window.__adminParse = parseProject; window.__adminSerialize = serializeProject; // 테스트용
+
   // ── 프로젝트 폼 ─────────────────────────────────────────────────────
   const pf = $('#tab-project');
-  pf.title_en.addEventListener('input', () => { if (!pf.slug.dataset.manual) pf.slug.value = slugify(pf.title_en.value); });
+  pf.title_en.addEventListener('input', () => { if (!pf.slug.dataset.manual && !editing) pf.slug.value = slugify(pf.title_en.value); });
   pf.slug.addEventListener('input', () => { pf.slug.dataset.manual = pf.slug.value ? '1' : ''; });
   // 연도를 넣으면 기간(period)이 비어 있을 때 자동으로 채움 — 월까지 적고 싶으면 뒤에 .08 처럼 덧붙이기
   pf.year.addEventListener('input', () => { if (!pf.period.dataset.manual) pf.period.value = pf.year.value; });
   pf.period.addEventListener('input', () => { pf.period.dataset.manual = pf.period.value && pf.period.value !== pf.year.value ? '1' : ''; });
 
+  let editing = null; // { slug, data } 편집 중인 기존 작업
+
+  function nextImageIndex(slug, text) { let n = -1; for (const m of text.matchAll(new RegExp(`/img/${slug}_(\\d+)\\.`, 'g'))) n = Math.max(n, +m[1]); return n + 1; }
+
   function collectProject() {
     const v = n => pf[n].value.trim();
     const slug = v('slug');
     if (!slug) throw new Error('파일 이름(slug)을 입력하세요. 영어 제목이 없으면 직접 영문으로 적어 주세요.');
-    const cover = pf.cover.files[0] || null;
-    const images = [...pf.images.files];
-    const files = []; // {name, file}
-    let n = 0;
-    if (cover) files.push({ name: `${slug}_${n++}${ext(cover)}`, file: cover, cover: true });
-    images.forEach(f => files.push({ name: `${slug}_${n++}${ext(f)}`, file: f }));
+    const d = editing ? editing.data : { scalars: {}, tags: [], media: [], links: [], extra: [], body: '' };
+    const s = d.scalars;
+    for (const k of ['title', 'title_en', 'year', 'type', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) s[k] = v(k);
+    s.featured = pf.featured.checked;
+    d.tags = v('tags').split(/[,，]/).map(t => t.trim()).filter(Boolean);
+    d.media = $$('.row.media', pf).map(r => ({ kind: r.querySelector('[name=mkind]').value, val: r.querySelector('[name=mval]').value.trim() })).filter(m => m.val);
+    d.links = $$('.row.link', pf).map(r => ({ label: r.querySelector('[name=llabel]').value.trim(), url: r.querySelector('[name=lurl]').value.trim() })).filter(l => l.url);
 
-    const media = $$('.row.media', pf).map(r => {
-      const k = r.querySelector('[name=mkind]').value, val = r.querySelector('[name=mval]').value.trim();
-      if (!val) return null;
-      if (k === 'youtube') return `  - youtube: ${q(ytId(val))}`;
-      if (k === 'vimeo') return `  - vimeo: ${q(vimeoId(val))}`;
-      if (k === 'soundcloud') return `  - soundcloud: ${q(val)}`;
-      if (k === 'bandcamp_album') return `  - bandcamp: { album: ${q(bcId(val))} }`;
-      if (k === 'bandcamp_track') return `  - bandcamp: { track: ${q(bcId(val))} }`;
-    }).filter(Boolean);
-    const links = $$('.row.link', pf).map(r => {
-      const l = r.querySelector('[name=llabel]').value.trim(), u = r.querySelector('[name=lurl]').value.trim();
-      return u ? `  - label: ${q(l || u)}\n    url: ${q(u)}` : null;
-    }).filter(Boolean);
-
-    const fm = [`title: ${q(v('title'))}`];
-    if (v('title_en')) fm.push(`title_en: ${q(v('title_en'))}`);
-    fm.push(`year: ${v('year')}`, `type: ${v('type')}`);
-    const tags = v('tags').split(/[,，]/).map(t => t.trim()).filter(Boolean);
-    fm.push(`tags: [${tags.join(', ')}]`);
-    const coverFile = files.find(f => f.cover);
-    if (coverFile) fm.push(`cover: /img/${coverFile.name}`);
-    if (pf.featured.checked) fm.push('featured: true');
-    if (media.length) fm.push('media:', ...media);
-    if (links.length) fm.push('links:', ...links);
-    fm.push('# CV 항목 (cv: exhibition|performance|dance|workshop|research|false)', `cv: ${v('cv')}`);
-    if (v('cv') !== 'false') {
-      fm.push(`period: ${q(v('period'))}`);
-      for (const k of ['event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) if (v(k)) fm.push(`${k}: ${q(v(k))}`);
-    }
-    const bodyParts = [];
-    if (v('body_ko')) bodyParts.push(v('body_ko'));
-    if (v('body_en')) bodyParts.push(v('body_en'));
-    const bodyImgs = files.filter(f => !f.cover).map(f => `![](/img/${f.name})`).join('\n');
-    if (bodyImgs) bodyParts.push(bodyImgs);
-    const md = `---\n${fm.join('\n')}\n---\n\n${bodyParts.join('\n\n')}\n`;
-    return { slug, md, files };
+    // 본문
+    let body = editing ? pf.body_raw.value : [v('body_ko'), v('body_en')].filter(Boolean).join('\n\n');
+    // 이미지: 기존 번호 다음부터
+    const files = []; let n = nextImageIndex(slug, (s.cover || '') + ' ' + body);
+    const cover = pf.cover.files[0] || null, images = [...pf.images.files];
+    if (cover) { const name = `${slug}_${n++}${ext(cover)}`; files.push({ name, file: cover }); s.cover = `/img/${name}`; }
+    const added = images.map(f => { const name = `${slug}_${n++}${ext(f)}`; files.push({ name, file: f }); return `![](/img/${name})`; });
+    if (added.length) body = (body.replace(/\s+$/, '') + '\n\n' + added.join('\n')).trim();
+    d.body = body;
+    return { slug, md: serializeProject(d), files };
   }
+
+  // ── 기존 작업 불러오기 ────────────────────────────────────────────
+  function setEditMode(on) {
+    $('#body-new').hidden = on; $('#body-edit').hidden = !on; $('#btn-new').hidden = !on;
+    pf.slug.readOnly = on; pf.title.required = true;
+    if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; }
+  }
+  $('#btn-new').addEventListener('click', () => setEditMode(false));
+  pf.load.addEventListener('change', async () => {
+    const slug = pf.load.value; if (!slug) return;
+    try {
+      need();
+      const text = await readText('_projects', slug + '.md');
+      const d = parseProject(text);
+      setEditMode(true); editing = { slug, data: d }; pf.load.value = slug;
+      const s = d.scalars;
+      pf.slug.value = slug; pf.slug.dataset.manual = '1';
+      for (const k of ['title', 'title_en', 'year', 'type', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) if (pf[k]) pf[k].value = s[k] || '';
+      if (!s.cv) pf.cv.value = 'false';
+      pf.period.dataset.manual = '1';
+      pf.featured.checked = s.featured === 'true';
+      pf.tags.value = d.tags.join(', ');
+      $('#cover-current').textContent = s.cover ? `현재: ${s.cover} (새 파일을 고르면 교체)` : '커버 없음 (글자 타일로 표시)';
+      $('#media-rows').innerHTML = ''; d.media.forEach(m => { addRow('media'); const r = $('#media-rows').lastElementChild; r.querySelector('[name=mkind]').value = m.kind; r.querySelector('[name=mval]').value = m.val; });
+      $('#link-rows').innerHTML = ''; d.links.forEach(l => { addRow('link'); const r = $('#link-rows').lastElementChild; r.querySelector('[name=llabel]').value = l.label || ''; r.querySelector('[name=lurl]').value = l.url || ''; });
+      pf.body_raw.value = d.body;
+      $('#edit-status').textContent = `편집 중: _projects/${slug}.md` + (d.extra.length ? ` (기타 항목 ${d.extra.length}개는 그대로 유지)` : '');
+      $('#edit-status').className = 'ok';
+    } catch (err) { $('#edit-status').textContent = '오류: ' + err.message; $('#edit-status').className = 'err'; }
+  });
 
   $('#btn-preview').addEventListener('click', () => {
     try { const { md } = collectProject(); const pre = $('#project-preview'); pre.textContent = md; pre.hidden = false; }
@@ -142,12 +212,13 @@
       need();
       const { slug, md, files } = collectProject();
       const fname = slug + '.md';
-      if (await exists('_projects', fname) && !confirm(`_projects/${fname} 가 이미 있습니다. 덮어쓸까요?`)) return;
+      if (!editing && await exists('_projects', fname) && !confirm(`_projects/${fname} 가 이미 있습니다. 덮어쓸까요?`)) return;
       for (const f of files) if (await exists('img', f.name) && !confirm(`img/${f.name} 가 이미 있습니다. 덮어쓸까요?`)) return;
       st.textContent = '저장 중…';
       for (const f of files) await writeBlob('img', f.name, f.file);
       await writeText('_projects', fname, md);
-      st.textContent = `저장됨: _projects/${fname}` + (files.length ? ` + 이미지 ${files.length}개` : '') + ` → 미리보기: /projects/${slug.replace(/_/g, '-')}/`;
+      st.textContent = `${editing ? '수정 저장됨' : '저장됨'}: _projects/${fname}` + (files.length ? ` + 이미지 ${files.length}개` : '') + ` → 미리보기: /projects/${slug.replace(/_/g, '-')}/`;
+      if (editing) editing.data = parseProject(md);
       st.className = 'ok';
     } catch (err) { st.textContent = '오류: ' + err.message; st.className = 'err'; }
   });
