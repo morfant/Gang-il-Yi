@@ -76,7 +76,7 @@
 
 
   // ── 프로젝트 파일 읽기/쓰기 (front matter 부분집합) ────────────────
-  const SCALARS = ['title', 'title_en', 'year', 'type', 'cover', 'featured', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en'];
+  const SCALARS = ['title', 'title_en', 'year', 'type', 'cover', 'medium', 'medium_en', 'featured', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en'];
   const unq = v => { v = v.trim(); const m = v.match(/^"((?:[^"\\]|\\.)*)"\s*(?:#.*)?$/) || v.match(/^'([^']*)'\s*(?:#.*)?$/); if (m) return m[1].replace(/\\(["\\])/g, '$1'); return v.replace(/\s+#.*$/, '').trim(); };
   function parseProject(text) {
     const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/); if (!m) throw new Error('front matter(---)를 찾을 수 없습니다.');
@@ -125,6 +125,8 @@
     if (s.type) fm.push(`type: ${s.type}`);
     fm.push(`tags: [${d.tags.join(', ')}]`);
     if (s.cover) fm.push(`cover: ${s.cover}`);
+    if (s.medium) fm.push(`medium: ${q(s.medium)}`);
+    if (s.medium_en) fm.push(`medium_en: ${q(s.medium_en)}`);
     if (s.featured === true || s.featured === 'true') fm.push('featured: true');
     if (d.media.length) fm.push('media:', ...d.media.map(m => mediaLine(m.kind, m.val)));
     if (d.links.length) fm.push('links:', ...d.links.map(l => `  - label: ${q(l.label || l.url)}\n    url: ${q(l.url)}`));
@@ -153,7 +155,7 @@
     if (!slug) throw new Error('파일 이름(slug)을 입력하세요. 영어 제목이 없으면 직접 영문으로 적어 주세요.');
     const d = editing ? editing.data : { scalars: {}, tags: [], media: [], links: [], extra: [], body: '' };
     const s = d.scalars;
-    for (const k of ['title', 'title_en', 'year', 'type', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) s[k] = v(k);
+    for (const k of ['title', 'title_en', 'year', 'type', 'medium', 'medium_en', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) s[k] = v(k);
     s.featured = pf.featured.checked;
     d.tags = v('tags').split(/[,，]/).map(t => t.trim()).filter(Boolean);
     d.media = $$('.row.media', pf).map(r => ({ kind: r.querySelector('[name=mkind]').value, val: r.querySelector('[name=mval]').value.trim() })).filter(m => m.val);
@@ -187,7 +189,7 @@
       setEditMode(true); editing = { slug, data: d }; pf.load.value = slug;
       const s = d.scalars;
       pf.slug.value = slug; pf.slug.dataset.manual = '1';
-      for (const k of ['title', 'title_en', 'year', 'type', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) if (pf[k]) pf[k].value = s[k] || '';
+      for (const k of ['title', 'title_en', 'year', 'type', 'medium', 'medium_en', 'cv', 'period', 'event', 'event_en', 'venue', 'venue_en', 'role', 'role_en']) if (pf[k]) pf[k].value = s[k] || '';
       if (!s.cv) pf.cv.value = 'false';
       pf.period.dataset.manual = '1';
       pf.featured.checked = s.featured === 'true';
@@ -272,5 +274,30 @@
       await writeText('_data', 'bio.yml', yml);
       st.textContent = '저장됨. /cv/ 에서 확인하세요.'; st.className = 'ok';
     } catch (err) { st.textContent = '오류: ' + err.message; st.className = 'err'; }
+  });
+
+  // ── 사이트에 올리기 (로컬 도우미 127.0.0.1:4001 → ./publish.sh) ──────
+  const HELPER = 'http://127.0.0.1:4001';
+  const pubReady = $('#publish-ready'), pubFallback = $('#publish-fallback'), pubChanges = $('#publish-changes'), pubLog = $('#publish-log');
+  async function refreshStatus() {
+    try {
+      const r = await fetch(HELPER + '/status', { cache: 'no-store' }); if (!r.ok) throw 0;
+      const t = (await r.text()).trim(); const n = t ? t.split('\n').length : 0;
+      pubReady.hidden = false; pubFallback.hidden = true;
+      pubChanges.textContent = n ? `올릴 변경 사항 ${n}개 파일:` : '올릴 변경 사항이 없습니다.';
+      if (n) { const ul = document.createElement('ul'); ul.className = 'dim'; t.split('\n').forEach(l => { const li = document.createElement('li'); li.textContent = l.trim(); ul.appendChild(li); }); pubChanges.appendChild(ul); }
+      $('#btn-publish').disabled = !n;
+    } catch { pubReady.hidden = true; pubFallback.hidden = false; }
+  }
+  refreshStatus(); setInterval(refreshStatus, 8000);
+  $('#btn-publish').addEventListener('click', async () => {
+    const b = $('#btn-publish'); b.disabled = true; b.textContent = '올리는 중… (PDF 생성 포함, 30초쯤)';
+    pubLog.hidden = false; pubLog.textContent = '';
+    try {
+      const r = await fetch(HELPER + '/publish', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: $('#publish-message').value }) });
+      pubLog.textContent = await r.text(); pubLog.className = 'preview ' + (r.ok ? 'ok' : 'err');
+      if (r.ok) $('#publish-message').value = '';
+    } catch (e) { pubLog.textContent = '도우미 서버에 연결할 수 없습니다: ' + e.message; pubLog.className = 'preview err'; }
+    b.textContent = '사이트에 올리기'; refreshStatus();
   });
 })();

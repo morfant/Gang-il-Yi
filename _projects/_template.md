@@ -10,6 +10,8 @@ year: 2024                       # 제작/발표 연도
 type: installation               # 작업 유형: performance | installation | sound | research 중 하나
 tags: [김지연, 라이브 스트리밍]     # 그래프 뷰(/graph/) 연결용 키워드: 협업자, 기법, 주제. 기존 태그와 같은 표기를 쓰세요
 cover: /img/example_0.jpg        # 목록에 표시될 대표 이미지 (img/ 폴더의 정확한 파일명)
+medium: "빛 반응 아날로그 오실레이터 77개, 철판, 스피커"   # 매체·재료 (작품 캡션처럼). 페이지 제목 아래와 CV에 표시
+medium_en: "77 light-reactive analog oscillators, steel plate, speakers"
 
 media:                           # 임베드할 미디어 (필요한 것만 남기세요). 목록 형식(- )을 지켜 주세요.
   - youtube: "XXXXXXXXXXX"        # 유튜브 영상 ID (주소의 v= 뒤 11글자)

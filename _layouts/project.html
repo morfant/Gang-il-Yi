@@ -9,6 +9,7 @@ layout: default
       {%- if page.year %}<span>{{ page.year }}</span>{% endif -%}
       {%- if page.type %}<span class="type">{{ page.type }}</span>{% endif -%}
     </p>
+    {% if page.medium or page.medium_en %}<p class="medium">{{ page.medium }}{% if page.medium_en and page.medium_en != page.medium %}<span class="en">{{ page.medium_en }}</span>{% endif %}</p>{% endif %}
   </header>
 
   {% if page.media %}

@@ -36,6 +36,11 @@ noindex: true
     <label>유형 *<select name="type">{% assign types = site.projects | map: "type" | compact | uniq | sort %}{% for t in types %}<option>{{ t }}</option>{% endfor %}</select></label>
     <label class="check"><input type="checkbox" name="featured"> 대표 작업 (홈 상단 selected works)</label>
   </div>
+  <div class="grid2">
+    <label>매체 / 재료 (한국어)<input name="medium" placeholder="빛 반응 아날로그 오실레이터 77개, 철판, 스피커"></label>
+    <label>매체 / 재료 (영어)<input name="medium_en" placeholder="77 light-reactive analog oscillators, steel plate, speakers"></label>
+  </div>
+  <p class="dim">작품 캡션처럼 적습니다. 페이지 제목 아래와 CV 한 줄(〈제목〉, 행사, 장소 — 매체, 역할)에 들어갑니다.</p>
   <label>태그 (쉼표로 구분 — 그래프 뷰에서 연결선이 됩니다)<input name="tags" list="tag-list" placeholder="김지연, 라이브 스트리밍, 자작 하드웨어"></label>
   <datalist id="tag-list">{% assign alltags = site.projects | map: "tags" | compact | join: "," | split: "," | uniq | sort %}{% for t in alltags %}{% if t != "" %}<option value="{{ t }}">{% endif %}{% endfor %}</datalist>
   <p class="dim">이미 쓰이는 태그: {{ alltags | join: " · " }}</p>
@@ -115,13 +120,18 @@ noindex: true
   </div>
 </form>
 
-<section class="admin-publish">
+<section class="admin-publish" id="publish">
   <h2>사이트에 올리기</h2>
-  <ol>
-    <li>로컬 미리보기(<code>./preview.sh</code>)에서 결과 확인 — 홈, 프로젝트 페이지, <a href="/cv/">/cv/</a></li>
-    <li>터미널에서 <code>./publish.sh "메시지"</code> 실행 → CV PDF 재생성, 커밋, 푸시가 한 번에 됩니다</li>
-    <li>1~3분 뒤 <a href="https://gangilyi.xyz">gangilyi.xyz</a>에 반영</li>
-  </ol>
+  <p class="dim">미리보기(홈, 프로젝트 페이지, <a href="/cv/">/cv/</a>)에서 확인한 뒤 올립니다. CV PDF 재생성 → 커밋 → 푸시가 한 번에 되고, 1~3분 뒤 <a href="https://gangilyi.xyz">gangilyi.xyz</a>에 반영됩니다.</p>
+  <div id="publish-ready">
+    <p class="dim" id="publish-changes">변경 사항 확인 중…</p>
+    <div class="actions">
+      <input name="message" id="publish-message" placeholder="변경 내용 한 줄 (예: 누군가 듣고 있어 사진 추가)">
+      <button type="button" class="btn primary" id="btn-publish">사이트에 올리기</button>
+    </div>
+    <pre id="publish-log" class="preview" hidden></pre>
+  </div>
+  <p id="publish-fallback" class="dim" hidden>도우미 서버가 꺼져 있습니다. <code>./preview.sh</code>로 미리보기를 켜면 버튼이 활성화되고, 아니면 터미널에서 <code>./publish.sh "메시지"</code>를 실행하세요.</p>
 </section>
 </main>
 

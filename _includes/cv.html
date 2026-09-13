@@ -14,9 +14,10 @@ CV 본문. include 시 lang 인자를 넘깁니다: {% include cv.html lang="ko"
         {%- assign ev = p.event_en | default: p.event -%}
         {%- assign v = p.venue_en | default: p.venue -%}
         {%- assign r = p.role_en | default: p.role -%}
-        {%- capture line -%}<a href="{{ p.url | relative_url }}"><i>{{ t }}</i></a>{%- if ev %}, {{ ev }}{% endif -%}{%- if v %}, {{ v }}{% endif -%}{%- if r %} — {{ r }}{% endif -%}{%- endcapture -%}
+        {%- assign md = p.medium_en | default: p.medium -%}
+        {%- capture line -%}<a href="{{ p.url | relative_url }}"><i>{{ t }}</i></a>{%- if ev %}, {{ ev }}{% endif -%}{%- if v %}, {{ v }}{% endif -%}{%- if md or r %} — {% endif -%}{{ md }}{%- if md and r %}, {% endif -%}{{ r }}{%- endcapture -%}
       {%- else -%}
-        {%- capture line -%}<a href="{{ p.url | relative_url }}">〈{{ p.title }}〉</a>{%- if p.event %}, {{ p.event }}{% endif -%}{%- if p.venue %}, {{ p.venue }}{% endif -%}{%- if p.role %} — {{ p.role }}{% endif -%}{%- endcapture -%}
+        {%- capture line -%}<a href="{{ p.url | relative_url }}">〈{{ p.title }}〉</a>{%- if p.event %}, {{ p.event }}{% endif -%}{%- if p.venue %}, {{ p.venue }}{% endif -%}{%- if p.medium or p.role %} — {% endif -%}{{ p.medium }}{%- if p.medium and p.role %}, {% endif -%}{{ p.role }}{%- endcapture -%}
       {%- endif -%}
       {%- capture entry -%}{{ period }}::{{ line }}{%- endcapture -%}
       {%- assign lines = lines | push: entry -%}

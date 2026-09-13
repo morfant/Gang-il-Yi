@@ -46,3 +46,4 @@ exclude:
   - README.md
   - CLAUDE.md
   - 사이트-관리-가이드.md
+  - _admin_helper.py
