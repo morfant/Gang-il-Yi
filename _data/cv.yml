@@ -17,10 +17,6 @@ sections:
       - period: "2024.01"
         ko: "신기술 기반 장애예술 창작실험실 〈Future Wide Open〉 쇼케이스 — 김은설 〈청각장애 인공지능〉 테크메이트, 모두예술극장, 서울"
         en: "<i>Future Wide Open</i> showcase — tech mate for Kim Eun-seol's <i>Hearing-Impaired AI</i>, Modu Art Theater, Seoul"
-      - period: "2023.10"
-        ko: "〈소리숲길 v2.0〉 (w/ Kayip), 자율주행차 환경의 MR 게임 — 2023 제로원데이 〈TIMESCAPER〉, 에스팩토리, 서울"
-        en: "<i>Soundlines v2.0</i> (with Kayip), mixed-reality game for autonomous vehicles — ZER01NE DAY 2023 “TIMESCAPER”, S-Factory, Seoul"
-        url: /projects/soundlines/
 
   - id: performance
     title_ko: 공연
