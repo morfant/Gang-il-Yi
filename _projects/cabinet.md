@@ -32,6 +32,15 @@ role_en: "multimedia performance, planning and production"
 
 캐비넷과 평균대는 각각 스스도로 모르는 곳에 감추어 잊고 싶은 것들과 그 의미가 모호한 '균형'에 대한 상징이다. 균형은 어찌할 수 없이 스스로와의 대면으로 이어지고, 감추고 싶은 마음은 잊고자 했던 더러움을 상기시킬 것이다. 이것은 그로인해 반복되는 무력함에 대한 이야기이다.
 
+Performance_1 캐비넷, 이강일
+
+Performance_2 얼굴과얼굴과얼굴, 박민희
+
+Performance_3 알기 전에는 알 수 없다, 배정식
+
+Performance_4 띠, 유석종
+
+
 ![](/img/cabinet_1.png)
 
 ![](/img/cabinet_doc_0.jpg)

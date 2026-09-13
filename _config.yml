@@ -33,7 +33,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true    # 본문에서 줄만 바꿔도 다음 줄로 (빈 줄 = 문단 간격)
   auto_ids: true
 
 encoding: "utf-8"
