@@ -7,6 +7,10 @@ Jekyll + GitHub Pages. `master`에 push하면 자동으로 빌드/배포됩니�
 
 ## 새 프로젝트 추가하는 법
 
+가장 쉬운 방법: `./preview.sh`를 켜고 크롬에서 http://127.0.0.1:4000/admin/ 을 열어 폼으로 추가 → `./publish.sh`로 배포. (가이드 0번 참고)
+
+직접 파일로 추가하려면:
+
 1. `_projects/_template.md`를 복사해서 `_projects/프로젝트이름.md`로 저장
 2. front matter(제목, 연도, 타입, 커버 이미지, 미디어 링크)를 채우기
 3. 이미지를 `img/`에 넣고 본문에 `![](/img/파일명.jpg)` 형태로 추가

@@ -10,10 +10,10 @@ year: 2024                       # 제작/발표 연도
 type: installation               # 작업 유형: performance | installation | sound | research 중 하나
 cover: /img/example_0.jpg        # 목록에 표시될 대표 이미지 (img/ 폴더의 정확한 파일명)
 
-media:                           # 임베드할 미디어 (필요한 것만 남기세요)
-  youtube: "https://www.youtube.com/watch?v=XXXXXXXXXXX"
-  soundcloud: "https://soundcloud.com/username/track-name"
-  bandcamp: "https://username.bandcamp.com/album/album-name"
+media:                           # 임베드할 미디어 (필요한 것만 남기세요). 목록 형식(- )을 지켜 주세요.
+  - youtube: "XXXXXXXXXXX"        # 유튜브 영상 ID (주소의 v= 뒤 11글자)
+  - soundcloud: "https://soundcloud.com/username/track-name"
+  - bandcamp: { album: "123456789" }   # Share/Embed 코드의 album=숫자 (트랙이면 { track: "숫자" })
 
 links:                           # 관련 링크 목록 (제목 + 주소)
   - label: "전시 정보"

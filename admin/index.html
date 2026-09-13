@@ -1,0 +1,122 @@
+---
+layout: default
+title: 관리
+permalink: /admin/
+sitemap: false
+noindex: true
+---
+<main class="container page-plain admin">
+<h1>관리</h1>
+<p class="admin-intro">프로젝트 추가, CV 항목 추가, 소개글 수정을 한 곳에서 합니다. 저장하면 내 컴퓨터의 사이트 폴더에 파일이 바로 쓰이고, 로컬 미리보기가 켜져 있으면 몇 초 뒤 반영됩니다. 사이트에 올리려면 마지막에 터미널에서 <code>./publish.sh</code>를 실행하세요.</p>
+
+<section class="admin-connect" id="connect">
+  <button id="btn-connect" class="btn">사이트 폴더 연결</button>
+  <span id="connect-status" class="dim">Gang-il-Yi 폴더(안에 _projects, img 가 있는 폴더)를 선택하세요. 크롬에서만 동작합니다.</span>
+</section>
+
+<nav class="admin-tabs">
+  <button data-tab="project" class="on">프로젝트 추가</button>
+  <button data-tab="cvitem">CV 항목 추가 (작업 외)</button>
+  <button data-tab="bio">소개글</button>
+</nav>
+
+<!-- ───────── 프로젝트 ───────── -->
+<form id="tab-project" class="admin-tab on" autocomplete="off">
+  <h2>기본 정보</h2>
+  <div class="grid2">
+    <label>제목 (한국어) *<input name="title" required placeholder="누군가 듣고 있어"></label>
+    <label>제목 (영어)<input name="title_en" placeholder="Somebodies Are Listening, Too"></label>
+    <label>파일 이름 (영문 소문자, 밑줄) *<input name="slug" required pattern="[a-z0-9_]+" placeholder="영어 제목에서 자동 생성"></label>
+    <label>연도 *<input name="year" type="number" required min="1990" max="2100"></label>
+    <label>유형 *<select name="type">{% assign types = site.projects | map: "type" | compact | uniq | sort %}{% for t in types %}<option>{{ t }}</option>{% endfor %}</select></label>
+    <label class="check"><input type="checkbox" name="featured"> 대표 작업 (홈 상단 selected works)</label>
+  </div>
+
+  <h2>이미지</h2>
+  <div class="grid2">
+    <label>커버 이미지 (홈 카드용)<input type="file" name="cover" accept="image/*"></label>
+    <label>추가 이미지 (본문에 순서대로 삽입)<input type="file" name="images" accept="image/*" multiple></label>
+  </div>
+  <p class="dim">이미지는 <code>img/파일이름_0.jpg</code>, <code>_1.jpg</code>… 로 복사됩니다. 웹용으로 가로 2000px 이하, 1MB 안쪽을 권합니다.</p>
+
+  <h2>미디어 임베드</h2>
+  <div id="media-rows"></div>
+  <button type="button" class="btn small" data-add="media">+ 미디어</button>
+  <p class="dim">YouTube: 주소 그대로 붙이면 ID를 추출합니다. SoundCloud: 트랙/앨범 주소. Bandcamp: Share/Embed 코드의 <code>album=숫자</code> 또는 <code>track=숫자</code>.</p>
+
+  <h2>링크 (버튼으로 표시)</h2>
+  <div id="link-rows"></div>
+  <button type="button" class="btn small" data-add="link">+ 링크</button>
+
+  <h2>본문</h2>
+  <label>설명 (한국어)<textarea name="body_ko" rows="7" placeholder="첫 줄에 한 줄 요약 + 장소, 날짜. 그 아래 자유롭게."></textarea></label>
+  <label>설명 (영어)<textarea name="body_en" rows="4"></textarea></label>
+
+  <h2>CV 항목</h2>
+  <div class="grid2">
+    <label>CV 섹션<select name="cv">
+      {% for s in site.data.cv.sections %}{% if s.id != 'album' and s.id != 'grant' and s.id != 'education' and s.id != 'work' %}<option value="{{ s.id }}">{{ s.title_ko }} ({{ s.id }})</option>{% endif %}{% endfor %}
+      <option value="false">CV에 넣지 않음</option></select></label>
+    <label>기간 (표시용) *<input name="period" placeholder="2025.08 – 10 / 2019.11 – 2020.01" required></label>
+    <label>장소 (한국어)<input name="venue" placeholder="문화공간 양, 제주"></label>
+    <label>장소 (영어)<input name="venue_en" placeholder="Culture Space Yang, Jeju"></label>
+    <label>소속 행사 (한국어)<input name="event" placeholder="파라다이스아트랩 쇼케이스 2019"></label>
+    <label>소속 행사 (영어)<input name="event_en" placeholder="Paradise Art Lab Showcase 2019"></label>
+    <label>역할·협업 (한국어)<input name="role" placeholder="사운드 인스톨레이션 (w/ 김지연)"></label>
+    <label>역할·협업 (영어)<input name="role_en" placeholder="sound installation (with Ji-yeon Kim)"></label>
+  </div>
+  <p class="dim">CV 한 줄은 <b>〈제목〉, 행사, 장소 — 역할</b> 순으로 나옵니다. 기간은 항상 연도부터 적어야 최신순 정렬이 맞습니다.</p>
+
+  <div class="actions">
+    <button type="button" class="btn" id="btn-preview">미리보기</button>
+    <button type="submit" class="btn primary">저장</button>
+    <span id="project-status" class="dim"></span>
+  </div>
+  <pre id="project-preview" class="preview" hidden></pre>
+</form>
+
+<!-- ───────── CV 항목 ───────── -->
+<form id="tab-cvitem" class="admin-tab" autocomplete="off">
+  <p class="dim">워크숍, 앨범, 기금, 학력, 경력처럼 작업 페이지가 없는 항목을 <code>_data/cv.yml</code>에 추가합니다.</p>
+  <div class="grid2">
+    <label>섹션<select name="section">{% for s in site.data.cv.sections %}<option value="{{ s.id }}">{{ s.title_ko }} / {{ s.title_en }}</option>{% endfor %}</select></label>
+    <label>기간 *<input name="period" required placeholder="2024.09 – / 2022.06 / 2013"></label>
+  </div>
+  <label>한국어 한 줄 *<input name="ko" required placeholder="코딩 워크숍 〈알고리즘 식물학〉, 서교예술실험센터"></label>
+  <label>영어 한 줄 *<input name="en" required placeholder="Coding workshop &lt;i&gt;Algorithmic Botany&lt;/i&gt;, Seogyo Art Experiment Center"></label>
+  <label>링크 (선택)<input name="url" placeholder="https://…  또는 /projects/슬러그/"></label>
+  <div class="actions">
+    <button type="submit" class="btn primary">cv.yml에 추가</button>
+    <span id="cvitem-status" class="dim"></span>
+  </div>
+</form>
+
+<!-- ───────── 소개글 ───────── -->
+<form id="tab-bio" class="admin-tab" autocomplete="off">
+  <p class="dim">CV 페이지와 PDF 상단에 들어가는 소개글입니다 (<code>_data/bio.yml</code>).</p>
+  <label>한국어<textarea name="ko" rows="6"></textarea></label>
+  <label>영어<textarea name="en" rows="6"></textarea></label>
+  <div class="actions">
+    <button type="button" class="btn" id="btn-bio-load">현재 내용 불러오기</button>
+    <button type="submit" class="btn primary">저장</button>
+    <span id="bio-status" class="dim"></span>
+  </div>
+</form>
+
+<section class="admin-publish">
+  <h2>사이트에 올리기</h2>
+  <ol>
+    <li>로컬 미리보기(<code>./preview.sh</code>)에서 결과 확인 — 홈, 프로젝트 페이지, <a href="/cv/">/cv/</a></li>
+    <li>터미널에서 <code>./publish.sh "메시지"</code> 실행 → CV PDF 재생성, 커밋, 푸시가 한 번에 됩니다</li>
+    <li>1~3분 뒤 <a href="https://gangilyi.xyz">gangilyi.xyz</a>에 반영</li>
+  </ol>
+</section>
+</main>
+
+<script>
+window.ADMIN_DATA = {
+  existing: {{ site.projects | map: "url" | jsonify }},
+  sections: {{ site.data.cv.sections | map: "id" | jsonify }}
+};
+</script>
+<script src="{{ '/assets/js/admin.js' | relative_url }}"></script>
