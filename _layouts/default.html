@@ -14,6 +14,7 @@
   <script defer src="{{ '/assets/js/home-sketch.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/js/home-filter.js' | relative_url }}"></script>
   {% endif %}
+  {% if page.layout == 'project' %}<script defer src="{{ '/assets/js/lightbox.js' | relative_url }}"></script>{% endif %}
 </head>
 <body class="{{ page.body_class | default: '' }}">
   {% include nav.html %}
