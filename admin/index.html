@@ -53,11 +53,12 @@ noindex: true
   <label>설명 (영어)<textarea name="body_en" rows="4"></textarea></label>
 
   <h2>CV 항목</h2>
+  <p class="dim">따로 CV를 쓰는 것이 아닙니다. 이 프로젝트가 CV에 한 줄로 나올 때 필요한 정보(기간·장소·역할)를 칸으로 나눠 적는 것이고, 저장하면 /cv/ 와 PDF에 자동으로 들어갑니다.</p>
   <div class="grid2">
     <label>CV 섹션<select name="cv">
       {% for s in site.data.cv.sections %}{% if s.id != 'album' and s.id != 'grant' and s.id != 'education' and s.id != 'work' %}<option value="{{ s.id }}">{{ s.title_ko }} ({{ s.id }})</option>{% endif %}{% endfor %}
       <option value="false">CV에 넣지 않음</option></select></label>
-    <label>기간 (표시용) *<input name="period" placeholder="2025.08 – 10 / 2019.11 – 2020.01" required></label>
+    <label>기간 (표시용, 연도에서 자동 채움) *<input name="period" placeholder="2025.08 – 10 / 2019.11 – 2020.01" required></label>
     <label>장소 (한국어)<input name="venue" placeholder="문화공간 양, 제주"></label>
     <label>장소 (영어)<input name="venue_en" placeholder="Culture Space Yang, Jeju"></label>
     <label>소속 행사 (한국어)<input name="event" placeholder="파라다이스아트랩 쇼케이스 2019"></label>

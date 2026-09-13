@@ -78,6 +78,9 @@
   const pf = $('#tab-project');
   pf.title_en.addEventListener('input', () => { if (!pf.slug.dataset.manual) pf.slug.value = slugify(pf.title_en.value); });
   pf.slug.addEventListener('input', () => { pf.slug.dataset.manual = pf.slug.value ? '1' : ''; });
+  // 연도를 넣으면 기간(period)이 비어 있을 때 자동으로 채움 — 월까지 적고 싶으면 뒤에 .08 처럼 덧붙이기
+  pf.year.addEventListener('input', () => { if (!pf.period.dataset.manual) pf.period.value = pf.year.value; });
+  pf.period.addEventListener('input', () => { pf.period.dataset.manual = pf.period.value && pf.period.value !== pf.year.value ? '1' : ''; });
 
   function collectProject() {
     const v = n => pf[n].value.trim();
