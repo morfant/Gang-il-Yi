@@ -168,18 +168,25 @@
     const cover = pf.cover.files[0] || null, images = [...pf.images.files];
     if (cover) { const name = `${slug}_${n++}${ext(cover)}`; files.push({ name, file: cover }); s.cover = `/img/${name}`; }
     const added = images.map(f => { const name = `${slug}_${n++}${ext(f)}`; files.push({ name, file: f }); return `![](/img/${name})`; });
-    if (added.length) body = (body.replace(/\s+$/, '') + '\n\n' + added.join('\n')).trim();
+    const sep = pf.img_layout.value === 'single' ? '\n\n' : '\n';
+    if (added.length) body = (body.replace(/\s+$/, '') + '\n\n' + added.join(sep)).trim();
     d.body = body;
     return { slug, md: serializeProject(d), files };
   }
 
   // ── 기존 작업 불러오기 ────────────────────────────────────────────
   function setEditMode(on) {
-    $('#body-new').hidden = on; $('#body-edit').hidden = !on; $('#btn-new').hidden = !on;
+    $('#body-new').hidden = on; $('#body-edit').hidden = !on; $('#btn-new').hidden = !on; $('#img-reflow').hidden = !on;
     pf.slug.readOnly = on; pf.title.required = true;
     if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; }
   }
   $('#btn-new').addEventListener('click', () => setEditMode(false));
+  // 본문의 이미지 줄 배치 바꾸기: 격자(연속) ↔ 단독(빈 줄로 분리)
+  const IMG = '!\\[[^\\]]*\\]\\([^)]+\\)';
+  const toGrid = t => { let prev; do { prev = t; t = t.replace(new RegExp(`(${IMG})[ \\t]*\\n[ \\t]*\\n+(?=${IMG})`, 'g'), '$1\n'); } while (t !== prev); return t; };
+  const toSingle = t => t.replace(new RegExp(`(${IMG})[ \\t]*\\n(?=${IMG})`, 'g'), '$1\n\n');
+  $('#btn-img-grid').addEventListener('click', () => { pf.body_raw.value = toGrid(pf.body_raw.value); });
+  $('#btn-img-single').addEventListener('click', () => { pf.body_raw.value = toSingle(pf.body_raw.value); });
   pf.load.addEventListener('change', async () => {
     const slug = pf.load.value; if (!slug) return;
     try {

@@ -50,7 +50,17 @@ noindex: true
     <label>커버 이미지 (홈 카드용)<span id="cover-current" class="dim"></span><input type="file" name="cover" accept="image/*"></label>
     <label>추가 이미지 (본문에 순서대로 삽입)<input type="file" name="images" accept="image/*" multiple></label>
   </div>
-  <p class="dim">이미지는 <code>img/파일이름_0.jpg</code>, <code>_1.jpg</code>… 로 복사됩니다. 웹용으로 가로 2000px 이하, 1MB 안쪽을 권합니다.</p>
+  <div class="radio-row">
+    <span class="dim">추가 이미지 배치:</span>
+    <label class="check"><input type="radio" name="img_layout" value="grid" checked> 격자 (같은 크기 타일로 나란히)</label>
+    <label class="check"><input type="radio" name="img_layout" value="single"> 단독 (한 장씩 세로로, 원래 크기)</label>
+  </div>
+  <div class="actions" id="img-reflow" hidden>
+    <span class="dim">본문에 이미 있는 이미지:</span>
+    <button type="button" class="btn small" id="btn-img-grid">모두 격자로 모으기</button>
+    <button type="button" class="btn small" id="btn-img-single">모두 하나씩 나누기</button>
+  </div>
+  <p class="dim">이미지는 <code>img/파일이름_0.jpg</code>, <code>_1.jpg</code>… 로 복사됩니다. 웹용으로 가로 2000px 이하, 1MB 안쪽을 권합니다. 격자 = 이미지 줄을 빈 줄 없이 붙임, 단독 = 사이에 빈 줄.</p>
 
   <h2>미디어 임베드</h2>
   <div id="media-rows"></div>

@@ -344,6 +344,8 @@ img { max-width: 100%; height: auto; display: block; }
 .admin h2 { font-size: 1rem; margin-top: 2rem; }
 .admin label { display: block; font-size: 0.85rem; color: var(--fg-dim); margin: 0.6rem 0; }
 .admin label.check { display: flex; align-items: center; gap: 0.5rem; color: var(--fg); margin-top: 1.6rem; }
+.admin .radio-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.2rem; margin: 0.6rem 0; }
+.admin .radio-row label.check { margin: 0; font-size: 0.9rem; }
 .admin input:not([type=checkbox]):not([type=file]), .admin select, .admin textarea {
   display: block; width: 100%; margin-top: 0.25rem; padding: 0.5rem 0.6rem; font: inherit; font-size: 0.95rem;
   color: var(--fg); background: var(--bg-soft); border: 1px solid var(--line); border-radius: 6px; }
