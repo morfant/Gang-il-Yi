@@ -5,8 +5,8 @@ year: 2010
 type: installation
 tags: [전자음악, 자작 하드웨어]
 cover: /img/thousand_lonely_events_0.png
-medium: "적외선 거리센서, 스피커, SuperCollider"
-medium_en: "Infrared distance sensor, speaker, supercollider"
+medium: "적외선 거리센서, 컴퓨터, SuperCollider, 사운드, 가변 설치"
+medium_en: "infrared distance sensors, computer, SuperCollider, sound, dimensions variable"
 media:
   - youtube: "5b6FJDW8WTY"
   - soundcloud: "https://soundcloud.com/morp/sets/the-adventure-of-ophelia"
