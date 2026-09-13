@@ -6,6 +6,8 @@ tags: [센서, 오브제, 멀티미디어 퍼포먼스]   # 그래프 뷰 연결
 media:
   - vimeo: "19301122"
 cover: /img/in_visible_0.png
+medium: "철제 앵글 큐브, 열쇠와 자물쇠, 적외선 거리센서, 사운드"
+medium_en: "steel-frame cube, key and lock, infrared distance sensor, sound"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2010.12"

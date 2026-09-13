@@ -5,6 +5,8 @@ year: 2018
 type: installation
 tags: [데이터, 자작 하드웨어, 시각화]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/n2b_main.png
+medium: "열전사 프린터, p5.js"
+medium_en: "thermal printer, p5.js"
 links:
   - label: "video (Google Drive)"
     url: "https://drive.google.com/file/d/1e2rGc_futrYHMsClwydtaxQa6nLCU-vW/view?usp=sharing"

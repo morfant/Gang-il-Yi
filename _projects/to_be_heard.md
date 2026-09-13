@@ -6,6 +6,8 @@ featured: true
 type: installation
 tags: [UNBARRIER, 접근성, 영상, 듣기]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/to_be_heard_0.png
+medium: "2채널 영상, 수어 통역 웨어러블 디바이스"
+medium_en: "2-channel video, wearable sign-language interpretation device"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2020.10 – 11"
@@ -13,8 +15,8 @@ event: "ZER01NE OPEN STUDIO with P:LAYERS"
 event_en: "ZER01NE OPEN STUDIO with P:LAYERS"
 venue: "제로원, 서울"
 venue_en: "ZER01NE, Seoul"
-role: "2채널 영상 (w/ UNBARRIER)"
-role_en: "two-channel video (with UNBARRIER)"
+role: "w/ UNBARRIER"
+role_en: "with UNBARRIER"
 ---
 
 제로원 오픈스튜디오 2020 — 수어통역 디바이스를 활용한 2채널 영상 작업 &lt;말할 수 있기 위해서&gt; (To be heard). 강남 드림플러스 6층 제로원, 2020.10 - 2020.11.

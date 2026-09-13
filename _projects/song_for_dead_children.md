@@ -4,6 +4,8 @@ title_en: "Song for Dead Children: Goodbye"
 year: 2021
 type: sound
 tags: [전자음악, 데이터, 알고리즘 작곡]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
+medium: "세월호 항로 데이터, 알고리즘 작곡"
+medium_en: "Sewol Ferry route data, algorithmic composition"
 media:
   - soundcloud: "https://soundcloud.com/thisriver/51a"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)

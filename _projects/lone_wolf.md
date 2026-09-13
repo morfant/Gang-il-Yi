@@ -6,6 +6,8 @@ featured: true
 type: performance
 tags: [레이저, 게임, 오디오비주얼, 영상]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/lone_wolf_0.png
+medium: "레이저 포인터, 전동 비비탄 총, openFrameworks, OpenCV, 1채널 영상 프로젝션, 사운드"
+medium_en: "laser pointer, airsoft gun, openFrameworks, OpenCV, single-channel video projection, sound"
 media:
   - youtube: "kpuLvNyF_CU"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
@@ -15,8 +17,8 @@ event: "오디오비주얼 페스티벌 〈WeSA 2015〉"
 event_en: "WeSA 2015"
 venue: "5.5 UNDER, 서울"
 venue_en: "5.5 UNDER, Seoul"
-role: "레이저 포인팅 FPS 멀티미디어 퍼포먼스"
-role_en: "laser-pointing FPS multimedia performance"
+role: "게임 형식의 오디오비주얼 퍼포먼스"
+role_en: "game-form audiovisual performance"
 ---
 
 레이저 포인팅 디텍션 시스템을 활용한 FPS 멀티미디어 퍼포먼스 &lt;Lone wolf&gt;. 오디오비주얼 페스티벌 &lt;WeSA&gt; 참여, 5.5 UNDER, 2015.12.

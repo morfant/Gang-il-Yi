@@ -7,6 +7,8 @@ tags: [코딩 교육, 게임, 웹]   # 그래프 뷰 연결용 키워드 (협업
 media:
   - youtube: "l-T-_zM6vyE"
 cover: /img/messengers_0.png
+medium: "p5.js"
+medium_en: "p5.js"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: workshop
 period: "2019.11"

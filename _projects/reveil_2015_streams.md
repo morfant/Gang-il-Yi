@@ -7,6 +7,8 @@ links:
   - label: "web page (soundtent.org)"
     url: "http://soundtent.org/2015/streams/streams_2015_UTC+9_jeju.html"
 cover: /img/reveil_2015_streams_0.png
+medium: "라이브 오디오 스트리밍"
+medium_en: "live audio streaming"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2015.05"

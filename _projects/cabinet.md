@@ -6,6 +6,7 @@ type: performance
 tags: [오브제, 멀티미디어 퍼포먼스]
 cover: /img/cabinet_0.png
 medium: "철제 캐비넷, 평행봉, 센서, 프로젝터"
+medium_en: "steel cabinet, parallel bars, sensors, projector"
 featured: true
 media:
   - youtube: "jBUjoCyaFWs"

@@ -5,6 +5,8 @@ year: 2012
 type: performance
 tags: [업사이클라운드업, 아날로그 오실레이터, 빛 반응, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/recycle_of_attachment.jpg
+medium: "빛 반응 아날로그 오실레이터, 형광등, 사운드"
+medium_en: "light-reactive analog oscillators, fluorescent lamps, sound"
 media:
   - vimeo: "52057509"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
@@ -14,8 +16,8 @@ event: "다매체 공연 〈업사이클라운드업 vol.1〉"
 event_en: "Upcycleroundup vol. 1"
 venue: "문래예술공장, 서울"
 venue_en: "Mullae Art Factory, Seoul"
-role: "형광등과 빛 반응 아날로그 오실레이터 라이브 퍼포먼스"
-role_en: "live performance with fluorescent lights and light-reactive analog oscillators"
+role: "라이브 퍼포먼스"
+role_en: "live performance"
 ---
 
 형광등과 빛반응 아날로그 오실레이터를 활용한 라이브 퍼포먼스 &lt;애착의 재활용&gt;. 다매체 공연 &lt;업사이클라운드업 vol.1 - 업사이클라운드업&gt; 참여, 문래예술공장, 2012.10.

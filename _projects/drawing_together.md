@@ -4,6 +4,8 @@ year: 2022
 type: workshop
 tags: [코딩 교육, 접근성, 게임, 웹]
 cover: /img/drawing_together_0.png
+medium: "p5.js"
+medium_en: "p5.js"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: workshop
 period: "2022.04 – 05"

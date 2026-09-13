@@ -5,6 +5,8 @@ year: 2022
 type: workshop
 tags: [코딩 교육, 접근성, 웹]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/future_club_0.png
+medium: "p5.js"
+medium_en: "p5.js"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: workshop
 period: "2022.07 – 08"

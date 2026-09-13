@@ -5,6 +5,8 @@ year: 2011
 type: installation
 tags: [아날로그 오실레이터, 빛 반응, 자작 하드웨어, 네트워크]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/cncs_0.png
+medium: "빛 반응 아날로그 오실레이터 모듈 50개, 상자, 사운드, 가변 설치"
+medium_en: "50 light-reactive analog oscillator modules, boxes, sound, dimensions variable"
 links:
   - label: "video (YouTube playlist)"
     url: "https://www.youtube.com/playlist?list=PLqefid9iG-IhB5LLLBlQaiguh5PGs8-aB"

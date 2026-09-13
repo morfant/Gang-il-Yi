@@ -5,6 +5,8 @@ year: 2016
 type: performance
 tags: [업사이클라운드업, 시각화, 영상]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/world_citizen_0.jpg
+medium: "스티로폼, 수조, 피에조 마이크, 실시간 비주얼, 2채널 사운드, 1채널 영상 프로젝션"
+medium_en: "styrofoam, water tank, piezo microphones, real-time visuals, 2-channel sound, single-channel video projection"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2016.11"

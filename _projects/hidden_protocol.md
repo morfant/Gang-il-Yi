@@ -5,6 +5,8 @@ year: 2019
 type: installation
 tags: [룹앤테일, AI, 게임, 관객 참여]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/hidden_protocol_0.jpg
+medium: "스마트폰 IMU 기반 프로젝션 위치 추적, SuperCollider, 게임, 프로젝션, 사운드"
+medium_en: "smartphone-IMU projection tracking, SuperCollider, game, projection, sound"
 links:
   - label: "code: controller server (GitHub)"
     url: "https://github.com/morfant/xyfi_sound"
@@ -17,8 +19,8 @@ event: "파라다이스아트랩 쇼케이스 2019"
 event_en: "Paradise Art Lab Showcase 2019"
 venue: "인천 스튜디오 파라다이스"
 venue_en: "Studio Paradise, Incheon"
-role: "머신러닝 기반 관객참여형 게임 (as 룹앤테일)"
-role_en: "machine-learning-based participatory game (as Loopntale)"
+role: "프로젝션 위치 추적, 사운드 (as 룹앤테일)"
+role_en: "projection tracking and sound (as Loopntale)"
 ---
 
 머신러닝을 활용한 관객참여형 멀티미디어 게임 &lt;히든프로토콜&gt; / Machine learning related simulation &lt;Hidden protocol&gt;. 파라다이스아트랩 쇼케이스 2019 참여 (as 룹앤테일), 인천 스튜디오 파라다이스, 2019.10 - 11.

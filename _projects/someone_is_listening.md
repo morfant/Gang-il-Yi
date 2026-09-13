@@ -9,12 +9,14 @@ links:
   - label: "web (stream-paint-poem)"
     url: "https://morfant.github.io/stream-paint-poem/"
 cover: /img/someone_is_listening_0.png
+medium: "야외 상시 오디오 스트리머, 실시간 사운드 시각화, 텍스트(약 20분), 웹"
+medium_en: "outdoor audio streamer, real-time sound visualization, text (approx. 20 min), web"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2025.08 – 10"
 venue: "문화공간 양, 제주"
 venue_en: "Culture Space Yang, Jeju"
-role: "웨더리포트(김지연, 이강일) 전시"
+role: "웨더리포트(김지연, 이강일)"
 role_en: "as Weather Report, with Ji-yeon Kim"
 ---
 

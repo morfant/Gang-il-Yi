@@ -10,13 +10,15 @@ links:
   - label: "code & data (GitHub)"
     url: "https://github.com/morfant/sammelungen"
 cover: /img/there_are_lights_0.png
+medium: "세월호 항로 데이터, 알고리즘 작곡"
+medium_en: "Sewol Ferry route data, algorithmic composition"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2015.12"
 event: "오디오비주얼 페스티벌 〈WeSA 2015〉"
 event_en: "WeSA 2015"
-role: "데이터를 이용한 전자음악 작곡"
-role_en: "data-driven electronic music composition"
+role: "전자음악 작곡"
+role_en: "electronic music composition"
 ---
 
 데이터를 이용한 전자음악 작곡 &lt;There are lights that never go out&gt;. 2015 WESA festival 참여, 2015.12.

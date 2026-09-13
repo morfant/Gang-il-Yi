@@ -10,6 +10,8 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2012_3_see_and_sing"
 cover: /img/see_and_sing_0.jpg
+medium: "자작 빛 반응 아날로그 오실레이터, 카메라 기반 실시간 형상 인식, 빛 제어용 프로젝션"
+medium_en: "self-built light-reactive analog oscillators, real-time camera-based shape recognition, projection as light control"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2012.03"

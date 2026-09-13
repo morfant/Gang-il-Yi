@@ -9,6 +9,8 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2012_6_mixture"
 cover: /img/mixture_0.png
+medium: "자작 오실레이터, 키넥트 센서, openFrameworks, 주변의 사물들"
+medium_en: "self-built oscillators, Kinect sensor, openFrameworks, found objects"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2012.06"

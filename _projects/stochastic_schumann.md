@@ -10,6 +10,8 @@ links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/schumann_like_with_probability/-/tree/master"
 cover: /img/stochastic_schumann_0.png
+medium: "〈시인의 사랑〉 확률 분석 데이터, 알고리즘 작곡"
+medium_en: "probabilistic analysis of Schumann’s Dichterliebe, algorithmic composition"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2019.12"

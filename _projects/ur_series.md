@@ -5,6 +5,8 @@ year: 2013
 type: performance
 tags: [업사이클라운드업, 아날로그 오실레이터, 빛 반응, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/UR_4.jpg
+medium: "빛 반응 아날로그 오실레이터, 스텝 모터, 백열등, 사운드"
+medium_en: "light-reactive analog oscillators, stepper motors, incandescent lamps, sound"
 media:
   - youtube: "djfAWeTMEAc"
 links:
@@ -17,8 +19,8 @@ cv: performance
 period: "2012 – 2016"
 venue: "문래예술공장 외, 서울"
 venue_en: "Mullae Art Factory and other venues, Seoul"
-role: "빛 반응 아날로그 오실레이터를 활용한 멀티미디어 퍼포먼스 시리즈"
-role_en: "multimedia performance series with light-reactive analog oscillators"
+role: "멀티미디어 퍼포먼스 시리즈"
+role_en: "multimedia performance series"
 ---
 
 <!-- This combined page collects all UR_* works (Bright Night, Motor 4, Obsolete Future, Sunyoudo). It may be split into separate project pages later. -->

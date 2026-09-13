@@ -9,11 +9,13 @@ links:
   - label: "Round, Convex, them (janehwang.com)"
     url: "https://janehwang.com/Round-Convex-them"
 cover: /img/round_convex_them_0.png
+medium: "SuperCollider"
+medium_en: "SuperCollider"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2022.06"
-role: "〈Round, Convex, them〉을 위한 음악 작곡"
-role_en: "music composition"
+role: "음악·사운드 제작"
+role_en: "music and sound"
 ---
 
 Round, Convex, them 을 위한 BGM 작곡. 2022.6.

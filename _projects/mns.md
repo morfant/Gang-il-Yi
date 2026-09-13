@@ -5,6 +5,8 @@ year: 2017
 type: installation
 tags: [김지연, 웨더리포트, 라이브 스트리밍, 네트워크, 자작 하드웨어]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/mns_0.jpg
+medium: "자작 오디오 스트리머, 마이크, 스피커, 메트로놈, 인터넷, 3개 장소"
+medium_en: "custom audio streamers, microphones, speakers, metronomes, internet, three sites"
 media:
   - youtube: "wYU9EeEITBQ"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)

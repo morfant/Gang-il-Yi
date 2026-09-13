@@ -6,6 +6,8 @@ featured: true
 type: performance
 tags: [관객 참여, 센서, 스마트폰, 게임]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/cbcb_main.jpg
+medium: "IMU 센서를 넣은 공, 관객 스마트폰(접속 웹페이지), p5.js, node.js, 프로젝션, 사운드"
+medium_en: "balls with embedded IMU sensors, audience smartphones (web page), p5.js, node.js, projection, sound"
 media:
   - youtube: "-8mqZjqoUN4"
 links:

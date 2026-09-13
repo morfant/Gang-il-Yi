@@ -5,6 +5,8 @@ year: 2017
 type: sound
 tags: [김지연, 라이브 스트리밍, 웹, 스마트폰, 시각화]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/transparent_music_0.jpg
+medium: "라이브 오디오 스트리밍, 웹 기반 스마트폰 앱, 1채널 영상"
+medium_en: "live audio streaming, web-based smartphone app, single-channel video"
 media:
   - youtube: "wXxLBe9WCtQ"
   - youtube: "f401RPKSiqw"

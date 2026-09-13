@@ -5,6 +5,8 @@ year: 2015
 type: installation
 tags: [웹, 설치]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
 cover: /img/whispering_gallery.jpg
+medium: "웹페이지, 센서를 부착한 라즈베리파이, 사운드"
+medium_en: "web page, Raspberry Pis with sensors, sound"
 media:
   - vimeo: "124137674"
 links:
