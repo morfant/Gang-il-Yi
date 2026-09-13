@@ -365,6 +365,9 @@ img { max-width: 100%; height: auto; display: block; }
 .admin [hidden] { display: none !important; }
 .admin .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .admin .btn.small { font-size: 0.85rem; padding: 0.3rem 0.7rem; margin-top: 0.3rem; }
+.admin .tr-row { display: flex; align-items: center; gap: 0.6rem; margin: 0.35rem 0 0; }
+.admin .tr-row .btn.small { margin: 0; font-size: 0.78rem; padding: 0.2rem 0.55rem; }
+.admin .tr-all { margin-top: 0.8rem; }
 .admin .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; margin-top: 1.6rem; }
 .admin .preview { margin-top: 1rem; padding: 1rem; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px; font-size: 0.82rem; line-height: 1.5; overflow-x: auto; white-space: pre-wrap; }
 .admin-load { display: flex; flex-wrap: wrap; align-items: end; gap: 0.6rem 1rem; padding: 0.8rem 1rem; margin-top: 1.2rem; background: var(--bg-soft); border-radius: 8px; }

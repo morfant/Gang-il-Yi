@@ -283,6 +283,46 @@
     } catch (err) { st.textContent = '오류: ' + err.message; st.className = 'err'; }
   });
 
+  // ── 한→영 자동 번역 (크롬 내장 온디바이스 Translator API, 키·비용 없음) ────
+  const PAIRS = [['title', 'title_en'], ['medium', 'medium_en'], ['venue', 'venue_en'], ['event', 'event_en'], ['role', 'role_en']];
+  let translator = null;
+  async function getTranslator(onProgress) {
+    if (translator) return translator;
+    if (!('Translator' in self)) throw new Error('이 크롬에는 내장 번역기가 없습니다 (크롬 138 이상 필요).');
+    const avail = await Translator.availability({ sourceLanguage: 'ko', targetLanguage: 'en' });
+    if (avail === 'unavailable') throw new Error('한→영 번역 모델을 쓸 수 없습니다.');
+    translator = await Translator.create({ sourceLanguage: 'ko', targetLanguage: 'en', monitor(m) { m.addEventListener('downloadprogress', e => onProgress && onProgress(e.loaded)); } });
+    return translator;
+  }
+  async function translateInto(koEl, enEl, statusEl) {
+    const src = koEl.value.trim(); if (!src) { statusEl.textContent = '한국어 칸이 비어 있습니다.'; return; }
+    try {
+      statusEl.textContent = '번역 중…'; statusEl.className = 'dim';
+      const t = await getTranslator(p => { statusEl.textContent = `번역 모델 내려받는 중 ${Math.round(p * 100)}%`; });
+      enEl.value = (await t.translate(src)).trim();
+      statusEl.textContent = '번역했습니다. 표현을 확인·수정하세요.'; statusEl.className = 'ok';
+      enEl.dispatchEvent(new Event('input'));
+    } catch (e) { statusEl.textContent = '번역 실패: ' + e.message; statusEl.className = 'err'; }
+  }
+  function addTranslateButton(koEl, enEl) {
+    const label = enEl.closest('label'); if (!label) return;
+    const wrap = document.createElement('div'); wrap.className = 'tr-row';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'btn small'; b.textContent = '← 한국어에서 번역';
+    const st = document.createElement('span'); st.className = 'dim';
+    b.addEventListener('click', () => translateInto(koEl, enEl, st));
+    wrap.append(b, st); label.appendChild(wrap); // 영어 칸 바로 아래 (grid 셀 안)
+  }
+  if ('Translator' in self) {
+    PAIRS.forEach(([ko, en]) => addTranslateButton(pf[ko], pf[en]));
+    const cf = $('#tab-cvitem'); addTranslateButton(cf.ko, cf.en);
+    // 프로젝트 폼: 비어 있는 영어 칸 한 번에 채우기
+    const all = document.createElement('button'); all.type = 'button'; all.className = 'btn small'; all.textContent = '비어 있는 영어 칸 모두 번역';
+    const allSt = document.createElement('span'); allSt.className = 'dim';
+    all.addEventListener('click', async () => { for (const [ko, en] of PAIRS) if (pf[ko].value.trim() && !pf[en].value.trim()) await translateInto(pf[ko], pf[en], allSt); if (!allSt.textContent) allSt.textContent = '채울 칸이 없습니다.'; });
+    const row = document.createElement('div'); row.className = 'actions tr-all'; row.append(all, allSt);
+    $('#btn-preview').closest('.actions').before(row);
+  }
+
   // ── 사이트에 올리기 (로컬 도우미 127.0.0.1:4001 → ./publish.sh) ──────
   const HELPER = 'http://127.0.0.1:4001';
   const pubReady = $('#publish-ready'), pubFallback = $('#publish-fallback'), pubChanges = $('#publish-changes'), pubLog = $('#publish-log');
