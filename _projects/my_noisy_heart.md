@@ -3,13 +3,15 @@ title: "내 마음은 노이즈"
 title_en: "My noisy heart"
 year: 2013
 type: performance
-tags: [게임, 오디오비주얼]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
+tags: [오디오비주얼]
+cover: /img/my_noisy_heart_0.png
+medium: "프로젝터, 2ch 스피커"
+medium_en: "Projector, 2ch speaker"
 media:
   - youtube: "vPvJSugrqyA"
 links:
   - label: "code (GitLab)"
     url: "https://gitlab.com/morfant/2013_6_my_noisy_heart"
-cover: /img/my_noisy_heart_0.png
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2013.06"
