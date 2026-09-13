@@ -1,10 +1,12 @@
 ---
 title: "Cabinet"
+title_en: "Cabinet"
 year: 2011
-featured: true
 type: performance
-tags: [오브제, 멀티미디어 퍼포먼스]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
+tags: [오브제, 멀티미디어 퍼포먼스]
 cover: /img/cabinet_0.png
+medium: "철제 캐비넷, 평행봉, 센서, 프로젝터"
+featured: true
 media:
   - youtube: "jBUjoCyaFWs"
 links:
@@ -32,5 +34,7 @@ role_en: "multimedia performance, planning and production"
 ![](/img/cabinet_1.png)
 
 ![](/img/cabinet_doc_0.jpg)
+
 ![](/img/cabinet_doc_1.jpg)
+
 ![](/img/cabinet_doc_2.jpg)
