@@ -78,6 +78,26 @@
   $$('[data-add]').forEach(b => b.addEventListener('click', () => addRow(b.dataset.add)));
 
   // ── 헬퍼 ────────────────────────────────────────────────────────────
+  // 프로그램으로 값을 바꿔도 ⌘Z 되돌리기가 되도록 (execCommand 는 구식이지만 크롬에서 undo 스택을 유지하는 유일한 방법)
+  // 브라우저 되돌리기가 안 되는 경우를 위해 자체 기록도 둠: 프로그램이 바꾼 값은 ⌘Z/Ctrl+Z 로 바로 직전 값으로 복구
+  const undoLog = new WeakMap(); // el → [{before, after}]
+  function setUndoable(el, text) {
+    if (el.value === text) return;
+    const before = el.value;
+    el.focus(); el.select();
+    let ok = false; try { ok = document.execCommand('insertText', false, text); } catch (e) {}
+    if (!ok || el.value !== text) el.value = text;
+    const log = undoLog.get(el) || []; log.push({ before, after: text }); undoLog.set(el, log);
+    if (!el.dataset.undoHooked) {
+      el.dataset.undoHooked = '1';
+      el.addEventListener('keydown', e => {
+        if (!(e.key === 'z' || e.key === 'Z') || !(e.metaKey || e.ctrlKey) || e.shiftKey) return;
+        const l = undoLog.get(el) || []; const top = l[l.length - 1];
+        if (top && el.value === top.after) { e.preventDefault(); l.pop(); el.value = top.before; el.dispatchEvent(new Event('input')); }
+      });
+    }
+    el.dispatchEvent(new Event('input'));
+  }
   const q = s => '"' + String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
   const slugify = s => s.toLowerCase().normalize('NFKD').replace(/[^\x00-\x7F]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const ext = f => (f.name.match(/\.[a-z0-9]+$/i) || ['.jpg'])[0].toLowerCase().replace('jpeg', 'jpg');
@@ -196,8 +216,10 @@
   const IMG = '!\\[[^\\]]*\\]\\([^)]+\\)';
   const toGrid = t => { let prev; do { prev = t; t = t.replace(new RegExp(`(${IMG})[ \\t]*\\n[ \\t]*\\n+(?=${IMG})`, 'g'), '$1\n'); } while (t !== prev); return t; };
   const toSingle = t => t.replace(new RegExp(`(${IMG})[ \\t]*\\n(?=${IMG})`, 'g'), '$1\n\n');
-  $('#btn-img-grid').addEventListener('click', () => { pf.body_raw.value = toGrid(pf.body_raw.value); });
-  $('#btn-img-single').addEventListener('click', () => { pf.body_raw.value = toSingle(pf.body_raw.value); });
+  $('#btn-img-grid').addEventListener('click', () => setUndoable(pf.body_raw, toGrid(pf.body_raw.value)));
+  $('#btn-img-single').addEventListener('click', () => setUndoable(pf.body_raw, toSingle(pf.body_raw.value)));
+  // 불러온(또는 마지막 저장한) 원본으로 본문 되돌리기
+  $('#btn-body-revert').addEventListener('click', () => { if (editing) setUndoable(pf.body_raw, editing.data.body); });
   pf.load.addEventListener('change', async () => {
     const slug = pf.load.value; if (!slug) return;
     try {
@@ -313,9 +335,8 @@
     try {
       statusEl.textContent = '번역 중…'; statusEl.className = 'dim';
       const t = await getTranslator(p => { statusEl.textContent = `번역 모델 내려받는 중 ${Math.round(p * 100)}%`; });
-      enEl.value = (await t.translate(src)).trim();
-      statusEl.textContent = '번역했습니다. 표현을 확인·수정하세요.'; statusEl.className = 'ok';
-      enEl.dispatchEvent(new Event('input'));
+      setUndoable(enEl, (await t.translate(src)).trim());
+      statusEl.textContent = '번역했습니다. 표현을 확인·수정하세요 (⌘Z로 되돌릴 수 있음).'; statusEl.className = 'ok';
     } catch (e) { statusEl.textContent = '번역 실패: ' + e.message; statusEl.className = 'err'; }
   }
   function addTranslateButton(koEl, enEl) {

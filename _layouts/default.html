@@ -11,10 +11,10 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%2364ffb4' stroke-width='10'/><circle cx='50' cy='50' r='10' fill='%2364ffb4'/></svg>">
   {% if page.layout == 'home' or page.url == '/' %}
   <script defer src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
-  <script defer src="{{ '/assets/js/home-sketch.js' | relative_url }}"></script>
-  <script defer src="{{ '/assets/js/home-filter.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/home-sketch.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
+  <script defer src="{{ '/assets/js/home-filter.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>
   {% endif %}
-  {% if page.layout == 'project' %}<script defer src="{{ '/assets/js/lightbox.js' | relative_url }}"></script>{% endif %}
+  {% if page.layout == 'project' %}<script defer src="{{ '/assets/js/lightbox.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}"></script>{% endif %}
 </head>
 <body class="{{ page.body_class | default: '' }}">
   {% include nav.html %}
