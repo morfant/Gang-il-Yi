@@ -44,6 +44,13 @@
     if (prev && !root) { await connect(false); if (root) return; }
     await connect(true);
   });
+  // 새로고침 뒤 복원: 마지막 저장 상태 표시 + 편집 중이던 작업 다시 불러오기
+  let lastSaved = null; try { lastSaved = JSON.parse(sessionStorage.getItem('gy-last-saved') || 'null'); } catch (e) {}
+  if (lastSaved && Date.now() - lastSaved.ts < 10 * 60 * 1000) {
+    const st = $('#project-status'); st.textContent = lastSaved.text; st.className = 'ok';
+    const openBtn = $('#project-open'); openBtn.href = `/projects/${lastSaved.slug.replace(/_/g, '-')}/`; openBtn.hidden = false;
+    if (lastSaved.reopen && !new URLSearchParams(location.search).get('edit')) window.__pendingEdit = lastSaved.slug;
+  }
   const editParam = new URLSearchParams(location.search).get('edit');
   if (editParam) { window.__pendingEdit = editParam; $('#connect-status').textContent = `'${editParam}' 을(를) 불러오려면 폴더 연결이 필요합니다.`; }
   connect(false);
@@ -182,7 +189,7 @@
   function setEditMode(on) {
     $('#body-new').hidden = on; $('#body-edit').hidden = !on; $('#btn-new').hidden = !on; $('#img-reflow').hidden = !on;
     pf.slug.readOnly = on; pf.title.required = true;
-    if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; $('#project-open').hidden = true; }
+    if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; $('#project-open').hidden = true; try { sessionStorage.removeItem('gy-last-saved'); } catch (e) {} }
   }
   $('#btn-new').addEventListener('click', () => setEditMode(false));
   // 본문의 이미지 줄 배치 바꾸기: 격자(연속) ↔ 단독(빈 줄로 분리)
@@ -232,6 +239,8 @@
       await writeText('_projects', fname, md);
       st.textContent = `${editing ? '수정 저장됨' : '저장됨'}: _projects/${fname}` + (files.length ? ` + 이미지 ${files.length}개` : '') + '. 미리보기 서버가 2~3초 뒤 반영합니다.';
       const openBtn = $('#project-open'); openBtn.href = `/projects/${slug.replace(/_/g, '-')}/`; openBtn.hidden = false;
+      // 저장 → 사이트 재생성 → 미리보기가 이 페이지를 새로고침하므로, 상태를 기억해 두고 새로고침 뒤 복원
+      try { sessionStorage.setItem('gy-last-saved', JSON.stringify({ slug, ts: Date.now(), text: st.textContent, reopen: !!editing })); } catch (e) {}
       if (editing) editing.data = parseProject(md);
       st.className = 'ok';
     } catch (err) { st.textContent = '오류: ' + err.message; st.className = 'err'; }
