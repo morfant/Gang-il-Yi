@@ -3,7 +3,7 @@ title: "소리숲길 v2.0"
 title_en: "Soundlines v2.0"
 year: 2023
 type: installation
-tags: [Kayip, 김지연, MR, 게임, 자율주행, 스마트폰]
+tags: [Kayip, 김지연, MR, 게임, 자율주행]
 cover: /img/soundlines_doc_0.png
 medium: "GV80, 홀로렌즈 2, LED 스크린, 2채널 스테레오 사운드, AR 게임, 3D 애니메이션(1분 35초), 3D 프린팅, 가변 설치"
 medium_en: "GV80, HoloLens 2, LED screen, 2-channel stereo sound, AR game, 3D animation (1 min 35 sec), 3D printing, dimensions variable"
@@ -43,4 +43,4 @@ Mixed-reality multiplayer game for autonomous vehicle environments (co-planning,
 ![](/img/soundlines_doc_4.png)
 ![](/img/soundlines_doc_5.png)
 
-→ 첫 버전: [소리숲길 (2017)](/projects/soundlines/)
+→ [소리숲길 (2017)](/projects/soundlines/)
