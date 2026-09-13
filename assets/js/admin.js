@@ -178,7 +178,7 @@
   function setEditMode(on) {
     $('#body-new').hidden = on; $('#body-edit').hidden = !on; $('#btn-new').hidden = !on; $('#img-reflow').hidden = !on;
     pf.slug.readOnly = on; pf.title.required = true;
-    if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; }
+    if (!on) { editing = null; pf.reset(); $('#media-rows').innerHTML = ''; $('#link-rows').innerHTML = ''; $('#cover-current').textContent = ''; $('#edit-status').textContent = ''; $('#project-preview').hidden = true; pf.slug.dataset.manual = ''; pf.period.dataset.manual = ''; $('#project-open').hidden = true; }
   }
   $('#btn-new').addEventListener('click', () => setEditMode(false));
   // 본문의 이미지 줄 배치 바꾸기: 격자(연속) ↔ 단독(빈 줄로 분리)
@@ -226,7 +226,8 @@
       st.textContent = '저장 중…';
       for (const f of files) await writeBlob('img', f.name, f.file);
       await writeText('_projects', fname, md);
-      st.textContent = `${editing ? '수정 저장됨' : '저장됨'}: _projects/${fname}` + (files.length ? ` + 이미지 ${files.length}개` : '') + ` → 미리보기: /projects/${slug.replace(/_/g, '-')}/`;
+      st.textContent = `${editing ? '수정 저장됨' : '저장됨'}: _projects/${fname}` + (files.length ? ` + 이미지 ${files.length}개` : '') + '. 미리보기 서버가 2~3초 뒤 반영합니다.';
+      const openBtn = $('#project-open'); openBtn.href = `/projects/${slug.replace(/_/g, '-')}/`; openBtn.hidden = false;
       if (editing) editing.data = parseProject(md);
       st.className = 'ok';
     } catch (err) { st.textContent = '오류: ' + err.message; st.className = 'err'; }
