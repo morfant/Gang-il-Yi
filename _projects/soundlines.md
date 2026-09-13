@@ -2,14 +2,12 @@
 title: "소리숲길"
 title_en: "Soundlines"
 year: 2017
-featured: true
 type: sound
-tags: [Kayip, AR, 게임, 스마트폰, 웹]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
+tags: [Kayip, AR, 게임, 스마트폰, 웹]
 cover: /img/soundlines_0.png
 medium: "장소특정적 AR 사운드 앱, 스마트폰, 현장 설치"
 medium_en: "site-specific AR sound app, smartphones, site installation"
-media:
-  - youtube: "TeRWOICqVLw"
+featured: true
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2017.09 – 11"

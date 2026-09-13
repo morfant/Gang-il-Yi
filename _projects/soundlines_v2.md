@@ -7,9 +7,9 @@ tags: [Kayip, 김지연, MR, 게임, 자율주행, 스마트폰]
 cover: /img/soundlines_doc_0.png
 medium: "GV80, 홀로렌즈 2, LED 스크린, 2채널 스테레오 사운드, AR 게임, 3D 애니메이션(1분 35초), 3D 프린팅, 가변 설치"
 medium_en: "GV80, HoloLens 2, LED screen, 2-channel stereo sound, AR game, 3D animation (1 min 35 sec), 3D printing, dimensions variable"
-links:
-  - label: "video: 차량 내부 (YouTube, 9:24~)"
-    url: "https://www.youtube.com/watch?v=EYb-CskzHiI&t=564s"
+media:
+  - youtube: "TeRWOICqVLw"
+  - youtube: "EYb-CskzHiI"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2023.10"
@@ -20,6 +20,7 @@ venue_en: "S-Factory, Seoul"
 role: "공동 구상, 시나리오, 사운드 (w/ Kayip)"
 role_en: "co-concept, scenario, sound (with Kayip)"
 ---
+
 자율주행차 환경을 전제로 한 Mixed Reality게임 &lt;소리숲길 v2.0&gt; (공동기획 Kayip). 2023 현대자동차 제로원 Z-LAB &lt;TIMESCAPER&gt; 프로젝트 중, 성수동 s-factory, 2023.10.
 
 &lt;소리숲길 v2.0&gt;은 지율주행차가 주행의 과정에서 수집하는 데이터들을 바탕으로 만들어낸 증강 세계를 기반으로 작동하는 자율주행 차를 위한 멀티플레이어 게임입니다. 탑승지는 플레이어기 되어 기후위기로 인해 생태적 절멸을 맞은 세계를 재건히는 경험을 하게 됩니다.
