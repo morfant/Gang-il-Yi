@@ -12,7 +12,7 @@ media:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2012.01"
-event: "다매체 공연 〈업사이클라운드업 vol.1〉"
+event: "다매체 공연 《업사이클라운드업 vol.1》"
 event_en: "Upcycleroundup vol. 1"
 venue: "문래예술공장, 서울"
 venue_en: "Mullae Art Factory, Seoul"

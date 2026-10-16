@@ -16,7 +16,7 @@ links:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2010.10"
-event: "박민희·이강일·지민희 3인전 〈오필리아의 모험〉"
+event: "박민희·이강일·지민희 3인전 《오필리아의 모험》"
 event_en: "“Ophelia’s Adventure” (three-person exhibition)"
 venue: "갤러리 팩토리, 서울"
 venue_en: "Gallery Factory, Seoul"

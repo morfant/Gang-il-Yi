@@ -33,6 +33,7 @@ venue: "문화공간 양, 제주"          # 장소 (한국어)
 venue_en: "Culture Space Yang, Jeju"
 event: "파라다이스아트랩 쇼케이스 2024"  # 소속 전시·페스티벌·행사명 (없으면 지우세요)
 event_en: "Paradise Art Lab Showcase 2024"
+# untitled: true                 # 행사 참여일 뿐 따로 작품 제목이 없을 때: CV에서 〈제목〉 없이 행사명(event)으로 시작
 role: "사운드 인스톨레이션 (w/ 김지연)"   # 역할·형식·협업자
 role_en: "sound installation (with Ji-yeon Kim)"
 # draft_stub: true               # 아직 내용이 없는 임시 페이지일 때만 사용

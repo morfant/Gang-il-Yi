@@ -15,7 +15,7 @@ medium_en: "probabilistic analysis of Schumann’s Dichterliebe, algorithmic com
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2019.12"
-event: "현대음악 공연 〈Dichterliebe: Detachment〉"
+event: "현대음악 공연 《Dichterliebe: Detachment》"
 event_en: "contemporary music concert “Dichterliebe: Detachment”"
 venue: "AUDIOGUY, 서울"
 venue_en: "AUDIOGUY, Seoul"
@@ -23,7 +23,7 @@ role: "전자음악 작곡"
 role_en: "electronic music composition"
 ---
 
-현대음악 공연 &lt;Dichterliebe : Detachment&gt; 전자음악 작곡. AUDIOGUY, 2019.12.
+현대음악 공연 &lt;Dichterliebe: Detachment&gt; 전자음악 작곡. AUDIOGUY, 2019.12.
 
 &lt;시인의 사랑&gt;의 곡들을 분석하여 음악적 요소들의 쓰임에 대한 평균적 확률들을 구한다. 그렇게 구해진 확률들을 이용해 음악을 만든다. 이 과정에서 의식적으로 데이터 이외의 것이 개입되는 것은 최소화 하려고 노력한다.
 

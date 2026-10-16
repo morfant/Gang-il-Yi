@@ -11,7 +11,7 @@ medium_en: "2-channel video, wearable sign-language interpretation device"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2020.10 – 11"
-event: "ZER01NE OPEN STUDIO with P:LAYERS"
+event: "《ZER01NE OPEN STUDIO with P:LAYERS》"
 event_en: "ZER01NE OPEN STUDIO with P:LAYERS"
 venue: "제로원, 서울"
 venue_en: "ZER01NE, Seoul"

@@ -15,7 +15,7 @@ sections:
     title_en: Exhibitions & Installations
     items:
       - period: "2024.01"
-        ko: "신기술 기반 장애예술 창작실험실 〈Future Wide Open〉 쇼케이스 — 김은설 〈청각장애 인공지능〉 테크메이트, 모두예술극장, 서울"
+        ko: "신기술 기반 장애예술 창작실험실 《Future Wide Open》 쇼케이스 — 김은설 〈청각장애 인공지능〉 테크메이트, 모두예술극장, 서울"
         en: "<i>Future Wide Open</i> showcase — tech mate for Kim Eun-seol's <i>Hearing-Impaired AI</i>, Modu Art Theater, Seoul"
 
   - id: performance
@@ -23,11 +23,11 @@ sections:
     title_en: Performances
     items:
       - period: "2019.08"
-        ko: "〈제천국제음악영화제: 음악 들려주는 영화관〉 — 다큐멘터리 ‘투명한 음악’ 쇼케이스 공연 (w/ 김지연), 제천문화회관"
+        ko: "《제천국제음악영화제: 음악 들려주는 영화관》 — 다큐멘터리 〈투명한 음악〉 쇼케이스 공연 (w/ 김지연), 제천문화회관"
         en: "Jecheon International Music & Film Festival — showcase performance for the documentary <i>Transparent Music</i> (with Ji-yeon Kim), Jecheon Culture Center"
         url: /projects/transparent-music/
       - period: "2016.01"
-        ko: "〈단조로운 생활〉, 포터블 무선장치를 활용한 알고리즘 작곡 퍼포먼스 — 업사이클라운드업 〈선유도 – 소리의 정원〉, 선유도공원, 서울"
+        ko: "〈단조로운 생활〉, 포터블 무선장치를 활용한 알고리즘 작곡 퍼포먼스 — 업사이클라운드업 《선유도 – 소리의 정원》, 선유도공원, 서울"
         en: "<i>Monotonous Life</i>, algorithmic composition performance with portable wireless devices — Upcycleroundup “Seonyudo: Garden of Sound”, Seonyudo Park, Seoul"
         url: /projects/ur-series/
 
@@ -46,61 +46,61 @@ sections:
         ko: "한국예술종합학교 음악원 음악테크놀로지과(전문사) 출강"
         en: "Lecturer, Music Technology (MA program), School of Music, Korea National University of Arts"
       - period: "2022.06"
-        ko: "문화예술연계강좌 〈창작자의 공구함: 피지컬 컴퓨팅을 활용한 일상의 예술〉, 신촌문화발전소"
+        ko: "문화예술연계강좌 《창작자의 공구함: 피지컬 컴퓨팅을 활용한 일상의 예술》, 신촌문화발전소"
         en: "<i>The Maker's Toolbox: Everyday Art with Physical Computing</i>, Sinchon Culture Center"
         url: https://ko-kr.facebook.com/scartsspace/posts/1118360172362046/
       - period: "2021.12"
-        ko: "〈장르 세계를 떠도는 B의 탐사기〉 ‘데이터를 소리와 그림으로 만들어보기’ (슈퍼콜라이더·p5.js 워크숍), 부천문화재단"
+        ko: "《장르 세계를 떠도는 B의 탐사기》 ‘데이터를 소리와 그림으로 만들어보기’ (슈퍼콜라이더·p5.js 워크숍), 부천문화재단"
         en: "‘Turning Data into Sound and Image’, SuperCollider and p5.js workshop, Bucheon Cultural Foundation"
       - period: "2019.10 – 11"
-        ko: "코딩 워크숍 〈알고리즘 식물학〉, 서교예술실험센터"
+        ko: "코딩 워크숍 《알고리즘 식물학》, 서교예술실험센터"
         en: "Coding workshop <i>Algorithmic Botany</i>, Seogyo Art Experiment Center"
         url: https://www.openprocessing.org/user/196604#sketches
       - period: "2019.03"
-        ko: "코딩 워크숍 〈예술코딩: 컴퓨터로 만드는 그림과 소리〉, 모두의학교"
+        ko: "코딩 워크숍 《예술코딩: 컴퓨터로 만드는 그림과 소리》, 모두의학교"
         en: "Coding workshop <i>Art Coding: Image and Sound with Computers</i>, Modu School"
       - period: "2019.02"
-        ko: "예술코딩 워크숍 #5 〈알고리즘 식물학〉, 적도"
+        ko: "예술코딩 워크숍 #5 《알고리즘 식물학》, 적도"
         en: "Art Coding Workshop #5 <i>Algorithmic Botany</i>, Jeokdo"
       - period: "2018.12"
-        ko: "예술코딩 워크숍 #4 〈p5.js, 웹에 그림을 그리며 배우는 코딩의 기초〉, 적도"
+        ko: "예술코딩 워크숍 #4 《p5.js, 웹에 그림을 그리며 배우는 코딩의 기초》, 적도"
         en: "Art Coding Workshop #4 <i>p5.js: Coding Basics by Drawing on the Web</i>, Jeokdo"
       - period: "2018.11"
-        ko: "코딩 워크숍 〈알고리즘 아트: 날씨로 그리는 그림〉, 하자센터"
+        ko: "코딩 워크숍 《알고리즘 아트: 날씨로 그리는 그림》, 하자센터"
         en: "Coding workshop <i>Algorithm Art: Drawing with Weather</i>, Haja Center"
         url: https://haja.net/nowonhaja/11956
       - period: "2018.09 – 11"
-        ko: "코딩 워크숍 〈코딩으로 배우는 미디어아트〉, 모두의학교"
+        ko: "코딩 워크숍 《코딩으로 배우는 미디어아트》, 모두의학교"
         en: "Coding workshop <i>Media Art through Coding</i>, Modu School"
       - period: "2018.08"
-        ko: "예술코딩 워크숍 #3 〈전자음악의 친구, 피지컬 컴퓨팅〉, 적도"
+        ko: "예술코딩 워크숍 #3 《전자음악의 친구, 피지컬 컴퓨팅》, 적도"
         en: "Art Coding Workshop #3 <i>Physical Computing, a Friend of Electronic Music</i>, Jeokdo"
       - period: "2018.07"
-        ko: "예술코딩 워크숍 #1 〈슈콜(SuperCollider), 딱 두 가지만 배워서 만드는 가벼운 전자음악〉 / #2 〈프로세싱과 슈퍼콜라이더, 이미지와 사운드의 관계 맺기〉, 적도"
+        ko: "예술코딩 워크숍 #1 《슈콜(SuperCollider), 딱 두 가지만 배워서 만드는 가벼운 전자음악》 / #2 《프로세싱과 슈퍼콜라이더, 이미지와 사운드의 관계 맺기》, 적도"
         en: "Art Coding Workshops #1 <i>SuperCollider: Light Electronic Music with Just Two Things</i> / #2 <i>Processing & SuperCollider: Relating Image and Sound</i>, Jeokdo"
       - period: "2018.07"
-        ko: "포스트사이드 2018 〈슈콜(SuperCollider), 딱 두 가지만 배워서 만드는 가벼운 전자음악〉, 탈영역우정국"
+        ko: "포스트사이드 2018 《슈콜(SuperCollider), 딱 두 가지만 배워서 만드는 가벼운 전자음악》, 탈영역우정국"
         en: "Postside 2018 <i>SuperCollider: Light Electronic Music with Just Two Things</i>, Post Territory Ujeongguk"
       - period: "2016.07"
-        ko: "넥슨컴퓨터박물관 오픈워크숍 〈Processing〉, 제주"
+        ko: "넥슨컴퓨터박물관 오픈워크숍 《Processing》, 제주"
         en: "Open workshop <i>Processing</i>, Nexon Computer Museum, Jeju"
       - period: "2013.03 – 12"
         ko: "계원예술대학교 비디오&사운드과 출강 (공동강사 김지연)"
         en: "Lecturer, Video & Sound, Kaywon University of Art & Design (co-taught with Ji-yeon Kim)"
       - period: "2013.08"
-        ko: "제7회 창의예술캠프 〈우락부락〉 강사 (한국문화예술교육진흥원, 공동강사 김지연)"
+        ko: "제7회 창의예술캠프 《우락부락》 강사 (한국문화예술교육진흥원, 공동강사 김지연)"
         en: "Instructor, 7th Creative Arts Camp <i>Urakburak</i> (Korea Arts & Culture Education Service, with Ji-yeon Kim)"
       - period: "2013.07"
-        ko: "청소년창의캠프 〈소리를 만지자〉 공동기획·강사, 하자센터"
+        ko: "청소년창의캠프 《소리를 만지자》 공동기획·강사, 하자센터"
         en: "Youth creative camp <i>Touch the Sound</i>, co-planning and instruction, Haja Center"
       - period: "2013.03"
-        ko: "악기제작 워크숍 〈일렉트릭 칼림바와 자작 이펙터 만들기〉 공동기획·참여, 무대륙, 서울"
+        ko: "악기제작 워크숍 《일렉트릭 칼림바와 자작 이펙터 만들기》 공동기획·참여, 무대륙, 서울"
         en: "Instrument-building workshop <i>Electric Kalimba and DIY Effects</i>, co-planning, Mudaeruk, Seoul"
       - period: "2012.11"
-        ko: "백남준아트센터 토요문화학교 〈TV 실험실〉 워크숍 기획·공동강사"
+        ko: "백남준아트센터 토요문화학교 《TV 실험실》 워크숍 기획·공동강사"
         en: "Nam June Paik Art Center Saturday School <i>TV Lab</i>, workshop planning and co-instruction"
       - period: "2012.09"
-        ko: "〈미디어아트를 위한 연장통〉 워크숍 기획·참여, 대안공간 아지트, 부산"
+        ko: "《미디어아트를 위한 연장통》 워크숍 기획·참여, 대안공간 아지트, 부산"
         en: "<i>A Toolbox for Media Art</i> workshop, planning and instruction, Alternative Space Agit, Busan"
 
   - id: album
@@ -108,15 +108,15 @@ sections:
     title_en: Releases
     items:
       - period: "2024.10"
-        ko: "디지털 음원 〈솟아오른 (Soaring)〉"
+        ko: "디지털 음원 《솟아오른 (Soaring)》"
         en: "Digital release <i>Soaring</i>"
         url: https://thisriver.bandcamp.com/album/soaring
       - period: "2019.09"
-        ko: "앨범 〈Summer〉 (디지털 음원 및 CD)"
+        ko: "앨범 《Summer》 (디지털 음원 및 CD)"
         en: "Album <i>Summer</i> (digital and CD release)"
         url: https://thisriver.bandcamp.com/releases
       - period: "2008.11"
-        ko: "EP 앨범 발매 (밴드 〈미르와나〉, 기타/보컬)"
+        ko: "EP 앨범 발매 (밴드 미르와나, 기타/보컬)"
         en: "EP release (band <i>Mirwana</i>, guitar/vocals)"
 
   - id: research

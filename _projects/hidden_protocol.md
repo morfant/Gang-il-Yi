@@ -15,7 +15,7 @@ links:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2019.10 – 11"
-event: "파라다이스아트랩 쇼케이스 2019"
+event: "《파라다이스아트랩 쇼케이스 2019》"
 event_en: "Paradise Art Lab Showcase 2019"
 venue: "인천 스튜디오 파라다이스"
 venue_en: "Studio Paradise, Incheon"

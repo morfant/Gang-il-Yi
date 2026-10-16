@@ -13,7 +13,7 @@ links:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2014.01"
-event: "서울문화재단 MAP 프로젝트 〈Sounding Sounder〉"
+event: "서울문화재단 MAP 프로젝트 《Sounding Sounder》"
 event_en: "SFAC MAP Project “Sounding Sounder”"
 venue: "문래예술공장, 서울"
 venue_en: "Mullae Art Factory, Seoul"

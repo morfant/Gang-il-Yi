@@ -13,7 +13,7 @@ media:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2015.12"
-event: "오디오비주얼 페스티벌 〈WeSA 2015〉"
+event: "오디오비주얼 페스티벌 《WeSA 2015》"
 event_en: "WeSA 2015"
 venue: "5.5 UNDER, 서울"
 venue_en: "5.5 UNDER, Seoul"

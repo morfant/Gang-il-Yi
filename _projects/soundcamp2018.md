@@ -10,7 +10,7 @@ medium_en: "live audio streaming, real-time visualization"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2019.05"
-event: "Reveil 2019 〈Soundcamp〉"
+event: "Reveil 2019 《Soundcamp》"
 event_en: "Reveil 2019 “Soundcamp”"
 venue: "문화공간 양, 제주"
 venue_en: "Culture Space Yang, Jeju"

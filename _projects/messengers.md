@@ -12,7 +12,7 @@ medium_en: "p5.js"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: workshop
 period: "2019.11"
-event: "게임 코딩 워크숍 〈균형이 살아있는 슛팅게임 만들기〉"
+event: "게임 코딩 워크숍 《균형이 살아있는 슛팅게임 만들기》"
 event_en: "game-coding workshop"
 venue: "모두의학교, 서울"
 venue_en: "Modu School, Seoul"

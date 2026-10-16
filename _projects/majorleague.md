@@ -1,6 +1,6 @@
 ---
-title: "메이저리그"
-title_en: "Majorleague"
+title: "메이저게임"
+title_en: "Major Game"
 year: 2018
 type: sound
 tags: [무용]   # 그래프 뷰 연결용 키워드 (협업자, 기법, 주제)
@@ -21,7 +21,7 @@ role: "음악, 사운드"
 role_en: "music and sound"
 ---
 
-&lt;메이저리그 (안무: 윤정아)&gt;. 문래예술공장, 2018.6.7 - 6.9.
+&lt;메이저게임 (안무: 윤정아)&gt;. 문래예술공장, 2018.6.7 - 6.9.
 
 안무: 윤정아
 

@@ -1,5 +1,5 @@
 ---
-title: "리스닝 세션-크게 듣기"
+title: "리스닝 세션 – 크게 듣기"
 title_en: "Listening Session: Listening Loudly"
 year: 2021
 featured: true
@@ -13,7 +13,7 @@ medium_en: "single-channel video, 2-channel sound"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2021.06"
-event: "〈재난과 치유〉 위성 프로젝트 〈반향하는 동사들〉"
+event: "《재난과 치유》 위성 프로젝트 《반향하는 동사들》"
 event_en: "satellite project of MMCA “Catastrophe and Recovery”"
 venue: "국립현대미술관 서울"
 venue_en: "National Museum of Modern and Contemporary Art (MMCA), Seoul"

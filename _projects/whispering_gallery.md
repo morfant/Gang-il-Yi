@@ -15,7 +15,7 @@ links:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2015.01"
-event: "다원매체 전시 〈속삭임의 회랑〉(김태원)"
+event: "다원매체 전시 《속삭임의 회랑》(김태원)"
 event_en: "multimedia exhibition by Kim Tae-won"
 role: "웹 프로그래밍, 사운드 설치"
 role_en: "web programming, sound installation"

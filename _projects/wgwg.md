@@ -13,7 +13,7 @@ medium_en: "five AI agents, real-time parameter mapping, generative sound, video
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2024.10"
-event: "전시 〈소리를 보여주마〉 연계"
+event: "전시 《소리를 보여주마》 연계"
 event_en: "in conjunction with the exhibition 〈소리를 보여주마〉"
 venue: "아트스페이스 휴, 파주"
 venue_en: "Art Space Hue, Paju"

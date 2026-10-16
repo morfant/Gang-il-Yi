@@ -1,5 +1,5 @@
 ---
-title: "캐치볼, 캐치밤"
+title: "캐치볼-캐치밤"
 title_en: "Catch Ball Catch Bomb"
 year: 2018
 featured: true
@@ -16,7 +16,7 @@ links:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2018.09"
-event: "〈사운드 투어 2018〉"
+event: "《사운드 투어 2018》"
 event_en: "Sound Tour 2018"
 venue: "돈의문박물관마을, 서울"
 venue_en: "Donuimun Museum Village, Seoul"

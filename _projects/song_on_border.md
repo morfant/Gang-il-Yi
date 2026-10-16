@@ -10,7 +10,7 @@ medium_en: "XBee modules, SuperCollider, voice"
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: performance
 period: "2016.09"
-event: "멀티미디어 퍼포먼스 〈다섯가지 음맞춤〉"
+event: "멀티미디어 퍼포먼스 《다섯가지 음맞춤》"
 event_en: "multimedia performance 〈다섯가지 음맞춤〉"
 venue: "문화공간 양, 제주"
 venue_en: "Culture Space Yang, Jeju"

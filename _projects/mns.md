@@ -12,7 +12,7 @@ media:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2017.11 – 12"
-event: "인천시립미술관 〈두 번째 도시, 세 번째 공동체〉"
+event: "인천시립미술관 《두 번째 도시, 세 번째 공동체》"
 event_en: "Incheon Art Platform “The Second City, the Third Community”"
 venue: "서울 문래 · 인천 · 송도"
 venue_en: "Seoul / Incheon / Songdo"

@@ -13,7 +13,7 @@ media:
 # CV 항목 (cv: exhibition|performance|dance|workshop|research|false)
 cv: exhibition
 period: "2023.10"
-event: "2023 제로원데이 〈TIMESCAPER〉 (현대자동차 제로원 Z-LAB)"
+event: "《2023 제로원데이》 《TIMESCAPER》 (현대자동차 제로원 Z-LAB)"
 event_en: "ZER01NE DAY 2023 “TIMESCAPER” (Hyundai ZER01NE Z-LAB)"
 venue: "에스팩토리, 서울"
 venue_en: "S-Factory, Seoul"
