@@ -41,4 +41,4 @@ role_en: "electronic music composition"
 ### 소개된 자리
 
 - 2015.12 — 2015 WESA festival
-- 2021.5.8 — 현대음악공연 &lt;죽은 아이들을 위한 노래 : 안녕&gt;, Art space 3 (서울 종로구 효자동)
+- 2021.5.8 — 현대음악공연 &lt;죽은 아이들을 위한 노래: 안녕&gt;, Art space 3 (서울 종로구 효자동)
